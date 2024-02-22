@@ -1,5 +1,6 @@
 import { clashDisplayMedium } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
+import Group3 from "@/public/images/Group -1.png";
 
 type Service = {
   name: string;
@@ -32,15 +33,15 @@ const services: Service[] = [
 const simpleServices: SimpleService[] = [
   {
     title: "Pago de reserva con tarjeta",
-    img: require("../../public/images/Group 3.png"),
+    img: Group3,
   },
   {
     title: "Sistema de Facturación en Línea",
-    img: require("../../public/images/Group 3.png"),
+    img: Group3,
   },
   {
     title: "Sistema de contrato en línea",
-    img: require("../../public/images/Group 3.png"),
+    img: Group3,
   },
 ];
 

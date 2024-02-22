@@ -1,11 +1,15 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-import heroImage from "@/public/images/heroImage.png";
-
-export default function HeroSection() {
+export default function HeroSection({ img }: { img: StaticImageData }) {
   return (
-    <div>
-      <Image src={heroImage} alt="" />
+    <div className="relative aspect-video w-full">
+      <Image
+        className="aspect-square object-cover object-center"
+        sizes="100vw"
+        fill
+        src={img}
+        alt=""
+      />
     </div>
   );
 }

@@ -3,13 +3,14 @@ import FeaturedServices from "@/components/Sections/FeaturedServices";
 import HeroSection from "@/components/Sections/HeroSection";
 import RentSection from "@/components/Sections/RentSection";
 
+import heroImage from "@/public/images/heroImage.png";
 import WhatsApp from "@/public/images/WhatsApp Icon.png";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="relative flex flex-col gap-20">
-      <HeroSection />
+      <HeroSection img={heroImage} />
       <FeaturedClients />
       <FeaturedServices />
       <RentSection />

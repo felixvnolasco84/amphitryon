@@ -1,6 +1,7 @@
 import { clashDisplayMedium } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
 import Clients from "@/public/images/clients.png";
+import Group3 from "@/public/images/Group -1.png";
 
 type Client = {
   name: string;
@@ -10,7 +11,7 @@ type Client = {
 const clients: Client[] = [
   {
     name: "Casa de la Cultura",
-    logo: require("../../public/images/Group 3.png"),
+    logo: Group3,
   },
 ];
 
