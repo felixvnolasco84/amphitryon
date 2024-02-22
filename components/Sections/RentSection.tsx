@@ -6,30 +6,8 @@ import Image, { StaticImageData } from "next/image";
 
 import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.png";
 import ReservaIcono from "@/public/images/Reserva_Icono.png";
-
-type RentPlace = {
-  name: string;
-  description: string;
-  img: StaticImageData;
-};
-
-const rentPlaces: RentPlace[] = [
-  {
-    name: "MOLIERE 310, POLANCO",
-    description: "LA GALERIA",
-    img: MOLIERE,
-  },
-  {
-    name: "PALMAS 781, LOMAS DE CHAPULTEPEC",
-    description: "MACARELLA",
-    img: PALMAS,
-  },
-  {
-    name: "TONALÁ 171, ROMA NORTE",
-    description: "TERRAZA PEPITA",
-    img: TONALÁ,
-  },
-];
+import Link from "next/link";
+import { rentPlaces } from "@/utils/data";
 
 export default function RentSection() {
   return (
@@ -39,7 +17,11 @@ export default function RentSection() {
       </h2>
       <div className="grid grid-cols-2 gap-4 align-baseline">
         {rentPlaces.map((place, index) => (
-          <div key={index} className="flex aspect-square flex-col gap-2">
+          <Link
+            href={`/${place.slug}`}
+            key={index}
+            className="flex aspect-square flex-col gap-2"
+          >
             <Image className="aspect-square" src={place.img} alt={place.name} />
             <div>
               <h3 className={`${clashDisplayMedium.className} text-2xl`}>
@@ -47,7 +29,7 @@ export default function RentSection() {
               </h3>
               <p className="font- text-[#727272]">{place.description}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <div className="flex justify-end">

@@ -7,7 +7,7 @@ Link;
 export default function Header() {
   return (
     <div className="container flex items-center justify-between border-b-2 border-[#707070] pb-6 pt-12 text-lg">
-      <div className="relative h-[55px] w-[195px]">
+      <Link href={"/"} className="relative h-[55px] w-[195px]">
         <Image
           className="object-cover object-center"
           fill
@@ -15,7 +15,7 @@ export default function Header() {
           alt=""
           src={Logo}
         />
-      </div>
+      </Link>
       <h1>GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS</h1>
       <nav className="flex items-center gap-4">
         <Link className="h-fit" href="#">
