@@ -6,22 +6,27 @@ Link;
 
 export default function Header() {
   return (
-    <div className="container flex items-center justify-between border-b-2 border-[#707070] pb-6 pt-12 text-lg">
-      <Link href={"/"} className="relative h-[55px] w-[195px]">
+    <div className="container flex items-center justify-between border-b-2 border-[#707070] pb-3 pt-6 text-lg lg:pb-6 lg:pt-12">
+      <Link
+        href={"/"}
+        className="relative h-[22px] w-[90px] lg:h-[50px] lg:w-[195px]"
+      >
         <Image
-          className="object-cover object-center"
+          className="object-fill object-center"
           fill
           sizes="100vw"
           alt=""
           src={Logo}
         />
       </Link>
-      <h1>GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS</h1>
-      <nav className="flex items-center gap-4">
-        <Link className="h-fit" href="#">
+      <h1 className="text-center text-sm lg:text-lg">
+        GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS
+      </h1>
+      <nav className="items-center gap-4 lg:flex">
+        <Link className="hidden h-fit lg:block" href="#">
           Nosotros
         </Link>
-        <Link className="h-fit" href="#">
+        <Link className="hidden h-fit lg:block" href="#">
           Contacto
         </Link>
         <Button variant={"default"} size={"lg"}>

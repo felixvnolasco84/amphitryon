@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${clashDisplayRegular.className} flex flex-col gap-20`}>
+      <body className={`${clashDisplayRegular.className} flex flex-col gap-10 lg:gap-20`}>
         <Header />
         <div className="container flex-1">{children}</div>
         <Footer />

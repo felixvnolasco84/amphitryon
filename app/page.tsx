@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col gap-20">
+    <main className="relative flex flex-col gap-10 lg:gap-20">
       <HeroSection img={heroImage} />
       <FeaturedClients />
       <FeaturedServices />

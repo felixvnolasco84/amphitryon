@@ -2,6 +2,9 @@ import { clashDisplayMedium } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
 import Group3 from "@/public/images/Group -1.png";
 
+import Money_Icon_Bill from "@/public/svg/Money_Icon_Bill.svg";
+import Money_Icon from "@/public/svg/Money_Icon_Orange.svg";
+import Money_Icon_Smartphone from "@/public/svg/Money_Icon_Smartphone.svg";
 type Service = {
   name: string;
   description: string;
@@ -33,26 +36,26 @@ const services: Service[] = [
 const simpleServices: SimpleService[] = [
   {
     title: "Pago de reserva con tarjeta",
-    img: Group3,
+    img: Money_Icon_Smartphone,
   },
   {
     title: "Sistema de Facturación en Línea",
-    img: Group3,
+    img: Money_Icon,
   },
   {
     title: "Sistema de contrato en línea",
-    img: Group3,
+    img: Money_Icon_Bill,
   },
 ];
 
 export default function FeaturedServices() {
   return (
-    <div className="flex flex-col gap-20 text-center">
-      <div className="flex flex-col gap-4">
-        <h3 className={`${clashDisplayMedium.className} text-3xl`}>
+    <div className="flex flex-col gap-10 text-center lg:gap-20">
+      <div className="flex flex-col gap-2 lg:gap-4">
+        <h3 className={`${clashDisplayMedium.className} text-2xl lg:text-3xl`}>
           RENTA TU ESPACIO FAVORITO PARA TU EVENTO PRIVADO EN CDMX
         </h3>
-        <p>
+        <p className="text-sm lg:text-base">
           Somos tu mejor opción para eventos privados en la Ciudad de México.
           Con tres espacios exclusivos, donde la elegancia se mezcla con la
           comodidad, tienes el control total sobre todo lo que necesitas para
@@ -60,19 +63,21 @@ export default function FeaturedServices() {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
         {services.map((service) => (
-          <div className="bg-[#F8F8F8] p-6 text-left" key={service.name}>
+          <div className="bg-[#F8F8F8] p-3 text-left lg:p-6" key={service.name}>
             <h4
-              className={`${clashDisplayMedium.className} text-xl lg:text-2xl xl:text-3xl my-2`}
+              className={`${clashDisplayMedium.className} text-xl lg:text-2xl xl:text-3xl my-1 lg:my-2`}
             >
               {service.name}
             </h4>
-            <p className="text-base text-[#222222]">{service.description}</p>
+            <p className="text-sm text-[#222222] lg:text-base">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
         {simpleServices.map((service) => (
           <div
             className="flex flex-col items-center gap-4 text-center"
@@ -89,7 +94,7 @@ export default function FeaturedServices() {
             </div>
 
             <h4
-              className={`${clashDisplayMedium.className} text-xl lg:text-2xl my-2`}
+              className={`${clashDisplayMedium.className} text-xl lg:text-2xl my-01 lg:my-2`}
             >
               {service.title}
             </h4>
