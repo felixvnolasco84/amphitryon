@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 import Arrow from "@/public/svg/Arrow_Icon.svg";
+import CustomMapSection from "@/components/Sections/CustomMapSection";
 
 type Props = {
   params: { slug: string };
@@ -58,7 +59,9 @@ export default function PlacePage({ params }: Props) {
           >
             {rentPlace.name}
           </h1>
-          <h2 className="text-center text-3xl lg:text-4xl xl:text-5xl">{rentPlace.description}</h2>
+          <h2 className="text-center text-3xl lg:text-4xl xl:text-5xl">
+            {rentPlace.description}
+          </h2>
         </div>
         {rentPlace.nextLink ? (
           <Link href={rentPlace.nextLink}>
@@ -90,20 +93,21 @@ export default function PlacePage({ params }: Props) {
           </Button>
         )}
       </div>
-
       <div className="grid grid-flow-col gap-4">
         {rentPlace.features.map((feature, index) => (
           <div className="border-t-2 border-black pt-2 lg:pt-4" key={index}>
-            <h3 className="text-xs text-[#727272] lg:text-sm">{feature.title}</h3>
-            <p className={`${clashDisplayMedium.className} text-lg lg:text-xl xl:text-2xl`}>
+            <h3 className="text-xs text-[#727272] lg:text-sm">
+              {feature.title}
+            </h3>
+            <p
+              className={`${clashDisplayMedium.className} text-lg lg:text-xl xl:text-2xl`}
+            >
               {feature.description}
             </p>
           </div>
         ))}
       </div>
-
       <HeroSection img={rentPlace.img} />
-
       <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
         <h3 className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}>
           {rentPlace.name + " - " + rentPlace.location}
@@ -125,6 +129,7 @@ export default function PlacePage({ params }: Props) {
           </div>
         ))}
       </div>
+      <CustomMapSection location={rentPlace.locationInMap} />
     </div>
   );
 }
