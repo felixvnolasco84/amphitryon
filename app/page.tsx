@@ -5,8 +5,6 @@ import RentSection from "@/components/Sections/RentSection";
 import { Button } from "@/components/ui/button";
 
 import heroImage from "@/public/images/heroImage.png";
-import WhatsApp from "@/public/images/WhatsApp Icon.png";
-import Image from "next/image";
 
 export default function Home() {
   return (
