@@ -10,7 +10,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
-import rightArrow from "@/public/images/rightArrow.svg";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Loader2 } from "lucide-react";
@@ -19,6 +18,7 @@ import { sendContactEmail } from "@/app/_actions";
 import SuccessMessage from "./SuccessMessage";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { clashDisplayMedium } from "@/utils/fonts";
 
 const FormSchema = z.object({
   name: z
@@ -30,6 +30,7 @@ const FormSchema = z.object({
       message: "El nombre no puede ser más de 160 carácteres.",
     }),
   email: z.string().email({ message: "Correo electrónico Inválido" }),
+  phoneNumber: z.string().min(10, { message: "Número de teléfono inválido" }),
 });
 
 export function ContactForm() {
@@ -42,6 +43,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       email: "",
+      phoneNumber: "",
     },
   });
 
@@ -69,23 +71,24 @@ export function ContactForm() {
   }
 
   return (
-    <>
+    <div className="flex flex-col items-center gap-2">
+      <h3 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h3>
       {showModalMessage && <SuccessMessage type="contact" />}
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className={`flex w-full flex-col gap-5 rounded-2xl lg:w-10/12 lg:flex-row lg:items-center xl:w-8/12`}
+          className={`flex w-full max-w-xl flex-col gap-5 lg:items-center`}
         >
-          <div className="lg:text-black-500 flex w-full flex-col gap-8 bg-transparent lg:flex-row lg:rounded-2xl lg:bg-gray-400 lg:p-4">
+          <div className="flex w-full flex-col gap-4">
             <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem className="space-y-0">
+                <FormItem className="space-y-2">
                   <FormControl>
                     <Input
                       placeholder="Nombre"
-                      className="resize-none bg-transparent px-1 py-0 text-base lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
@@ -102,7 +105,24 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       placeholder="Correo"
-                      className="resize-none bg-transparent px-1 py-0 text-base lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
+                      disabled={isLoading}
+                      {...field}
+                    ></Input>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="phoneNumber"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Input
+                      placeholder="Número de teléfono"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
@@ -117,7 +137,7 @@ export function ContactForm() {
             <>
               <Button
                 type="submit"
-                className="h-fit w-fit bg-black hover:bg-transparent"
+                className="h-fit w-fit bg-black"
                 disabled={isLoading}
               >
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -127,26 +147,15 @@ export function ContactForm() {
           ) : (
             <Button
               type="submit"
-              className="lg:group relative h-fit w-fit bg-transparent px-0 py-2 hover:bg-transparent lg:px-4 lg:py-2"
+              size={"contact"}
+              variant={"contact"}
               disabled={isLoading}
             >
-              <span className="bg-flourescentYellow relative z-10 h-fit gap-4 rounded-[15px] px-12 py-4 text-xl font-normal text-gray-600 hover:bg-black hover:text-white lg:px-[48px] lg:py-[12px] lg:text-xl xl:px-[64px] xl:py-[16px] xl:text-2xl">
-                Enviar
-              </span>
-
-              <Image
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                loading="eager"
-                className="group-hover:bg-flourescent-yellow bg-flourescentYellow absolute left-[50%] top-[10%] hidden h-fit cursor-pointer rounded-full p-2 transition ease-out group-hover:block group-hover:translate-x-28 lg:block"
-                width={48}
-                height={48}
-                src={rightArrow}
-                alt=""
-              />
+              Enviar
             </Button>
           )}
         </form>
       </Form>
-    </>
+    </div>
   );
 }

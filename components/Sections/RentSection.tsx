@@ -12,7 +12,9 @@ import { rentPlaces } from "@/utils/data";
 export default function RentSection() {
   return (
     <div className="flex flex-col gap-6 lg:gap-12">
-      <h2 className={`${clashDisplayMedium.className} text-2xl lg:text-3xl text-center`}>
+      <h2
+        className={`${clashDisplayMedium.className} text-2xl lg:text-3xl text-center`}
+      >
         ALGUNOS LUGARES A LA RENTA PARA TUS EVENTOS PRIVADOS
       </h2>
       <div className="grid grid-cols-2 gap-2 align-baseline lg:gap-4">
@@ -24,13 +26,28 @@ export default function RentSection() {
           >
             <Image className="aspect-square" src={place.img} alt={place.name} />
             <div>
-              <h3 className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}>
-                {place.name}
+              <h3
+                className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}
+              >
+                {place.name}, {place.district.toUpperCase()}
               </h3>
-              <p className="text-sm text-[#727272] lg:text-base">{place.description}</p>
+              <p className="text-sm text-[#727272] lg:text-base">
+                {place.description}
+              </p>
             </div>
           </Link>
         ))}
+        <div className="flex flex-col justify-between gap-4 lg:max-h-[472px] xl:max-h-[660px]">
+          <div className="flex h-1/6 items-center justify-center bg-[#EFEFEF] text-center">
+            <h3> Revisa la disponibilidad</h3>
+          </div>
+          <div className="h-4/6 bg-[#EFEFEF]"></div>
+          <div className="flex h-1/6 items-center justify-around bg-[#EFEFEF]">
+            <p>La Galería</p>
+            <p>Macarella</p>
+            <p>Terraza Pepita</p>
+          </div>
+        </div>
       </div>
       <div className="flex justify-start lg:justify-end">
         <div className="flex flex-col-reverse items-center gap-2 lg:w-7/12 lg:flex-row">
@@ -61,7 +78,9 @@ export default function RentSection() {
           />
         </div>
         <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
-          <h3 className={`${clashDisplayMedium.className} my-1 lg:my-2 text-2xl lg:text-3xl`}>
+          <h3
+            className={`${clashDisplayMedium.className} my-1 lg:my-2 text-2xl lg:text-3xl`}
+          >
             VENUES PROPIOS
           </h3>
           <p>

@@ -19,14 +19,20 @@ export default function Header() {
           src={Logo}
         />
       </Link>
-      <h1 className="text-center text-sm lg:text-lg">
+      <h1 className="text-center text-sm lg:text-base xl:text-lg">
         GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS
       </h1>
       <nav className="items-center gap-4 lg:flex">
-        <Link className="hidden h-fit lg:block" href="#">
+        <Link
+          className="hidden h-fit lg:block lg:text-base xl:text-lg"
+          href="#"
+        >
           Nosotros
         </Link>
-        <Link className="hidden h-fit lg:block" href="#">
+        <Link
+          className="hidden h-fit lg:block lg:text-base xl:text-lg"
+          href="#"
+        >
           Contacto
         </Link>
         <Button variant={"default"} size={"lg"}>

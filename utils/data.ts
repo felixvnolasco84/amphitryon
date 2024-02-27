@@ -38,12 +38,13 @@ export type RentPlace = {
   previousLink?: string;
   nextLink?: string;
   locationInMap: { lat: number; lng: number };
+  district: string;
 };
 
 export const rentPlaces: RentPlace[] = [
   {
     slug: "moliere-310-polanco",
-    name: "MOLIERE 310, POLANCO",
+    name: "MOLIERE 310",
     description: "LA GALERIA",
     img: MOLIERE,
     gallery: [MOLIERE, Moliere2, Moliere3, Moliere4],
@@ -77,10 +78,11 @@ export const rentPlaces: RentPlace[] = [
       lat: 19.4365039,
       lng: -99.2039958,
     },
+    district: "Polanco",
   },
   {
     slug: "palmas-781-lomas-de-chapultepec",
-    name: "PALMAS 781, LOMAS DE CHAPULTEPEC",
+    name: "PALMAS 781",
     description: "MACARELLA",
     img: PALMAS,
     gallery: [Palmas1, Palmas2, Palmas3, Palmas4],
@@ -111,10 +113,11 @@ export const rentPlaces: RentPlace[] = [
       lat: 19.4292817,
       lng: -99.2193947,
     },
+    district: "Lomas de Chapultepec",
   },
   {
     slug: "tonala-171-roma-norte",
-    name: "TONALÁ 171, ROMA NORTE",
+    name: "TONALÁ 171",
     description: "TERRAZA PEPITA",
     img: TONALÁ,
     gallery: [Tonala1, Tonala2, Tonala3, Tonala4],
@@ -144,5 +147,6 @@ export const rentPlaces: RentPlace[] = [
       lat: 19.4135478,
       lng: -99.1642227,
     },
+    district: "ROMA NORTE",
   },
 ];
