@@ -5,6 +5,8 @@ import Group3 from "@/public/images/Group -1.png";
 import Money_Icon_Bill from "@/public/svg/Money_Icon_Bill.svg";
 import Money_Icon from "@/public/svg/Money_Icon_Orange.svg";
 import Money_Icon_Smartphone from "@/public/svg/Money_Icon_Smartphone.svg";
+import ServicesCarousel from "../Carousel/ServicesCarousel";
+import FeaturedCarousel from "../Carousel/FeaturedCarousel";
 type Service = {
   name: string;
   description: string;
@@ -52,7 +54,7 @@ export default function FeaturedServices() {
   return (
     <div className="flex flex-col gap-10 text-center lg:gap-20">
       <div className="flex flex-col gap-2 lg:gap-4">
-        <h3 className={`${clashDisplayMedium.className} text-2xl lg:text-3xl`}>
+        <h3 className={`${clashDisplayMedium.className} text-xl lg:text-3xl`}>
           RENTA TU ESPACIO FAVORITO PARA TU EVENTO PRIVADO EN CDMX
         </h3>
         <p className="text-sm lg:text-base">
@@ -62,8 +64,7 @@ export default function FeaturedServices() {
           hacer realidad tu reunión, celebración y evento social o corporativo.
         </p>
       </div>
-
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
+      <div className="hidden grid-cols-1 gap-2 lg:grid lg:grid-cols-3">
         {services.map((service) => (
           <div className="bg-[#F8F8F8] p-3 text-left lg:p-6" key={service.name}>
             <h4
@@ -77,7 +78,8 @@ export default function FeaturedServices() {
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
+      <ServicesCarousel items={services} />
+      <div className="hidden grid-cols-1 gap-2 lg:grid lg:grid-cols-3">
         {simpleServices.map((service) => (
           <div
             className="flex flex-col items-center gap-4 text-center"
@@ -101,6 +103,7 @@ export default function FeaturedServices() {
           </div>
         ))}
       </div>
+      <FeaturedCarousel items={simpleServices} />
     </div>
   );
 }

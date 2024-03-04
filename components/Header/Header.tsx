@@ -2,14 +2,14 @@ import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import Link from "next/link";
 import { Button } from "../ui/button";
-Link;
+import HeaderMobile from "./HeaderMobile";
 
 export default function Header() {
   return (
-    <div className="container flex items-center justify-between border-b-2 border-[#707070] pb-3 pt-6 text-lg lg:pb-6 lg:pt-12">
+    <div className="container sticky z-50 flex items-center justify-between border-b-2 border-[#707070] bg-white pb-3 pt-6 text-lg lg:pb-5 lg:pt-5 xl:pb-6 xl:pt-12">
       <Link
         href={"/"}
-        className="relative h-[22px] w-[90px] lg:h-[50px] lg:w-[195px]"
+        className="relative h-[22px] w-[90px] lg:h-[42px] lg:w-[160px] xl:h-[50px] xl:w-[195px]"
       >
         <Image
           className="object-fill object-center"
@@ -35,9 +35,7 @@ export default function Header() {
         >
           Contacto
         </Link>
-        <Button variant={"default"} size={"lg"}>
-          |||
-        </Button>
+        <HeaderMobile />
       </nav>
     </div>
   );

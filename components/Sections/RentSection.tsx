@@ -8,16 +8,17 @@ import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.png";
 import ReservaIcono from "@/public/images/Reserva_Icono.png";
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
+import RentPlaceCarousel from "../Carousel/RentPlaceCarousel";
 
 export default function RentSection() {
   return (
     <div className="flex flex-col gap-6 lg:gap-12">
       <h2
-        className={`${clashDisplayMedium.className} text-2xl lg:text-3xl text-center`}
+        className={`${clashDisplayMedium.className} text-xl lg:text-3xl text-center`}
       >
         ALGUNOS LUGARES A LA RENTA PARA TUS EVENTOS PRIVADOS
       </h2>
-      <div className="grid grid-cols-2 gap-2 align-baseline lg:gap-4">
+      <div className="hidden grid-cols-2 gap-2 align-baseline lg:grid lg:gap-4">
         {rentPlaces.map((place, index) => (
           <Link
             href={`/${place.slug}`}
@@ -49,6 +50,7 @@ export default function RentSection() {
           </div>
         </div>
       </div>
+      <RentPlaceCarousel items={rentPlaces} />
       <div className="flex justify-start lg:justify-end">
         <div className="flex flex-col-reverse items-center gap-2 lg:w-7/12 lg:flex-row">
           <p className="text-center lg:text-left">
@@ -79,7 +81,7 @@ export default function RentSection() {
         </div>
         <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
           <h3
-            className={`${clashDisplayMedium.className} my-1 lg:my-2 text-2xl lg:text-3xl`}
+            className={`${clashDisplayMedium.className} my-1 lg:my-2 text-xl lg:text-3xl`}
           >
             VENUES PROPIOS
           </h3>

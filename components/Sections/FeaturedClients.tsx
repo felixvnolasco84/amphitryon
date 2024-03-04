@@ -64,7 +64,7 @@ export default function FeaturedClients() {
   return (
     <div className="flex flex-col gap-7 lg:gap-14">
       <h3
-        className={`${clashDisplayMedium.className} text-center text-2xl lg:text-3xl`}
+        className={`${clashDisplayMedium.className} text-center text-xl lg:text-3xl`}
       >
         NUESTROS CLIENTES
       </h3>

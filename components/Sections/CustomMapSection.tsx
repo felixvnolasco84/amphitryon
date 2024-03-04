@@ -42,5 +42,10 @@ export default function CustomMapSection({
     initializeMap();
   }, [location]);
 
-  return <div className="h-[600px]" ref={mapRef} />;
+  return (
+    <div
+      className="aspect-square lg:aspect-auto lg:h-[500px] xl:h-[600px]"
+      ref={mapRef}
+    />
+  );
 }

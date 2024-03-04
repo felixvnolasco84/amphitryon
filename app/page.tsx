@@ -6,6 +6,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
 
 import heroImage from "@/public/images/heroImage.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,11 +16,16 @@ export default function Home() {
       <FeaturedServices />
       <RentSection />
       <ContactForm />
-      <div className="sticky bottom-2 flex w-full justify-end rounded-md">
+      <Link
+        href={
+          "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+        }
+        className="sticky bottom-2 flex w-full justify-end rounded-md"
+      >
         <Button size={"lg"} className="relative bg-[#FC9532]">
           WhatsApp
         </Button>
-      </div>
+      </Link>
     </main>
   );
 }

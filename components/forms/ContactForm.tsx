@@ -71,7 +71,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div id="nosotros" className="flex flex-col items-center gap-2">
       <h3 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h3>
       {showModalMessage && <SuccessMessage type="contact" />}
       <Form {...form}>
