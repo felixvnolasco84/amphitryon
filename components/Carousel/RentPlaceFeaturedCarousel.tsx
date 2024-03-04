@@ -34,7 +34,7 @@ export default function RentPlaceFeaturedCarousel({
   }, [api]);
 
   return (
-    <>
+    <div>
       <Carousel
         setApi={setApi}
         opts={{
@@ -59,7 +59,7 @@ export default function RentPlaceFeaturedCarousel({
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground lg:hidden">
+      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (
@@ -78,6 +78,6 @@ export default function RentPlaceFeaturedCarousel({
             />
           ))}
       </div>
-    </>
+    </div>
   );
 }

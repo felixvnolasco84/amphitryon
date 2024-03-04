@@ -27,7 +27,7 @@ export default function ServicesCarousel({ items }: { items: any[] }) {
   }, [api]);
 
   return (
-    <>
+    <div className="">
       <Carousel
         setApi={setApi}
         opts={{
@@ -35,7 +35,7 @@ export default function ServicesCarousel({ items }: { items: any[] }) {
         }}
         className="m-auto w-full max-w-7xl lg:hidden"
       >
-        <CarouselContent>
+        <CarouselContent className="w-11/12">
           {items.map((item: any, index: number) => (
             <CarouselItem key={index} className="basis-full">
               <div className="p-0 lg:p-1">
@@ -55,7 +55,7 @@ export default function ServicesCarousel({ items }: { items: any[] }) {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground lg:hidden">
+      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (
@@ -74,6 +74,6 @@ export default function ServicesCarousel({ items }: { items: any[] }) {
             />
           ))}
       </div>
-    </>
+    </div>
   );
 }

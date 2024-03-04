@@ -11,6 +11,7 @@ import Penguin from "@/public/images/clients/penguin.png";
 import Porcenalosa from "@/public/images/clients/porcelanosa.png";
 import Rolex from "@/public/images/clients/rolex.png";
 import Tous from "@/public/images/clients/tous.png";
+import ClientsCarousel from "../Carousel/ClientsCarousel";
 
 type Client = {
   name: string;
@@ -62,13 +63,14 @@ const clients: Client[] = [
 
 export default function FeaturedClients() {
   return (
-    <div className="flex flex-col gap-7 lg:gap-14">
+    <div className="flex flex-col gap-4 lg:gap-7 xl:gap-14">
       <h3
         className={`${clashDisplayMedium.className} text-center text-xl lg:text-3xl`}
       >
         NUESTROS CLIENTES
       </h3>
-      <div className="grid grid-flow-col-dense items-center gap-4 lg:gap-8 xl:gap-12">
+      <ClientsCarousel items={clients} />
+      <div className="hidden grid-flow-col-dense items-center gap-4 lg:grid lg:gap-8 xl:gap-12">
         {clients.map((client, index) => (
           <Image
             key={index}

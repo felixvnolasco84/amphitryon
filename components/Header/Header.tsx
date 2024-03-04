@@ -19,7 +19,7 @@ export default function Header() {
           src={Logo}
         />
       </Link>
-      <h1 className="text-center text-sm lg:text-base xl:text-lg">
+      <h1 className="text-center text-xs lg:text-base xl:text-lg">
         GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS
       </h1>
       <nav className="items-center gap-4 lg:flex">

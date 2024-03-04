@@ -8,10 +8,8 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import Link from "next/link";
-import { clashDisplayMedium } from "@/utils/fonts";
 
-export default function RentPlaceCarousel({ items }: { items: any[] }) {
+export default function ClientsCarousel({ items }: { items: any[] }) {
   const [api, setApi] = useState<any>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -38,30 +36,15 @@ export default function RentPlaceCarousel({ items }: { items: any[] }) {
         }}
         className="m-auto w-full max-w-7xl lg:hidden"
       >
-        <CarouselContent className="w-11/12">
+        <CarouselContent className="w-11/12 items-center">
           {items.map((item: any, index: number) => (
-            <CarouselItem key={index} className="basis-full">
-              <Link
-                href={`/${item.slug}`}
+            <CarouselItem key={index} className="basis-1/3">
+              <Image
                 key={index}
-                className="flex aspect-square flex-col gap-2"
-              >
-                <Image
-                  className="aspect-square"
-                  src={item.img}
-                  alt={item.name}
-                />
-                <div>
-                  <h3
-                    className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}
-                  >
-                    {item.name}, {item.district.toUpperCase()}
-                  </h3>
-                  <p className="text-sm text-[#727272] lg:text-base">
-                    {item.description}
-                  </p>
-                </div>
-              </Link>
+                src={item.logo}
+                alt={item.name}
+                className="h-auto w-auto"
+              />
             </CarouselItem>
           ))}
         </CarouselContent>

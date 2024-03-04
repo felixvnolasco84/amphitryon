@@ -46,32 +46,32 @@ export default function HeaderMobile() {
             </Link>
           </SheetTitle>
           <SheetDescription className="flex flex-col gap-2 text-2xl text-black">
-            <SheetTrigger>
-              <Link
-                className="h-fit"
-                href="#nosotros"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("nosotros")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                <SheetClose>Nosotros</SheetClose>
-              </Link>
-            </SheetTrigger>
-            <Link
+            {/* <Link
               className="h-fit"
               href="#"
               onClick={(e) => {
                 e.preventDefault();
                 document
-                  .getElementById("contacto")
+                  .getElementById("nosotros")
                   ?.scrollIntoView({ behavior: "smooth" });
               }}
             >
-              Contacto
-            </Link>
+              <SheetClose>Nosotros</SheetClose>
+            </Link> */}
+            <SheetTrigger>
+              <Link
+                className="h-fit"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("contacto")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                <SheetClose>Contacto</SheetClose>
+              </Link>
+            </SheetTrigger>
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

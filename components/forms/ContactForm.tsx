@@ -50,12 +50,8 @@ export function ContactForm() {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
       setIsLoading(true);
-      await sendContactEmail(data);
-      const response = await fetch("/api/customers", {
-        method: "POST",
-        body: JSON.stringify(data),
-      });
-      if (response.ok) {
+      const response = await sendContactEmail(data);     
+      if (response.success) {
         setShowModalMessage(true);
         setIsLoading(false);
       }
@@ -71,7 +67,7 @@ export function ContactForm() {
   }
 
   return (
-    <div id="nosotros" className="flex flex-col items-center gap-2">
+    <div id="contacto" className="flex flex-col items-center gap-2">
       <h3 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h3>
       {showModalMessage && <SuccessMessage type="contact" />}
       <Form {...form}>

@@ -28,7 +28,7 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
   }, [api]);
 
   return (
-    <>
+    <div>
       <Carousel
         setApi={setApi}
         opts={{
@@ -36,14 +36,14 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
         }}
         className="m-auto w-full max-w-7xl lg:hidden"
       >
-        <CarouselContent>
+        <CarouselContent className="w-8/12">
           {items.map((item: any, index: number) => (
             <CarouselItem key={index} className="basis-full">
               <div
-                className="flex flex-col items-center gap-4 text-center"
+                className="flex flex-col items-center gap-2 text-center lg:gap-4"
                 key={item.title}
               >
-                <div className="relative h-60 w-60">
+                <div className="relative h-40 w-40 lg:h-60 lg:w-60">
                   <Image
                     src={item.img.src}
                     alt=""
@@ -53,7 +53,7 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
                   />
                 </div>
 
-                <h4 className="my-01 text-xl lg:my-2 lg:text-2xl">
+                <h4 className="text-lg lg:my-2 lg:text-xl xl:text-2xl">
                   {item.title}
                 </h4>
               </div>
@@ -61,7 +61,7 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground lg:hidden">
+      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (
@@ -80,6 +80,6 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
             />
           ))}
       </div>
-    </>
+    </div>
   );
 }

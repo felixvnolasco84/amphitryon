@@ -28,7 +28,7 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
   }, [api]);
 
   return (
-    <>
+    <div>
       <Carousel
         setApi={setApi}
         opts={{
@@ -54,7 +54,7 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-muted-foreground lg:hidden">
+      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (
@@ -73,6 +73,6 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
             />
           ))}
       </div>
-    </>
+    </div>
   );
 }
