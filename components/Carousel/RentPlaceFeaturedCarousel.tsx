@@ -50,7 +50,7 @@ export default function RentPlaceFeaturedCarousel({
                   {feature.title}
                 </h3>
                 <p
-                  className={`${clashDisplayMedium.className} text-lg lg:text-xl xl:text-2xl`}
+                  className={`${clashDisplayMedium.className} text-base lg:text-xl xl:text-2xl`}
                 >
                   {feature.description}
                 </p>
@@ -59,7 +59,7 @@ export default function RentPlaceFeaturedCarousel({
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
+      <div className="py-2 text-center text-sm lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (

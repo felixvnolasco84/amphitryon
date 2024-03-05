@@ -54,7 +54,7 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="py-2 text-center text-sm text-[#FC9532] lg:hidden">
+      <div className="py-2 text-center text-sm lg:hidden">
         {Array(count)
           .fill(null)
           .map((_, i) => (

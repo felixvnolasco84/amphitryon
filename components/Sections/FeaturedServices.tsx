@@ -57,7 +57,7 @@ export default function FeaturedServices() {
         <h3 className={`${clashDisplayMedium.className} text-xl lg:text-3xl`}>
           RENTA TU ESPACIO FAVORITO PARA TU EVENTO PRIVADO EN CDMX
         </h3>
-        <p className="text-sm lg:text-base">
+        <p className="text-lg leading-tight lg:text-xl">
           Somos tu mejor opción para eventos privados en la Ciudad de México.
           Con tres espacios exclusivos, donde la elegancia se mezcla con la
           comodidad, tienes el control total sobre todo lo que necesitas para
@@ -66,13 +66,13 @@ export default function FeaturedServices() {
       </div>
       <div className="grid grid-cols-1 gap-4 lg:grid lg:grid-cols-3 lg:gap-2">
         {services.map((service) => (
-          <div className="bg-[#F8F8F8] p-3 text-left lg:p-6" key={service.name}>
+          <div className="bg-[#F8F8F8] p-3 lg:p-6 lg:text-left" key={service.name}>
             <h4
               className={`${clashDisplayMedium.className} text-xl lg:text-2xl xl:text-3xl my-1 lg:my-2`}
             >
               {service.name}
             </h4>
-            <p className="text-sm text-[#222222] lg:text-base">
+            <p className="text-base text-[#222222]">
               {service.description}
             </p>
           </div>
@@ -82,10 +82,10 @@ export default function FeaturedServices() {
       <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
         {simpleServices.map((service) => (
           <div
-            className="flex flex-col items-center gap-4 text-center"
+            className="flex flex-col items-center gap-2 text-center lg:gap-4"
             key={service.title}
           >
-            <div className="relative h-60 w-60">
+            <div className="relative h-[190px] w-3/4 lg:h-60 lg:w-60">
               <Image
                 src={service.img.src}
                 alt=""
@@ -96,7 +96,7 @@ export default function FeaturedServices() {
             </div>
 
             <h4
-              className={`${clashDisplayMedium.className} text-xl lg:text-2xl my-01 lg:my-2`}
+              className={`${clashDisplayMedium.className} text-lg lg:text-2xl my-01 lg:my-2`}
             >
               {service.title}
             </h4>

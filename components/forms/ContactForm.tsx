@@ -84,7 +84,7 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       placeholder="Nombre"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
@@ -101,7 +101,7 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       placeholder="Correo"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
@@ -118,7 +118,7 @@ export function ContactForm() {
                   <FormControl>
                     <Input
                       placeholder="Número de teléfono"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-6 text-base focus-visible:ring-orange-400 lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>

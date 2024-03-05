@@ -1,15 +1,9 @@
 import { clashDisplayMedium } from "@/utils/fonts";
-import MOLIERE from "@/public/images/MOLIERE 310, POLANCO.png";
-import PALMAS from "@/public/images/PALMAS 781, LOMAS DE CHAPULTEPEC.png";
-import TONALÁ from "@/public/images/TONALÁ 171, ROMA NORTE.png";
-import Image, { StaticImageData } from "next/image";
-
+import Image from "next/image";
 import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.png";
 import ReservaIcono from "@/public/images/Reserva_Icono.png";
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
-import RentPlaceCarousel from "../Carousel/RentPlaceCarousel";
-import Calendly from "../Calendar/Calendly";
 import { CalendlyComponent } from "../Calendar/CalendlyComponent";
 
 export default function RentSection() {
@@ -28,7 +22,7 @@ export default function RentSection() {
             className="flex aspect-square flex-col gap-2"
           >
             <Image className="aspect-square" src={place.img} alt={place.name} />
-            <div>
+            <div className="py-4 text-center lg:py-0 lg:text-left">
               <h3
                 className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}
               >
@@ -44,36 +38,36 @@ export default function RentSection() {
       </div>
       {/* <RentPlaceCarousel items={rentPlaces} /> */}
       <div className="flex justify-start lg:justify-end">
-        <div className="flex flex-col-reverse items-center gap-2 lg:w-7/12 lg:flex-row">
-          <p className="text-center lg:text-left">
+        <div className="flex flex-row-reverse items-start gap-4 lg:w-7/12 lg:flex-row lg:items-center lg:gap-2">
+          <p className="text-left text-lg lg:text-base">
             Asegura la fecha de tu evento sin problemas: reserva en línea con
             diversas opciones de pago. Solo necesitas abonar el 50% y firmar
             digitalmente el contrato.
           </p>
-          <div className="relative aspect-square h-[120px] w-[120px] lg:h-[180px] lg:w-[180px]">
+          <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
             <Image
               src={ReservaIcono}
               alt="MOLIERE 310, POLANCO"
               fill
-              sizes="100vw"
+              sizes="100%"
               className="object-cover object-center"
             />
           </div>
         </div>
       </div>
-      <div className="flex flex-col items-center lg:items-start">
-        <div className="relative aspect-square h-[120px] w-[120px] lg:h-[180px] lg:w-[180px]">
+      <div className="flex flex-row items-start bg-[#F8F8F8] lg:flex-col lg:items-center">
+        <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
           <Image
             alt=""
             className="object-cover object-center"
             fill
-            sizes="100vw"
+            sizes="100%"
             src={AgregarIcono}
           />
         </div>
         <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
           <h3
-            className={`${clashDisplayMedium.className} my-1 lg:my-2 text-xl lg:text-3xl`}
+            className={`${clashDisplayMedium.className} lg:my-1 lg:my-2 text-xl lg:text-3xl`}
           >
             VENUES PROPIOS
           </h3>
