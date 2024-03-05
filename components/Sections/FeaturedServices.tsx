@@ -64,7 +64,7 @@ export default function FeaturedServices() {
           hacer realidad tu reunión, celebración y evento social o corporativo.
         </p>
       </div>
-      <div className="hidden grid-cols-1 gap-2 lg:grid lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 lg:grid lg:grid-cols-3 lg:gap-2">
         {services.map((service) => (
           <div className="bg-[#F8F8F8] p-3 text-left lg:p-6" key={service.name}>
             <h4
@@ -78,8 +78,8 @@ export default function FeaturedServices() {
           </div>
         ))}
       </div>
-      <ServicesCarousel items={services} />
-      <div className="hidden grid-cols-1 gap-2 lg:grid lg:grid-cols-3">
+      {/* <ServicesCarousel items={services} /> */}
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
         {simpleServices.map((service) => (
           <div
             className="flex flex-col items-center gap-4 text-center"
@@ -103,7 +103,7 @@ export default function FeaturedServices() {
           </div>
         ))}
       </div>
-      <FeaturedCarousel items={simpleServices} />
+      {/* <FeaturedCarousel items={simpleServices} /> */}
     </div>
   );
 }

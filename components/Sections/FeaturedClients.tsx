@@ -69,8 +69,8 @@ export default function FeaturedClients() {
       >
         NUESTROS CLIENTES
       </h3>
-      <ClientsCarousel items={clients} />
-      <div className="hidden grid-flow-col-dense items-center gap-4 lg:grid lg:gap-8 xl:gap-12">
+      {/* <ClientsCarousel items={clients} /> */}
+      <div className="grid grid-flow-col-dense items-center gap-4 lg:grid lg:gap-8 xl:gap-12">
         {clients.map((client, index) => (
           <Image
             key={index}

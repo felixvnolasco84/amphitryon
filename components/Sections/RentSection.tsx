@@ -20,7 +20,7 @@ export default function RentSection() {
       >
         ALGUNOS LUGARES A LA RENTA PARA TUS EVENTOS PRIVADOS
       </h2>
-      <div className="hidden grid-cols-2 gap-2 align-baseline lg:grid lg:gap-4">
+      <div className="grid grid-cols-1 gap-4 align-baseline lg:grid lg:grid-cols-2 lg:gap-4">
         {rentPlaces.map((place, index) => (
           <Link
             href={`/${place.slug}`}
@@ -42,7 +42,7 @@ export default function RentSection() {
         ))}
         <CalendlyComponent />
       </div>
-      <RentPlaceCarousel items={rentPlaces} />
+      {/* <RentPlaceCarousel items={rentPlaces} /> */}
       <div className="flex justify-start lg:justify-end">
         <div className="flex flex-col-reverse items-center gap-2 lg:w-7/12 lg:flex-row">
           <p className="text-center lg:text-left">
@@ -50,7 +50,7 @@ export default function RentSection() {
             diversas opciones de pago. Solo necesitas abonar el 50% y firmar
             digitalmente el contrato.
           </p>
-          <div className="relative aspect-square h-[180px]">
+          <div className="relative aspect-square h-[120px] w-[120px] lg:h-[180px] lg:w-[180px]">
             <Image
               src={ReservaIcono}
               alt="MOLIERE 310, POLANCO"
@@ -62,7 +62,7 @@ export default function RentSection() {
         </div>
       </div>
       <div className="flex flex-col items-center lg:items-start">
-        <div className="relative aspect-square h-[180px] w-[180px]">
+        <div className="relative aspect-square h-[120px] w-[120px] lg:h-[180px] lg:w-[180px]">
           <Image
             alt=""
             className="object-cover object-center"
