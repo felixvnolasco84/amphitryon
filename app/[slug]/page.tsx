@@ -34,6 +34,7 @@ export default function PlacePage({ params }: Props) {
               <Image
                 src={Arrow}
                 fill
+                sizes="100vw"
                 className="object-cover object-center"
                 alt="Arrow"
               />
@@ -49,6 +50,7 @@ export default function PlacePage({ params }: Props) {
             <Image
               src={Arrow}
               fill
+              sizes="100vw"
               className="object-cover object-center"
               alt="Arrow"
             />
@@ -75,6 +77,7 @@ export default function PlacePage({ params }: Props) {
               <Image
                 src={Arrow}
                 fill
+                sizes="100vw"
                 className="rotate-180 object-cover object-center"
                 alt="Arrow"
               />
@@ -89,6 +92,7 @@ export default function PlacePage({ params }: Props) {
             <Image
               src={Arrow}
               fill
+              sizes="100vw"
               className="rotate-180 object-cover object-center"
               alt="Arrow"
             />
@@ -129,6 +133,7 @@ export default function PlacePage({ params }: Props) {
               src={image}
               alt=""
               fill
+              sizes="100vw"
             />
           </div>
         ))}

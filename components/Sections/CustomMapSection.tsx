@@ -13,7 +13,7 @@ export default function CustomMapSection({
   useEffect(() => {
     const initializeMap = async () => {
       const loader = new Loader({
-        apiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY as string,
+        apiKey: process.env.MAPS_API_KEY as string,
         version: "quartely",
       });
 
