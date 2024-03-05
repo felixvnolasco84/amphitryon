@@ -9,6 +9,8 @@ import ReservaIcono from "@/public/images/Reserva_Icono.png";
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
 import RentPlaceCarousel from "../Carousel/RentPlaceCarousel";
+import Calendly from "../Calendar/Calendly";
+import { CalendlyComponent } from "../Calendar/CalendlyComponent";
 
 export default function RentSection() {
   return (
@@ -38,17 +40,7 @@ export default function RentSection() {
             </div>
           </Link>
         ))}
-        <div className="flex flex-col justify-between gap-4 lg:max-h-[472px] xl:max-h-[660px]">
-          <div className="flex h-1/6 items-center justify-center bg-[#EFEFEF] text-center">
-            <h3> Revisa la disponibilidad</h3>
-          </div>
-          <div className="h-4/6 bg-[#EFEFEF]"></div>
-          <div className="flex h-1/6 items-center justify-around bg-[#EFEFEF]">
-            <p>La Galería</p>
-            <p>Macarella</p>
-            <p>Terraza Pepita</p>
-          </div>
-        </div>
+        <CalendlyComponent />
       </div>
       <RentPlaceCarousel items={rentPlaces} />
       <div className="flex justify-start lg:justify-end">
