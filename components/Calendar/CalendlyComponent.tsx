@@ -32,9 +32,7 @@ export const CalendlyComponent = () => {
         </Button>
         <Button
           variant={"default"}
-          onClick={() =>
-            handleOptionClick("https://calendly.com/jimena-h1g/macarella")
-          }
+          onClick={() => handleOptionClick("https://calendly.com/polygonag")}
         >
           Macarella
         </Button>
