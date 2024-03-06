@@ -79,7 +79,7 @@ export default function FeaturedServices() {
         ))}
       </div>
       {/* <ServicesCarousel items={services} /> */}
-      <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
+      {/* <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
         {simpleServices.map((service) => (
           <div
             className="flex flex-col items-center gap-2 text-center lg:gap-4"
@@ -102,7 +102,7 @@ export default function FeaturedServices() {
             </h4>
           </div>
         ))}
-      </div>
+      </div> */}
       {/* <FeaturedCarousel items={simpleServices} /> */}
     </div>
   );

@@ -22,7 +22,7 @@ export default function PlacePage({ params }: Props) {
     (rentPlace) => rentPlace.slug === slug
   )!;
   return (
-    <div className="flex flex-col gap-6 lg:gap-12">
+    <div className="container flex flex-col gap-6 lg:gap-12">
       <div className="grid grid-flow-col items-center justify-between gap-2">
         {rentPlace.previousLink ? (
           <Link href={rentPlace.previousLink} className="">

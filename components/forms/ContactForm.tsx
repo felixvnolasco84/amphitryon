@@ -1,16 +1,27 @@
 "use client";
 
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 import * as z from "zod";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
   FormField,
   FormItem,
+  FormLabel,
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
-import Image from "next/image";
 import React, { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
@@ -18,7 +29,9 @@ import { sendContactEmail } from "@/app/_actions";
 import SuccessMessage from "./SuccessMessage";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { clashDisplayMedium } from "@/utils/fonts";
+import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
+import { Textarea } from "../ui/textarea";
+import { phoneRegex } from "@/lib/utils";
 
 const FormSchema = z.object({
   name: z
@@ -30,12 +43,28 @@ const FormSchema = z.object({
       message: "El nombre no puede ser más de 160 carácteres.",
     }),
   email: z.string().email({ message: "Correo electrónico Inválido" }),
-  phoneNumber: z.string().min(10, { message: "Número de teléfono inválido" }),
+  phoneNumber: z.string().regex(phoneRegex, "Número de Teléfono Inválido"),
+  dateEvent: z
+    .date()
+    .refine(
+      (date) => {
+        const today = new Date();
+        return date > today;
+      },
+      { message: "La fecha del evento debe ser mayor a la fecha actual" }
+    )
+    .transform((date) => date.toISOString()),
+
+  venue: z.string().min(1, { message: "Venue inválido" }),
+  eventDescription: z.string().min(10, { message: "Descripción inválida" }),
 });
 
 export function ContactForm() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModalMessage, setShowModalMessage] = useState<boolean>(false);
+
+  const [startDate, setStartDate] = useState(new Date());
+
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -44,13 +73,16 @@ export function ContactForm() {
       name: "",
       email: "",
       phoneNumber: "",
+      dateEvent: "",
+      venue: "",
+      eventDescription: "",
     },
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     try {
       setIsLoading(true);
-      const response = await sendContactEmail(data);     
+      const response = await sendContactEmail(data);
       if (response.success) {
         setShowModalMessage(true);
         setIsLoading(false);
@@ -83,7 +115,7 @@ export function ContactForm() {
                 <FormItem className="space-y-2">
                   <FormControl>
                     <Input
-                      placeholder="Nombre"
+                      placeholder="NOMBRE"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -100,7 +132,7 @@ export function ContactForm() {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="Correo"
+                      placeholder="CORREO ELECTRÓNICO"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -117,11 +149,89 @@ export function ContactForm() {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="Número de teléfono"
+                      placeholder="NÚMERO DE TELÉFONO"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="dateEvent"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel className="ml-2 text-muted-foreground">Fecha del Evento</FormLabel>
+                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
+                    <DatePicker
+                      onChange={(date) => {
+                        setStartDate(date as Date);
+                        field.onChange(date);
+                      }}
+                      selected={startDate}
+                      dateFormat="dd/MM/yyyy"
+                      placeholderText="Fecha del evento"
+                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
+                      disabled={isLoading}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="venue"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
+                        <SelectValue placeholder="VENUE PREFERIDO" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem
+                          className={`${clashDisplayRegular.className} text-lg`}
+                          value="La Galeria"
+                        >
+                          La Galeria
+                        </SelectItem>
+                        <SelectItem
+                          className={`${clashDisplayRegular.className} text-lg`}
+                          value="Macarella"
+                        >
+                          Macarella
+                        </SelectItem>
+                        <SelectItem
+                          className={`${clashDisplayRegular.className} text-lg`}
+                          value="Terraza Pepita"
+                        >
+                          Terraza Pepita
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="eventDescription"
+              render={({ field }) => (
+                <FormItem>
+                  <FormControl>
+                    <Textarea
+                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg"
+                      placeholder="Describe tu evento..."
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

@@ -75,3 +75,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}

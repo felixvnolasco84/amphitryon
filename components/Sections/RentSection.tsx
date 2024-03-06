@@ -1,6 +1,5 @@
 import { clashDisplayMedium } from "@/utils/fonts";
 import Image from "next/image";
-import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.png";
 import ReservaIcono from "@/public/images/Reserva_Icono.png";
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
@@ -55,31 +54,7 @@ export default function RentSection() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-start bg-[#F8F8F8] lg:flex-col lg:items-center">
-        <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
-          <Image
-            alt=""
-            className="object-cover object-center"
-            fill
-            sizes="100%"
-            src={AgregarIcono}
-          />
-        </div>
-        <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
-          <h3
-            className={`${clashDisplayMedium.className} lg:my-1 lg:my-2 text-xl lg:text-3xl`}
-          >
-            VENUES PROPIOS
-          </h3>
-          <p>
-            Nuestros venues para eventos son propios, sin intermediarios ni
-            comisiones adicionales. Los precios son fijos y se encuentran
-            públicamente disponibles en la información de cada espacio. Con
-            nosotros, disfrutas de una experiencia sin complicaciones y con toda
-            la atención que mereces para tu evento.
-          </p>
-        </div>
-      </div>
+
     </div>
   );
 }
