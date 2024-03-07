@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import Calendly from "./Calendly";
+import CustomCalendar from "./CustomCalendar";
 
-export const CalendlyComponent = () => {
+export const CalendarComponent = () => {
   const terrazas = [
     {
       name: "La Galería",
@@ -28,12 +29,13 @@ export const CalendlyComponent = () => {
   return (
     <div className="lg:min-h-none flex min-h-[600px] flex-col gap-4 lg:max-h-[472px] lg:justify-between xl:max-h-[660px]">
       <div className="flex items-center justify-center bg-[#EFEFEF] py-4 text-center lg:h-1/6">
-        <h3>Agendar una Cita</h3>
+        <h3>Revisa disponibilidad</h3>
       </div>
-      <div className="h-4/6">
-        <Calendly url={calendlyUrl} />
+      <div className="h-5/6">
+        <CustomCalendar />
+        {/* <Calendly url={calendlyUrl} /> */}
       </div>
-      <div className="flex items-center justify-around bg-[#EFEFEF] py-4 lg:h-1/6">
+      {/* <div className="flex items-center justify-around bg-[#EFEFEF] py-4 lg:h-1/6">
         {terrazas.map((terraza, index) => (
           <label key={index}>
             <input
@@ -46,7 +48,7 @@ export const CalendlyComponent = () => {
             {terraza.name}
           </label>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -24,11 +24,14 @@ export default function HeroSection({ img }: { img: StaticImageData }) {
     {
       name: "BARRAS",
     },
+    {
+      name: ".",
+    },
   ];
   return (
-    <div className="flex flex-col">
-      <InfiniteMovingMessages items={items} direction="right" speed="slow" />
-      <div className="relative aspect-[9/12] w-full lg:container md:aspect-video">
+    <div className="flex flex-col lg:container">
+      <InfiniteMovingMessages items={items} direction="right" speed="fast" />
+      <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
           className="aspect-square object-cover object-center"
           sizes="100vw"
@@ -36,12 +39,12 @@ export default function HeroSection({ img }: { img: StaticImageData }) {
           src={img}
           alt=""
         />
-        relative z-20 text-sm font-normal leading-[1.6] text-gray-100
-        <h2 className="absolute bottom-0 z-50 bg-gradient-to-t from-black to-transparent py-12 text-center text-2xl text-white lg:text-4xl xl:text-5xl">
+
+        <h2 className="relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl">
           LOS MEJORES LUGARES EN RENTA PARA EVENTOS CORPORATIVOS Y SOCIALES
         </h2>
       </div>
-      <InfiniteMovingMessages items={items} direction="right" speed="slow" />
+      <InfiniteMovingMessages items={items} direction="right" speed="fast" />
     </div>
   );
 }

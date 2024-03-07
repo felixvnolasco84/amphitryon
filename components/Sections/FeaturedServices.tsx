@@ -52,29 +52,19 @@ const simpleServices: SimpleService[] = [
 
 export default function FeaturedServices() {
   return (
-    <div className="flex flex-col gap-10 text-center lg:gap-20">
-      <div className="flex flex-col gap-2 lg:gap-4">
-        <h3 className={`${clashDisplayMedium.className} text-xl lg:text-3xl`}>
-          RENTA TU ESPACIO FAVORITO PARA TU EVENTO PRIVADO EN CDMX
-        </h3>
-        <p className="text-lg leading-tight lg:text-xl">
-          Somos tu mejor opción para eventos privados en la Ciudad de México.
-          Con tres espacios exclusivos, donde la elegancia se mezcla con la
-          comodidad, tienes el control total sobre todo lo que necesitas para
-          hacer realidad tu reunión, celebración y evento social o corporativo.
-        </p>
-      </div>
+    <div className="order-5 flex flex-col gap-10 text-center lg:order-3 lg:gap-20">
       <div className="grid grid-cols-1 gap-4 lg:grid lg:grid-cols-3 lg:gap-2">
         {services.map((service) => (
-          <div className="bg-[#F8F8F8] p-3 lg:p-6 lg:text-left" key={service.name}>
+          <div
+            className="bg-[#F8F8F8] p-3 lg:p-6 lg:text-left"
+            key={service.name}
+          >
             <h4
               className={`${clashDisplayMedium.className} text-xl lg:text-2xl xl:text-3xl my-1 lg:my-2`}
             >
               {service.name}
             </h4>
-            <p className="text-base text-[#222222]">
-              {service.description}
-            </p>
+            <p className="text-base text-[#222222]">{service.description}</p>
           </div>
         ))}
       </div>

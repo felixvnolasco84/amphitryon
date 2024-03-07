@@ -32,8 +32,9 @@ import { useForm } from "react-hook-form";
 import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
+import Link from "next/link";
 
-const FormSchema = z.object({
+export const FormSchema = z.object({
   name: z
     .string()
     .min(2, {
@@ -86,6 +87,7 @@ export function ContactForm() {
       if (response.success) {
         setShowModalMessage(true);
         setIsLoading(false);
+        form.reset();
       }
     } catch (error) {
       console.log(error);
@@ -99,9 +101,9 @@ export function ContactForm() {
   }
 
   return (
-    <div id="contacto" className="flex flex-col items-center gap-2">
+    <div id="contacto" className="order-7 flex flex-col items-center gap-2">
       <h3 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h3>
-      {showModalMessage && <SuccessMessage type="contact" />}
+      {showModalMessage && <SuccessMessage />}
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
@@ -164,7 +166,9 @@ export function ContactForm() {
               name="dateEvent"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="ml-2 text-muted-foreground">Fecha del Evento</FormLabel>
+                  <FormLabel className="ml-2 text-muted-foreground">
+                    Fecha del Evento
+                  </FormLabel>
                   <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
                     <DatePicker
                       onChange={(date) => {
@@ -251,14 +255,21 @@ export function ContactForm() {
               </Button>
             </>
           ) : (
-            <Button
-              type="submit"
-              size={"contact"}
-              variant={"contact"}
-              disabled={isLoading}
-            >
-              Enviar
-            </Button>
+            <div className="flex w-full flex-col gap-2">
+              <Button
+                type="submit"
+                size={"contact"}
+                variant={"contact"}
+                disabled={isLoading}
+              >
+                Enviar
+              </Button>
+              <Link href={"https://calendly.com/amphitryonterrazas/"}>
+                <Button size={"contact"} variant={"contact"}>
+                  Agenda una cita
+                </Button>
+              </Link>
+            </div>
           )}
         </form>
       </Form>

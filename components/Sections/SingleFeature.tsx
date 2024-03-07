@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function SingleFeature() {
   return (
-    <div className="flex flex-row items-start lg:flex-col">
+    <div className="order-6 flex flex-row items-start lg:flex-col">
       <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
         <Image
           alt=""

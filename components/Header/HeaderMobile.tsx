@@ -1,22 +1,20 @@
 "use client";
 
-import Logo from "@/public/images/logo.png";
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
-import Image from "next/image";
 import Link from "next/link";
+import { rentPlaces } from "@/utils/data";
 
 export default function HeaderMobile() {
   return (
     <Sheet>
-      <SheetTrigger className="block lg:hidden">
+      <SheetTrigger>
         <svg
           className="h-6 w-6"
           fill="none"
@@ -34,7 +32,7 @@ export default function HeaderMobile() {
       </SheetTrigger>
       <SheetContent side={"left"}>
         <SheetHeader>
-          <SheetTitle>
+          {/* <SheetTitle>
             <Link href={"/"} className="relative h-[22px] w-[90px]">
               <Image
                 className="object-fill object-center"
@@ -44,34 +42,39 @@ export default function HeaderMobile() {
                 src={Logo}
               />
             </Link>
-          </SheetTitle>
-          <SheetDescription className="flex flex-col gap-2 text-2xl text-black">
-            {/* <Link
-              className="h-fit"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                document
-                  .getElementById("nosotros")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              <SheetClose>Nosotros</SheetClose>
-            </Link> */}
-            <SheetTrigger>
-              <Link
-                className="h-fit"
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("contacto")
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                <SheetClose>Contacto</SheetClose>
-              </Link>
-            </SheetTrigger>
+          </SheetTitle> 
+          <Link
+                  className="h-fit"
+                  href={`/${place.slug}`}
+                  // onClick={(e) => {
+                  //   e.preventDefault();
+                  //   document
+                  //     .getElementById("contacto")
+                  //     ?.scrollIntoView({ behavior: "smooth" });
+                  // }}
+                >
+                  <SheetClose className="text-white">Contacto</SheetClose>
+                </Link>
+          */}
+          <SheetDescription className="flex h-3/4 flex-col justify-around text-2xl text-black">
+            {rentPlaces.map((place) => (
+              <SheetTrigger key={place.name}>
+                <Link className="h-fit" href={`/${place.slug}`}>
+                  <SheetClose className="text-white">
+                    <div>
+                      <p className="font-light text-gray-400">
+                        {place.description}
+                      </p>
+                      <p className="text-xs">
+                        {" "}
+                        {place.name.toUpperCase()}{" "}
+                        {place.district.toUpperCase()}
+                      </p>
+                    </div>
+                  </SheetClose>
+                </Link>
+              </SheetTrigger>
+            ))}
           </SheetDescription>
         </SheetHeader>
       </SheetContent>

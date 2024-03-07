@@ -34,9 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${clashDisplayRegular.className}`}>
-        <div className="flex flex-col gap-y-10 lg:gap-y-20">
+        <div className="flex flex-col gap-y-5 lg:gap-y-10">
           <Header />
-          <div className="flex-1">{children}</div>
+          <div className="flex flex-1 flex-col gap-y-10 lg:gap-y-20">
+            {children}
+          </div>
           <Footer />
         </div>
       </body>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import HeaderMobile from "./HeaderMobile";
 
 export default function Header() {
@@ -23,12 +22,6 @@ export default function Header() {
         GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS
       </h1>
       <nav className="items-center gap-4 lg:flex">
-        <Link
-          className="hidden h-fit lg:block lg:text-base xl:text-lg"
-          href="#"
-        >
-          Nosotros
-        </Link>
         <Link
           className="hidden h-fit lg:block lg:text-base xl:text-lg"
           href="#"
