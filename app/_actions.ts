@@ -1,9 +1,11 @@
 "use server";
 
 import ContactFormEmail from "@/template/email/ContactFormEmail";
+
 import * as z from "zod";
 import { Resend } from "resend";
 import { FormSchema } from "@/components/forms/ContactForm";
+import EmailTemplateResend from "@/emails";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -14,7 +16,7 @@ export async function sendContactEmail(data: z.infer<typeof FormSchema>) {
       from: "felipe@amphitryon.mx",
       to: ["felipe@amphitryon.mx", email],
       subject: "Nuevo contacto | Amphitryon",
-      react: ContactFormEmail({
+      react: EmailTemplateResend({
         name,
         email,
         phoneNumber,
