@@ -10,6 +10,8 @@ import Arrow from "@/public/svg/Arrow_Icon.svg";
 import CustomMapSection from "@/components/Sections/CustomMapSection";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import RentPlaceFeaturedCarousel from "@/components/Carousel/RentPlaceFeaturedCarousel";
+import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
+import FlatComponent from "@/components/Flat/FlatComponent";
 
 type Props = {
   params: { slug: string };
@@ -113,7 +115,6 @@ export default function PlacePage({ params }: Props) {
           </div>
         ))}
       </div>
-
       <RentPlaceFeaturedCarousel features={rentPlace.features} />
       <HeroSection img={rentPlace.img} />
       <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
@@ -139,6 +140,8 @@ export default function PlacePage({ params }: Props) {
         ))}
       </div>
       <GalleryCarousel items={rentPlace.gallery} />
+      <PlaceTablePricing prices={rentPlace.prices} />
+      <FlatComponent flat={rentPlace.flat} />
       <CustomMapSection location={rentPlace.locationInMap} />
     </div>
   );

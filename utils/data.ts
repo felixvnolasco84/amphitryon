@@ -21,6 +21,12 @@ import Tonala2 from "@/public/images/Tonala2.png";
 import Tonala3 from "@/public/images/Tonala3.png";
 import Tonala4 from "@/public/images/Tonala4.png";
 
+// FLATS
+import GALERIAFLAT from "@/public/flat/Galeria.png";
+import PEPITAFLAT from "@/public/flat/Pepita.png";
+import MACARELLAFLAT from "@/public/flat/Tonala.png";
+import { PricePlace } from "@/lib/utils";
+
 export type Feature = {
   title: string;
   description: string;
@@ -39,6 +45,8 @@ export type RentPlace = {
   nextLink?: string;
   locationInMap: { lat: number; lng: number };
   district: string;
+  prices: PricePlace[];
+  flat: StaticImageData;
 };
 
 export const rentPlaces: RentPlace[] = [
@@ -79,7 +87,130 @@ export const rentPlaces: RentPlace[] = [
       lng: -99.2039958,
     },
     district: "Polanco",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 37000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 32000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 47000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 37000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 32000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 47000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 42000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 37000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 52000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 44000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 39000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 53000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 62000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 52000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 77000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 67000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 57000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 82000,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 37000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 32000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 47000,
+          },
+        ],
+      },
+    ],
+    flat: GALERIAFLAT,
   },
+
   {
     slug: "palmas-781-lomas-de-chapultepec",
     name: "PALMAS 781",
@@ -114,6 +245,100 @@ export const rentPlaces: RentPlace[] = [
       lng: -99.2193947,
     },
     district: "Lomas de Chapultepec",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 20700,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 32900,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 20700,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 32900,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 30700,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 52900,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 30700,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 52900,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 36500,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 64500,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 36500,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 64500,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 20700,
+          },
+          {
+            type: "Completo (200PX)",
+            price: 32900,
+          },
+        ],
+      },
+    ],
+    flat: MACARELLAFLAT,
   },
   {
     slug: "tonala-171-roma-norte",
@@ -148,5 +373,71 @@ export const rentPlaces: RentPlace[] = [
       lng: -99.1642227,
     },
     district: "ROMA NORTE",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 25500,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 25500,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 30500,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 30500,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 35500,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 35500,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 25500,
+          },
+        ],
+      },
+    ],
+    flat: PEPITAFLAT,
   },
 ];
