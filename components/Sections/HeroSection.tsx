@@ -37,7 +37,7 @@ export default function HeroSection({
   return (
     <div
       className={
-        isRentPlace ? "flex flex-col" : "container flex flex-col"
+        isRentPlace ? "flex flex-col" : "flex flex-col"
       }
     >
       <InfiniteMovingMessages items={items} direction="right" speed="fast" />
