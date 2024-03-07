@@ -1,7 +1,13 @@
 import Image, { StaticImageData } from "next/image";
 import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
 
-export default function HeroSection({ img }: { img: StaticImageData }) {
+export default function HeroSection({
+  img,
+  isRentPlace,
+}: {
+  img: StaticImageData;
+  isRentPlace: boolean;
+}) {
   const items = [
     {
       name: "SALONES PRIVADOS",
@@ -29,7 +35,11 @@ export default function HeroSection({ img }: { img: StaticImageData }) {
     },
   ];
   return (
-    <div className="flex flex-col lg:container">
+    <div
+      className={
+        isRentPlace ? "flex flex-col" : "container flex flex-col"
+      }
+    >
       <InfiniteMovingMessages items={items} direction="right" speed="fast" />
       <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
@@ -40,9 +50,11 @@ export default function HeroSection({ img }: { img: StaticImageData }) {
           alt=""
         />
 
-        <h2 className="relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl">
-          LOS MEJORES LUGARES EN RENTA PARA EVENTOS CORPORATIVOS Y SOCIALES
-        </h2>
+        {!isRentPlace && (
+          <h2 className="relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl">
+            LOS MEJORES LUGARES EN RENTA PARA EVENTOS CORPORATIVOS Y SOCIALES
+          </h2>
+        )}
       </div>
       <InfiniteMovingMessages items={items} direction="right" speed="fast" />
     </div>

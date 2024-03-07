@@ -1,17 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import { siteConfig } from "./config/site";
 import { clashDisplayRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
+  title:
+    "Encuentra el lugar perfecto para tus eventos privados - Grupo Amphytrion",
+  description:
+    "Grupo Amphytrion tiene para ti los lugares más exclusivos en las mejores zonas de Ciudad de México para tus eventos. ¡Conoce los spots disponibles! ",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",

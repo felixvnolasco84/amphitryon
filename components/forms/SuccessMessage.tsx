@@ -10,14 +10,17 @@ import Link from "next/link";
 export default function SuccessMessage() {
   return (
     <Dialog defaultOpen={true}>
-      <DialogContent>
+      <DialogContent className="border-black bg-black/90 p-16 text-white lg:p-24">
         <DialogHeader>
           <DialogTitle
-            className={`text-black-400 text-left text-5xl font-medium md:mb-3 md:leading-relaxed lg:mb-6 lg:text-6xl lg:leading-[70px] xl:mb-12 xl:text-7xl`}
+            className={`text-center text-xl font-medium md:mb-3 lg:mb-6 lg:text-3xl`}
           >
-            ¡GRACIAS! <br /> NOS COMUNICAREMOS CONTIGO
+            <div className="flex flex-col items-center gap-2">
+              <p>¡GRACIAS!</p>
+              <p className="text-base text-gray-300">NOS COMUNICAREMOS CONTIGO</p>
+            </div>
           </DialogTitle>
-          <DialogDescription
+          {/* <DialogDescription
             className={`text-black-500 text-xl leading-none lg:text-4xl`}
           >
             <div className="flex flex-col gap-[28px]">
@@ -25,7 +28,7 @@ export default function SuccessMessage() {
                 Regresar al inicio.
               </Link>
             </div>
-          </DialogDescription>
+          </DialogDescription> */}
         </DialogHeader>
       </DialogContent>
     </Dialog>

@@ -71,7 +71,7 @@ export const InfiniteMovingMessages = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden bg-[#FC9532] lg:container",
+        "scroller relative z-20  overflow-hidden bg-[#FC9532] w-full",
         className
       )}
     >

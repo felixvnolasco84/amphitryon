@@ -1,7 +1,7 @@
 import HeroSection from "@/components/Sections/HeroSection";
+import { Metadata, ResolvingMetadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
 import { clashDisplayMedium, clashDisplaySemibold } from "@/utils/fonts";
-import MOLIERE from "@/public/images/MOLIERE 310, POLANCO.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -17,6 +17,19 @@ type Props = {
   params: { slug: string };
   searchParams: { [key: string]: string | string[] | undefined };
 };
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const slug = params.slug;
+  const rentPlace = rentPlaces.find((service: any) => service.slug === slug);
+
+  return {
+    title: rentPlace?.metaTitle,
+    description: rentPlace?.metaDescription,
+  };
+}
 
 export default function PlacePage({ params }: Props) {
   const { slug } = params;
@@ -116,7 +129,7 @@ export default function PlacePage({ params }: Props) {
         ))}
       </div>
       <RentPlaceFeaturedCarousel features={rentPlace.features} />
-      <HeroSection img={rentPlace.img} />
+      <HeroSection isRentPlace={true} img={rentPlace.img} />
       <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
         <h3 className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}>
           {rentPlace.name + " - " + rentPlace.location}

@@ -33,6 +33,8 @@ export type Feature = {
 };
 
 export type RentPlace = {
+  metaTitle: string;
+  metaDescription: string;
   slug: string;
   name: string;
   description: string;
@@ -51,6 +53,9 @@ export type RentPlace = {
 
 export const rentPlaces: RentPlace[] = [
   {
+    metaTitle: "Moliere 310 en Polanco - Grupo Amphytrion",
+    metaDescription:
+      "Este espacio es un verdadero oasis de sofisticación y comodidad. Es el escenario ideal para eventos de cualquier índole con tu familia, amigos o colegas de trabajo",
     slug: "moliere-310-polanco",
     name: "MOLIERE 310",
     description: "LA GALERIA",
@@ -212,6 +217,9 @@ export const rentPlaces: RentPlace[] = [
   },
 
   {
+    metaTitle: "Palmas 781 en Lomas de Chapultepec - Grupo Amphytrion",
+    metaDescription:
+      "Ubicado en una de las zonas más recordadas de México, en esta ubicación disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión.",
     slug: "palmas-781-lomas-de-chapultepec",
     name: "PALMAS 781",
     description: "MACARELLA",
@@ -341,6 +349,9 @@ export const rentPlaces: RentPlace[] = [
     flat: MACARELLAFLAT,
   },
   {
+    metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
+    metaDescription:
+      "Nuestra terraza te ofrece serenidad y sofisticación en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación",
     slug: "tonala-171-roma-norte",
     name: "TONALÁ 171",
     description: "TERRAZA PEPITA",

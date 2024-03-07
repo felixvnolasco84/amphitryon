@@ -26,7 +26,7 @@ export default function Footer() {
             <Link href={"tel:5520244047"}>(55) 2024 4047</Link>
           </div>
         </div>
-        <div className="flex flex-col items-end gap-2 lg:gap-6 xl:gap-12">
+        <div className="flex flex-col items-center gap-2 lg:items-end lg:gap-6 xl:gap-12">
           <h4 className="hidden text-4xl lg:block xl:text-6xl">Hablemos</h4>
           <div className="flex flex-col text-sm lg:gap-4 lg:text-base">
             <Link
@@ -46,7 +46,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container flex flex-col items-center justify-between gap-4 border-white py-4 text-xs text-white lg:flex-row lg:gap-0 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg">
+      <div className="container flex flex-col items-center justify-between gap-2 border-white py-4 text-xs text-white lg:flex-row lg:gap-0 lg:gap-4 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg">
         <p>CIUDAD DE MÉXICO, MÉXICO.</p>
         <p>AVISO DE PRIVACIDAD.</p>
         <p>DESARROLLADO POR POLYGON.</p>
