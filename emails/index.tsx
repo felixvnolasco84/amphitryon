@@ -30,7 +30,7 @@ export const EmailTemplateResend = ({
   <Html>
     <Head />
     <Preview>
-      A fine-grained personal access token has been added to your account
+      Hemos recibido tu solicitusd, a continuación compartimos los detalles
     </Preview>
     <Body style={main}>
       <Container style={container}>
