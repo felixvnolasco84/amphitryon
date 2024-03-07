@@ -16,7 +16,7 @@ export default function SingleFeature() {
       </div>
       <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
         <h3
-          className={`${clashDisplayMedium.className} lg:my-1 lg:my-2 text-xl lg:text-3xl`}
+          className={`${clashDisplayMedium.className} my-1 lg:my-2 text-xl lg:text-3xl`}
         >
           VENUES PROPIOS
         </h3>
