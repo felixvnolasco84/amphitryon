@@ -10,7 +10,21 @@ import EmailTemplateResend from "@/emails";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function sendContactEmail(data: z.infer<typeof FormSchema>) {
-  const { name, email, phoneNumber, dateEvent, venue, eventDescription } = data;
+  const {
+    name,
+    email,
+    phoneNumber,
+    dateEvent: DATESYM,
+    venue,
+    eventDescription,
+  } = data;
+
+  let dateEvent = new Date(DATESYM).toLocaleDateString("es-MX", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+
   try {
     const data = await resend.emails.send({
       from: "felipe@amphitryon.mx",
