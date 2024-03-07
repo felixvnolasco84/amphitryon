@@ -24,7 +24,7 @@ export default function Header() {
       <nav className="items-center gap-4 lg:flex">
         <Link
           className="hidden h-fit lg:block lg:text-base xl:text-lg"
-          href="#"
+          href="#contacto"
         >
           Contacto
         </Link>
