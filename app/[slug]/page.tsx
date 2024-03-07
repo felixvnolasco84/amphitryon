@@ -12,6 +12,8 @@ import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import RentPlaceFeaturedCarousel from "@/components/Carousel/RentPlaceFeaturedCarousel";
 import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
+import CalendlyButton from "@/components/Calendar/CalendlyButton";
+import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 
 type Props = {
   params: { slug: string };
@@ -39,26 +41,9 @@ export default function PlacePage({ params }: Props) {
   return (
     <div className="container flex flex-col gap-6 lg:gap-12">
       <div className="grid grid-flow-col items-center justify-between gap-2">
-        {rentPlace.previousLink ? (
-          <Link href={rentPlace.previousLink} className="">
-            <Button
-              className="relative cursor-pointer"
-              variant={"arrow"}
-              size={"arrow"}
-            >
-              <Image
-                src={Arrow}
-                fill
-                sizes="100vw"
-                className="object-cover object-center"
-                alt="Arrow"
-              />
-            </Button>
-          </Link>
-        ) : (
+        <Link href={rentPlace.previousLink || ""} className="">
           <Button
-            className="relative cursor-pointer disabled:cursor-not-allowed"
-            disabled={true}
+            className="relative cursor-pointer"
             variant={"arrow"}
             size={"arrow"}
           >
@@ -70,7 +55,7 @@ export default function PlacePage({ params }: Props) {
               alt="Arrow"
             />
           </Button>
-        )}
+        </Link>
 
         <div className="flex flex-col">
           <h1
@@ -156,6 +141,14 @@ export default function PlacePage({ params }: Props) {
       <PlaceTablePricing prices={rentPlace.prices} />
       <FlatComponent flat={rentPlace.flat} />
       <CustomMapSection location={rentPlace.locationInMap} />
+
+      <div className="flex flex-col gap-2">
+        <CalendlyButton url={rentPlace.calendlyURL} />
+        <WhatsAppButton url={rentPlace.whatsAppURL} />
+        <Button variant={"link"} size={"lg"}>
+          Regresar al Inicio
+        </Button>
+      </div>
     </div>
   );
 }

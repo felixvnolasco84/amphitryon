@@ -49,6 +49,8 @@ export type RentPlace = {
   district: string;
   prices: PricePlace[];
   flat: StaticImageData;
+  calendlyURL: string;
+  whatsAppURL: string;
 };
 
 export const rentPlaces: RentPlace[] = [
@@ -86,6 +88,7 @@ export const rentPlaces: RentPlace[] = [
     largeDescription:
       "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 200 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
     location: "Polanco",
+    previousLink: "/tonala-171-roma-norte",
     nextLink: "/palmas-781-lomas-de-chapultepec",
     locationInMap: {
       lat: 19.4365039,
@@ -214,6 +217,10 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: GALERIAFLAT,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
+    whatsAppURL:
+      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
 
   {
@@ -347,6 +354,10 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: MACARELLAFLAT,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
+    whatsAppURL:
+      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
   {
     metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
@@ -360,7 +371,7 @@ export const rentPlaces: RentPlace[] = [
     features: [
       {
         title: "Capacidad",
-        description: "90 px modo coctel 40 px modo sentados.",
+        description: "90 PAX modo coctel 40 PAX modo sentados.",
       },
       {
         title: "Horario",
@@ -379,6 +390,7 @@ export const rentPlaces: RentPlace[] = [
       "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonala, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
     location: "Roma Norte",
     previousLink: "/palmas-781-lomas-de-chapultepec",
+    nextLink: "/moliere-310-polanco",
     locationInMap: {
       lat: 19.4135478,
       lng: -99.1642227,
@@ -450,5 +462,9 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: PEPITAFLAT,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000306",
+    whatsAppURL:
+      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
 ];

@@ -33,6 +33,7 @@ import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 import Link from "next/link";
+import CalendlyButton from "../Calendar/CalendlyButton";
 
 export const FormSchema = z.object({
   name: z
@@ -64,7 +65,7 @@ export function ContactForm() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showModalMessage, setShowModalMessage] = useState<boolean>(false);
 
-  const [startDate, setStartDate] = useState(new Date());
+  const [startDate, setStartDate] = useState<undefined | Date>();
 
   const { toast } = useToast();
 
@@ -134,7 +135,7 @@ export function ContactForm() {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="CORREO ELECTRÓNICO"
+                      placeholder="CORREO"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -151,7 +152,7 @@ export function ContactForm() {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="NÚMERO DE TELÉFONO"
+                      placeholder="CONTACTO"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -166,9 +167,9 @@ export function ContactForm() {
               name="dateEvent"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="ml-2 text-muted-foreground">
+                  {/* <FormLabel className="ml-2 text-muted-foreground">
                     Fecha del Evento
-                  </FormLabel>
+                  </FormLabel> */}
                   <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
                     <DatePicker
                       onChange={(date) => {
@@ -177,7 +178,7 @@ export function ContactForm() {
                       }}
                       selected={startDate}
                       dateFormat="dd/MM/yyyy"
-                      placeholderText="Fecha del evento"
+                      placeholderText="FECHA DEL EVENTO"
                       className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                     />
@@ -233,7 +234,7 @@ export function ContactForm() {
                   <FormControl>
                     <Textarea
                       className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg"
-                      placeholder="Describe tu evento..."
+                      placeholder="DESCRIBE TU EVENTO"
                       {...field}
                     />
                   </FormControl>
@@ -264,11 +265,7 @@ export function ContactForm() {
               >
                 Enviar
               </Button>
-              <Link href={"https://calendly.com/amphitryonterrazas/"}>
-                <Button size={"contact"} variant={"contact"}>
-                  Agenda una cita
-                </Button>
-              </Link>
+              <CalendlyButton url="https://calendly.com/amphitryonterrazas/" />
             </div>
           )}
         </form>

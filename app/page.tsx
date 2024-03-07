@@ -12,7 +12,7 @@ import heroImage from "@/public/images/HeroNew.jpeg";
 export default function Home() {
   return (
     <main className="flex flex-col gap-10 lg:gap-20">
-      <HeroSection isRentPlace={false} img={heroImage} />
+      <HeroSection isRentPlace={true} img={heroImage} />
       <div className="container flex flex-col gap-10 lg:gap-20">
         <FeaturedClients />
         <CTASection />

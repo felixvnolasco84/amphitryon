@@ -35,12 +35,13 @@ export default function HeroSection({
     },
   ];
   return (
-    <div
-      className={
-        isRentPlace ? "flex flex-col" : "flex flex-col"
-      }
-    >
-      <InfiniteMovingMessages items={items} direction="right" speed="fast" />
+    <div className={isRentPlace ? "flex flex-col lg:container" : "container flex flex-col"}>
+      <InfiniteMovingMessages
+        pauseOnHover={false}
+        items={items}
+        direction="right"
+        speed="fast"
+      />
       <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
           className="aspect-square object-cover object-center"
@@ -56,7 +57,12 @@ export default function HeroSection({
           </h2>
         )}
       </div>
-      <InfiniteMovingMessages items={items} direction="right" speed="fast" />
+      <InfiniteMovingMessages
+        pauseOnHover={false}
+        items={items}
+        direction="right"
+        speed="fast"
+      />
     </div>
   );
 }

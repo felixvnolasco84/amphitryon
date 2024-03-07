@@ -10,7 +10,7 @@ export default function CTADeposit() {
           diversas opciones de pago. Solo necesitas abonar el 50% y firmar
           digitalmente el contrato.
         </p>
-        <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
+        <div className="relative aspect-square h-[60px] w-[56px] lg:h-[180px] lg:w-[170px]">
           <Image
             src={ReservaIcono}
             alt="MOLIERE 310, POLANCO"

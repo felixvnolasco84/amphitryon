@@ -80,3 +80,7 @@
 .react-datepicker-wrapper {
   width: 100% !important;
 }
+
+#calendarTitle {
+  display: none;
+}

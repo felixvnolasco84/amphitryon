@@ -83,13 +83,13 @@ export const InfiniteMovingMessages = ({
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item, index) => (
           <li
             className="relative px-2 py-2"
             style={{
               background: "#FC9532",
             }}
-            key={item.name}
+            key={index}
           >
             <blockquote>
               <div
