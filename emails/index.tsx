@@ -50,7 +50,7 @@ export const EmailTemplateResend = ({
             ¡Hola <strong>{name}!</strong>!
           </Text>
           <Text style={text}>
-            Hemos recibido tu solicitud, a continuación comparitmos los detalles
+            Hemos recibido tu solicitud, a continuación compartimos los detalles:
           </Text>
 
           <Text style={text}>Correo: {email}</Text>
