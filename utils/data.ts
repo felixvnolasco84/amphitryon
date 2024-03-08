@@ -78,7 +78,7 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Mobilario",
-        description: "120 PAX COCTEL",
+        description: "120 PAX CÓCTEL",
       },
       {
         title: "Estructura",

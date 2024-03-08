@@ -32,7 +32,7 @@ import { useForm } from "react-hook-form";
 import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
-import Link from "next/link";
+
 import CalendlyButton from "../Calendar/CalendlyButton";
 
 export const FormSchema = z.object({
@@ -58,7 +58,7 @@ export const FormSchema = z.object({
     .transform((date) => date.toISOString()),
 
   venue: z.string().min(1, { message: "Venue inválido" }),
-  eventDescription: z.string().min(10, { message: "Descripción inválida" }),
+  eventDescription: z.string().min(1, { message: "Descripción inválida" }),
 });
 
 export function ContactForm() {
@@ -152,7 +152,7 @@ export function ContactForm() {
                 <FormItem>
                   <FormControl>
                     <Input
-                      placeholder="CONTACTO"
+                      placeholder="TELÉFONO DE CONTACTO"
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
                       disabled={isLoading}
                       {...field}
