@@ -205,7 +205,7 @@ export function ContactForm() {
                           className={`${clashDisplayRegular.className} text-lg`}
                           value="La Galeria"
                         >
-                          La Galeria
+                          La Galería
                         </SelectItem>
                         <SelectItem
                           className={`${clashDisplayRegular.className} text-lg`}

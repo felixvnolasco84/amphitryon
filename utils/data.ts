@@ -60,7 +60,7 @@ export const rentPlaces: RentPlace[] = [
       "Este espacio es un verdadero oasis de sofisticación y comodidad. Es el escenario ideal para eventos de cualquier índole con tu familia, amigos o colegas de trabajo",
     slug: "moliere-310-polanco",
     name: "MOLIERE 310",
-    description: "LA GALERIA",
+    description: "LA GALERÍA",
     img: MOLIERE,
     gallery: [MOLIERE, Moliere2, Moliere3, Moliere4],
     features: [
