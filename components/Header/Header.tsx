@@ -23,7 +23,7 @@ export default function Header() {
       </h1>
       <nav className="items-center gap-4 lg:flex">
         <Link
-          className="hidden h-fit lg:block lg:text-base xl:text-lg"
+          className="hidden h-fit hover:underline lg:block lg:text-base xl:text-lg"
           href="#contacto"
         >
           Contacto

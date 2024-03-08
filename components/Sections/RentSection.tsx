@@ -23,7 +23,7 @@ export default function RentSection() {
             <Image className="aspect-square" src={place.img} alt={place.name} />
             <div className="py-4 text-center lg:py-0 lg:text-left">
               <h3
-                className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}
+                className={`${clashDisplayMedium.className} hover:underline text-xl lg:text-2xl`}
               >
                 {place.name}, {place.district.toUpperCase()}
               </h3>
