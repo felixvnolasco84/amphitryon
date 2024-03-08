@@ -86,7 +86,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     largeDescription:
-      "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 200 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
+      "¡Descubre la magia de nuestra terraza La Galería! Ubicada en el corazón de Polanco, ofrecemos una de las mejores vistas de la Ciudad de México. Disfruta de la transición de día a noche mientras te maravillas con la belleza urbana. Nuestro espacio cuenta con un techo retráctil y cortinas motorizadas, operadas por un sistema eléctrico totalmente automatizado, que te permite disfrutar al máximo al aire libre en cualquier clima. Permitimos que la naturaleza y la elegancia se fusionen para brindarte una experiencia inolvidable en tu próximo evento.",
     location: "Polanco",
     previousLink: "/tonala-171-roma-norte",
     nextLink: "/palmas-781-lomas-de-chapultepec",
