@@ -35,7 +35,7 @@ export default function HeroSection({
     },
   ];
   return (
-    <div className={isRentPlace ? "flex flex-col lg:container" : "container flex flex-col"}>
+    <div className={isRentPlace ? "flex flex-col" : "lg:container flex flex-col"}>
       <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}

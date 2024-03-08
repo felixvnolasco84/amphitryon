@@ -8,8 +8,6 @@ import Link from "next/link";
 
 import Arrow from "@/public/svg/Arrow_Icon.svg";
 import CustomMapSection from "@/components/Sections/CustomMapSection";
-import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
-import RentPlaceFeaturedCarousel from "@/components/Carousel/RentPlaceFeaturedCarousel";
 import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
 import CalendlyButton from "@/components/Calendar/CalendlyButton";
@@ -99,7 +97,7 @@ export default function PlacePage({ params }: Props) {
           </Button>
         )}
       </div>
-      <div className="hidden grid-flow-col gap-4 lg:grid">
+      <div className="grid-flow-col gap-4 lg:grid">
         {rentPlace.features.map((feature, index) => (
           <div className="border-t-2 border-black pt-2 lg:pt-4" key={index}>
             <h3 className="text-xs text-[#727272] lg:text-sm">
@@ -113,7 +111,7 @@ export default function PlacePage({ params }: Props) {
           </div>
         ))}
       </div>
-      <RentPlaceFeaturedCarousel features={rentPlace.features} />
+      {/* <RentPlaceFeaturedCarousel features={rentPlace.features} /> */}
       <HeroSection isRentPlace={true} img={rentPlace.img} />
       <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
         <h3 className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}>
@@ -121,7 +119,7 @@ export default function PlacePage({ params }: Props) {
         </h3>
         <p className="text-sm lg:text-base">{rentPlace.largeDescription}</p>
       </div>
-      <div className="hidden grid-cols-2 gap-2 align-baseline lg:grid lg:gap-4">
+      <div className="grid grid-cols-1 gap-2 align-baseline lg:grid-cols-2 lg:gap-4">
         {rentPlace.gallery.map((image, index) => (
           <div
             key={index}
@@ -137,7 +135,7 @@ export default function PlacePage({ params }: Props) {
           </div>
         ))}
       </div>
-      <GalleryCarousel items={rentPlace.gallery} />
+      {/* <GalleryCarousel items={rentPlace.gallery} /> */}
       <PlaceTablePricing prices={rentPlace.prices} />
       <FlatComponent flat={rentPlace.flat} />
       <CustomMapSection location={rentPlace.locationInMap} />
@@ -145,9 +143,11 @@ export default function PlacePage({ params }: Props) {
       <div className="flex flex-col gap-2">
         <CalendlyButton url={rentPlace.calendlyURL} />
         <WhatsAppButton url={rentPlace.whatsAppURL} />
-        <Button variant={"link"} size={"lg"}>
-          Regresar al Inicio
-        </Button>
+        <Link className="mx-auto" href={"/"}>
+          <Button variant={"link"} size={"lg"}>
+            Regresar al Inicio
+          </Button>
+        </Link>
       </div>
     </div>
   );
