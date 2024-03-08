@@ -69,7 +69,8 @@ export default function HeaderMobile() {
                       </p>
                       <p className="text-xs">
                         {" "}
-                        {place.name.toUpperCase()}{" "}
+                        {place.name.toUpperCase()}
+                        {", "}
                         {place.district.toUpperCase()}
                       </p>
                     </div>
