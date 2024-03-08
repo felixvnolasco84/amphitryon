@@ -371,7 +371,7 @@ export const rentPlaces: RentPlace[] = [
     features: [
       {
         title: "Capacidad",
-        description: "90 PAX modo coctel 40 PAX modo sentados.",
+        description: "90 PAX",
       },
       {
         title: "Horario",
@@ -387,7 +387,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     largeDescription:
-      "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonala, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
+      "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonalá, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
     location: "Roma Norte",
     previousLink: "/palmas-781-lomas-de-chapultepec",
     nextLink: "/moliere-310-polanco",
@@ -401,7 +401,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Lunes",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 25500,
           },
         ],
@@ -410,7 +410,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Martes",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 25500,
           },
         ],
@@ -419,7 +419,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Miércoles",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 30500,
           },
         ],
@@ -428,7 +428,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Jueves",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 30500,
           },
         ],
@@ -437,7 +437,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Viernes",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 35500,
           },
         ],
@@ -446,7 +446,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Sábado",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 35500,
           },
         ],
@@ -455,7 +455,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Domingo",
         type: [
           {
-            type: "Terraza (80PX)",
+            type: "Terraza (90PX)",
             price: 25500,
           },
         ],
