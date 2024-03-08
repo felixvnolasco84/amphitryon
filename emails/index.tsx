@@ -15,9 +15,9 @@ import {
 import * as React from "react";
 import { FormSchema } from "@/components/forms/ContactForm";
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
+// const baseUrl = process.env.VERCEL_URL
+//   ? `https://${process.env.VERCEL_URL}`
+//   : "http://localhost:3000";
 
 export const EmailTemplateResend = ({
   dateEvent,
@@ -35,7 +35,7 @@ export const EmailTemplateResend = ({
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={`${baseUrl}/images/logo.png`}
+          src={"https://www.amphitryon.mx/images/logo.png"}
           width="90"
           height="22"
           alt="Amphitryon Logo"
@@ -50,7 +50,8 @@ export const EmailTemplateResend = ({
             ¡Hola <strong>{name}!</strong>!
           </Text>
           <Text style={text}>
-            Hemos recibido tu solicitud, a continuación compartimos los detalles:
+            Hemos recibido tu solicitud, a continuación compartimos los
+            detalles:
           </Text>
 
           <Text style={text}>Correo: {email}</Text>
