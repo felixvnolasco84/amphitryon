@@ -27,8 +27,8 @@ export async function sendContactEmail(data: z.infer<typeof FormSchema>) {
 
   try {
     const data = await resend.emails.send({
-      from: "felipe@amphitryon.mx",
-      to: ["felipe@amphitryon.mx", email],
+      from: "cesar@amphitryon.mx",
+      to: ["cesar@amphitryon.mx", email],
       subject: "Nuevo contacto | Amphitryon",
       react: EmailTemplateResend({
         name,

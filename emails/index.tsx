@@ -6,7 +6,7 @@ import {
   Container,
   Head,
   Html,
-  //   Img,
+  Img,
   Link,
   Preview,
   Section,
@@ -15,9 +15,9 @@ import {
 import * as React from "react";
 import { FormSchema } from "@/components/forms/ContactForm";
 
-// const baseUrl = process.env.VERCEL_URL
-//   ? `https://${process.env.VERCEL_URL}`
-//   : "";
+const baseUrl = process.env.VERCEL_URL
+  ? `https://${process.env.VERCEL_URL}`
+  : "http://localhost:3000";
 
 export const EmailTemplateResend = ({
   dateEvent,
@@ -34,12 +34,12 @@ export const EmailTemplateResend = ({
     </Preview>
     <Body style={main}>
       <Container style={container}>
-        {/* <Img
-          src={`${baseUrl}/static/github.png`}
-          width="32"
-          height="32"
-          alt="Github"
-        /> */}
+        <Img
+          src={`${baseUrl}/images/logo.png`}
+          width="90"
+          height="22"
+          alt="Amphitryon Logo"
+        />
 
         <Text style={title}>
           <strong>Confirmación de Contacto</strong>
@@ -64,8 +64,16 @@ export const EmailTemplateResend = ({
           </Button>
         </Section>
         <Text style={links}>
-          <Link style={link}>Contacto</Link> ・{" "}
-          <Link style={link}>Aviso de Privacidad</Link>
+          <Link href={"https://www.amphitryon.mx/#contacto"} style={link}>
+            Contacto
+          </Link>{" "}
+          ・{" "}
+          <Link
+            href={"https://www.amphitryon.mx/aviso-de-privacidad"}
+            style={link}
+          >
+            Aviso de Privacidad
+          </Link>
         </Text>
 
         <Text style={footer}>Amphytrion</Text>
@@ -108,8 +116,8 @@ const text = {
 
 const button = {
   fontSize: "14px",
-  backgroundColor: "#28a745",
-  color: "#fff",
+  backgroundColor: "#FC9532",
+  color: "#000",
   lineHeight: 1.5,
   borderRadius: "0.5em",
   padding: "12px 24px",

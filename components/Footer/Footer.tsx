@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
       <div className="container flex flex-col items-center justify-between gap-2 border-white py-4 text-xs text-white lg:flex-row lg:gap-0 lg:gap-4 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg">
         <p>CIUDAD DE MÉXICO, MÉXICO.</p>
-        <p>AVISO DE PRIVACIDAD.</p>
+        <Link href={"/aviso-de-privacidad"}>AVISO DE PRIVACIDAD.</Link>
         <p>DESARROLLADO POR POLYGON.</p>
       </div>
     </div>
