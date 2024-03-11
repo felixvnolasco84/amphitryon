@@ -4,8 +4,7 @@ export default function CustomCalendar() {
       <iframe
         src="https://embed.styledcalendar.com/#bmU5KAjCRCAnaGZuVFld"
         title="Styled Calendar"
-        className="styled-calendar-container"
-        style={{ width: "100%", border: "none" }}
+        className="styled-calendar-container h-full w-full overflow-x-scroll"       
         data-cy="calendar-embed-iframe"
       ></iframe>
       <script

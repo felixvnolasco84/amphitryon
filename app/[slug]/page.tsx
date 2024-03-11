@@ -12,6 +12,7 @@ import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
 import CalendlyButton from "@/components/Calendar/CalendlyButton";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
+import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 
 type Props = {
   params: { slug: string };
@@ -119,7 +120,7 @@ export default function PlacePage({ params }: Props) {
         </h3>
         <p className="text-sm lg:text-base">{rentPlace.largeDescription}</p>
       </div>
-      <div className="grid grid-cols-1 gap-2 align-baseline lg:grid-cols-2 lg:gap-4">
+      <div className="hidden grid-cols-1 gap-2 align-baseline lg:grid lg:grid-cols-2 lg:gap-4">
         {rentPlace.gallery.map((image, index) => (
           <div
             key={index}
@@ -135,7 +136,7 @@ export default function PlacePage({ params }: Props) {
           </div>
         ))}
       </div>
-      {/* <GalleryCarousel items={rentPlace.gallery} /> */}
+      <GalleryCarousel items={rentPlace.gallery} />
       <PlaceTablePricing prices={rentPlace.prices} />
       <FlatComponent flat={rentPlace.flat} />
       <CustomMapSection location={rentPlace.locationInMap} />
