@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+
 import "./globals.css";
 import { clashDisplayRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es-Mx">
       <body className={`${clashDisplayRegular.className}`}>
         <div className="flex flex-col gap-y-5 lg:gap-y-10">
           <Header />
@@ -38,6 +39,15 @@ export default function RootLayout({
           </div>
           <Footer />
         </div>
+        {/* <link
+          href="https://assets.calendly.com/assets/external/widget.css"
+          rel="stylesheet"
+        ></link>
+        <script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          type="text/javascript"
+          async
+        ></script> */}
       </body>
     </html>
   );

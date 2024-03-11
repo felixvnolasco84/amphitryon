@@ -1,6 +1,6 @@
 export default function CustomCalendar() {
   return (
-    <div className="aspect-square h-full w-full overflow-x-scroll">
+    <div className="aspect-square h-[720px] w-full overflow-x-scroll lg:h-full">
       <iframe
         src="https://embed.styledcalendar.com/#bmU5KAjCRCAnaGZuVFld"
         title="Styled Calendar"

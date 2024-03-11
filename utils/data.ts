@@ -99,8 +99,8 @@ export const rentPlaces: RentPlace[] = [
     previousLink: "/tonala-171-roma-norte",
     nextLink: "/palmas-781-lomas-de-chapultepec",
     locationInMap: {
-      lat: 19.4365039,
-      lng: -99.2039958,
+      lat: 19.4364466,
+      lng: -99.2012794,
     },
     district: "Polanco",
     prices: [
@@ -265,8 +265,8 @@ export const rentPlaces: RentPlace[] = [
     previousLink: "/moliere-310-polanco",
     nextLink: "/tonala-171-roma-norte",
     locationInMap: {
-      lat: 19.4292817,
-      lng: -99.2193947,
+      lat: 19.429364,
+      lng: -99.216756,
     },
     district: "Lomas de Chapultepec",
     prices: [
@@ -402,8 +402,8 @@ export const rentPlaces: RentPlace[] = [
     previousLink: "/palmas-781-lomas-de-chapultepec",
     nextLink: "/moliere-310-polanco",
     locationInMap: {
-      lat: 19.4135478,
-      lng: -99.1642227,
+      lat: 19.4135428,
+      lng: -99.1642174,
     },
     district: "ROMA NORTE",
     prices: [

@@ -34,7 +34,7 @@ export const CalendarComponent = () => {
       <div className="flex items-center justify-center bg-[#EFEFEF] py-4 text-center lg:h-1/6">
         <h3>Revisa disponibilidad</h3>
       </div>
-      <div className="h-4/6">
+      <div className="lg:h-4/6">
         <CustomCalendar />
         {/* <Calendly url={calendlyUrl} /> */}
       </div>
