@@ -138,7 +138,7 @@ export default function PlacePage({ params }: Props) {
       </div>
       <GalleryCarousel items={rentPlace.gallery} />
       <PlaceTablePricing prices={rentPlace.prices} />
-      <FlatComponent flat={rentPlace.flat} />
+      <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
       <CustomMapSection location={rentPlace.locationInMap} />
 
       <div className="flex flex-col gap-2">

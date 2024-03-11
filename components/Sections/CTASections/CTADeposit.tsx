@@ -1,5 +1,7 @@
 import Image from "next/image";
 import ReservaIcono from "@/public/images/Reserva_Icono.png";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CTADeposit() {
   return (
@@ -10,15 +12,17 @@ export default function CTADeposit() {
           diversas opciones de pago. Solo necesitas abonar el 50% y firmar
           digitalmente el contrato.
         </p>
-        <div className="relative aspect-square h-[60px] w-[56px] lg:h-[186px] lg:w-[170px]">
-          <Image
-            src={ReservaIcono}
-            alt="MOLIERE 310, POLANCO"
-            fill
-            sizes="100%"
-            className="object-cover object-center"
-          />
-        </div>
+        <Link href={"https://calendly.com/amphitryonterrazas/"}>
+          <Button className="relative aspect-square h-[60px] w-[56px] bg-transparent hover:bg-transparent lg:h-[186px] lg:w-[170px]">
+            <Image
+              src={ReservaIcono}
+              alt="MOLIERE 310, POLANCO"
+              fill
+              sizes="100%"
+              className="object-cover object-center"
+            />
+          </Button>
+        </Link>
       </div>
     </div>
   );

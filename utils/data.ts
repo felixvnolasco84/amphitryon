@@ -1,7 +1,7 @@
 import { StaticImageData } from "next/image";
 
-import MOLIERE from "@/public/images/MOLIERE 310, POLANCO.png";
-import PALMAS from "@/public/images/PALMAS 781, LOMAS DE CHAPULTEPEC.png";
+import MOLIERE from "@/public/images/Hero/MoliereHero.jpg";
+import PALMAS from "@/public/images/HeroNew.jpeg";
 import TONALÁ from "@/public/images/TonalaHome.png";
 
 // MOLIERE IMAGES
@@ -25,6 +25,13 @@ import Tonala4 from "@/public/images/Tonala4.png";
 import GALERIAFLAT from "@/public/flat/Galeria.png";
 import PEPITAFLAT from "@/public/flat/Pepita.png";
 import MACARELLAFLAT from "@/public/flat/Tonala.png";
+
+//FLAT PDF
+
+const GALERIAFLATPDF = "/pdfs/La Galeria.pdf";
+const MACARELLAFLATPDF = "/pdfs/Macarella.pdf";
+const PEPITAFLATPDF = "/pdfs/Pepita.pdf";
+
 import { PricePlace } from "@/lib/utils";
 
 export type Feature = {
@@ -49,6 +56,7 @@ export type RentPlace = {
   district: string;
   prices: PricePlace[];
   flat: StaticImageData;
+  flatPDF: string;
   calendlyURL: string;
   whatsAppURL: string;
 };
@@ -217,6 +225,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: GALERIAFLAT,
+    flatPDF: GALERIAFLATPDF,
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
     whatsAppURL:
@@ -354,6 +363,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: MACARELLAFLAT,
+    flatPDF: MACARELLAFLATPDF,
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
     whatsAppURL:
@@ -462,6 +472,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     flat: PEPITAFLAT,
+    flatPDF: PEPITAFLATPDF,
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000306",
     whatsAppURL:

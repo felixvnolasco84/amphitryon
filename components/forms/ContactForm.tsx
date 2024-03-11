@@ -234,7 +234,7 @@ export function ContactForm() {
                   <FormControl>
                     <Textarea
                       className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg"
-                      placeholder="DESCRIBE TU EVENTO"
+                      placeholder="NÚMERO DE INVITADOS"
                       {...field}
                     />
                   </FormControl>

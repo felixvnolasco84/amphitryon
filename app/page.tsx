@@ -3,6 +3,7 @@ import CTASection from "@/components/Sections/CTASections/CTASection";
 import FeaturedClients from "@/components/Sections/FeaturedClients";
 import FeaturedServices from "@/components/Sections/FeaturedServices";
 import HeroSection from "@/components/Sections/HeroSection";
+import HeroSectionCarrousel from "@/components/Sections/HeroSectionCarrousel";
 import RentSection from "@/components/Sections/RentSection";
 import SingleFeature from "@/components/Sections/SingleFeature";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
@@ -12,7 +13,8 @@ import heroImage from "@/public/images/HeroNew.jpeg";
 export default function Home() {
   return (
     <main className="flex flex-col gap-10 lg:gap-20">
-      <HeroSection isRentPlace={false} img={heroImage} />
+      {/* <HeroSection isRentPlace={false} img={heroImage} /> */}
+      <HeroSectionCarrousel />
       <div className="container flex flex-col gap-10 lg:gap-20">
         <FeaturedClients />
         <CTASection />

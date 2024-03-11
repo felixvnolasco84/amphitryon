@@ -20,7 +20,16 @@ export default function RentSection() {
             key={index}
             className="flex aspect-square flex-col gap-2"
           >
-            <Image className="aspect-square" src={place.img} alt={place.name} />
+            <div className="relative aspect-square">
+              <Image
+                className="h-full w-full object-cover object-center"
+                fill
+                sizes="100%"
+                src={place.img}
+                alt={place.name}
+              />
+            </div>
+
             <div className="py-4 text-center lg:py-0 lg:text-left">
               <h3
                 className={`${clashDisplayMedium.className} hover:underline text-xl lg:text-2xl`}
