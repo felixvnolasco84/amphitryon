@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/next-script-for-ga */
 import type { Metadata, Viewport } from "next";
-
+import Script from "next/script";
 import "./globals.css";
 import { clashDisplayRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
@@ -31,10 +32,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-Mx">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WNGXG4N4')`,
+          }}
+        />
+      </head>
       <body className={`${clashDisplayRegular.className}`}>
         <div className="flex flex-col gap-y-5 lg:gap-y-10">
           <Header />
           <div className="flex flex-1 flex-col gap-y-10 lg:gap-y-20">
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
+              height="0"
+              width="0"
+            ></iframe>
             {children}
           </div>
           <Footer />
@@ -48,6 +65,7 @@ export default function RootLayout({
           type="text/javascript"
           async
         ></script> */}
+        <Script></Script>
       </body>
     </html>
   );
