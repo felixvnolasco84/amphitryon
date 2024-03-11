@@ -44,9 +44,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body className={`${clashDisplayRegular.className}`}>
-        <div className="flex flex-col gap-y-5 lg:gap-y-10">
+        <div className="flex flex-col lg:gap-4">
           <Header />
-          <div className="flex flex-1 flex-col gap-y-10 lg:gap-y-20">
+          <div className="flex flex-1 flex-col gap-4">
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
               height="0"
@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           type="text/javascript"
           async
         ></script> */}
-        <Script></Script>
+        {/* <Script></Script> */}
       </body>
     </html>
   );
