@@ -26,9 +26,6 @@ export default function Home() {
         <SingleFeature />
         <ContactForm />
 
-        
-
-
         <div className="order-8 mx-auto flex flex-col text-center">
           <h3
             className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}

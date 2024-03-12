@@ -21,7 +21,7 @@ export default function WhatsAppButton({ url }: { url: string }) {
             window.location.pathname
           )
         }
-        className="w-full bg-green-400"
+        className="w-full bg-green-400 text-gray-800"
         size={"contact"}
         variant={"contact"}
       >

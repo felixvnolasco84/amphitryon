@@ -28,7 +28,7 @@ export default function WhatsAppComponent() {
           )
         }
         size={"lg"}
-        className="relative bg-green-500"
+        className="relative bg-green-400 text-gray-800"
       >
         * WhatsApp
       </Button>
