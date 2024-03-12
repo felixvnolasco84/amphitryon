@@ -24,8 +24,8 @@ const CustomModalCalendly = ({ url }: { url: string }) => {
         variant={"contact"}
         onClick={() => {
           TrackGoogleAnalyticsEvent(
-            "agendar_cita",
             "click",
+            "agendar_cita",
             window.location.pathname
           );       
           setIsOpen(true);
