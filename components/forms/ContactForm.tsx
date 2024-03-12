@@ -34,6 +34,7 @@ import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
 import dynamic from "next/dynamic";
+import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 
 const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
   ssr: false,
@@ -93,6 +94,11 @@ export function ContactForm() {
         setShowModalMessage(true);
         setIsLoading(false);
         form.reset();
+        TrackGoogleAnalyticsEvent(
+          "click",
+          "formulario_enviado",
+          window.location.pathname
+        );
       }
     } catch (error) {
       console.log(error);
