@@ -35,6 +35,7 @@ import { phoneRegex } from "@/lib/utils";
 
 import CalendlyButton from "../Calendar/CalendlyButton";
 import InitializeGoogleAnalytics from "@/lib/google-analytics";
+import CustomModalCalendly from "../Calendar/CustomModalCalendly";
 
 export const FormSchema = z.object({
   name: z
@@ -265,9 +266,8 @@ export function ContactForm() {
                 disabled={isLoading}
               >
                 Enviar
-              </Button>
-
-              <CalendlyButton url="https://calendly.com/amphitryonterrazas/" />
+              </Button>             
+              <CustomModalCalendly url="https://calendly.com/amphitryonterrazas/" />
             </div>
           )}
         </form>
