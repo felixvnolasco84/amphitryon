@@ -22,7 +22,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { sendContactEmail } from "@/app/_actions";
@@ -34,6 +34,7 @@ import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
 import CalendlyButton from "../Calendar/CalendlyButton";
+import InitializeGoogleAnalytics from "@/lib/google-analytics";
 
 export const FormSchema = z.object({
   name: z
@@ -265,7 +266,6 @@ export function ContactForm() {
               >
                 Enviar
               </Button>
-
 
               <CalendlyButton url="https://calendly.com/amphitryonterrazas/" />
             </div>

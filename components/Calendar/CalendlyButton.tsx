@@ -2,35 +2,30 @@
 
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { useEffect } from "react";
+import InitializeGoogleAnalytics, {
+  TrackGoogleAnalyticsEvent,
+} from "@/lib/google-analytics";
 
 export default function CalendlyButton({ url }: { url: string }) {
-  return (
-    // <>
-    //   <link
-    //     href="https://assets.calendly.com/assets/external/widget.css"
-    //     rel="stylesheet"
-    //   />
-    //   <script
-    //     src="https://assets.calendly.com/assets/external/widget.js"
-    //     type="text/javascript"
-    //     async
-    //   ></script>
-    //   <a
-    //     href=""
-    //     onClick={() => {
-    //       // @ts-ignore
-    //       Calendly.initPopupWidget({
-    //         url: url,
-    //       });
-    //       return false;
-    //     }}
-    //   >
-    //     Agenda una cita
-    //   </a>
-    // </>
+  useEffect(() => {
+    InitializeGoogleAnalytics();
+  }, []);
 
+  return (
     <Link className="w-full" href={url}>
-      <Button className="w-full" size={"contact"} variant={"contact"}>
+      <Button
+        onClick={() =>
+          TrackGoogleAnalyticsEvent(
+            "agendar_cita",
+            "click",
+            window.location.pathname
+          )
+        }
+        className="w-full"
+        size={"contact"}
+        variant={"contact"}
+      >
         Agenda una cita
       </Button>
     </Link>
