@@ -94,7 +94,7 @@ export function ContactForm() {
         setShowModalMessage(true);
         setIsLoading(false);
         form.reset();
-        TrackingFormLead(
+        TrackingFormLead( 
           "click",
           "formulario_enviado",
           data.name +
