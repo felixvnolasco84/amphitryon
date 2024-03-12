@@ -87,6 +87,13 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
+
+      let dateEvent = new Date(data.dateEvent).toLocaleDateString("es-MX", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+
     try {
       setIsLoading(true);
       const response = await sendContactEmail(data);
@@ -97,16 +104,22 @@ export function ContactForm() {
         TrackingFormLead( 
           "click",
           "formulario_enviado",
+          "Nombre:" +
           data.name +
             " " +
+            "Correo:" +
             data.email +
             " " +
+            "Teléfono:" +
             data.phoneNumber +
             " " +
-            data.dateEvent +
+            "Fecha del Evento:" +
+            dateEvent +
             " " +
+            "Venue:" +
             data.venue +
             " " +
+            "Descripción:" +
             data.eventDescription
         );
       }
