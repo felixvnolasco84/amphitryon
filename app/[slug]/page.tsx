@@ -13,6 +13,7 @@ import FlatComponent from "@/components/Flat/FlatComponent";
 import CalendlyButton from "@/components/Calendar/CalendlyButton";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
+import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
 
 type Props = {
   params: { slug: string };
@@ -142,7 +143,8 @@ export default function PlacePage({ params }: Props) {
       <CustomMapSection location={rentPlace.locationInMap} />
 
       <div className="flex flex-col gap-2">
-        <CalendlyButton url={rentPlace.calendlyURL} />
+        {/* <CalendlyButton url={rentPlace.calendlyURL} /> */}
+        <CustomModalCalendly url={rentPlace.calendlyURL} />
         <WhatsAppButton url={rentPlace.whatsAppURL} />
         <Link className="mx-auto" href={"/"}>
           <Button variant={"link"} size={"lg"}>
