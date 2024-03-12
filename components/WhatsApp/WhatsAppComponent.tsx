@@ -1,7 +1,16 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useEffect } from "react";
+import InitializeGoogleAnalytics, {
+  TrackGoogleAnalyticsEvent,
+} from "@/lib/google-analytics";
 
 export default function WhatsAppComponent() {
+  useEffect(() => {
+    InitializeGoogleAnalytics();
+  }, []);
   return (
     <Link
       target="_blank"
@@ -10,7 +19,17 @@ export default function WhatsAppComponent() {
       }
       className="container sticky bottom-2 z-50 mx-auto flex w-full justify-end rounded-md"
     >
-      <Button size={"lg"} className="relative bg-green-500">
+      <Button
+        onClick={() =>
+          TrackGoogleAnalyticsEvent(
+            "enviar_mensaje",
+            "click",
+            window.location.pathname
+          )
+        }
+        size={"lg"}
+        className="relative bg-green-500"
+      >
         * WhatsApp
       </Button>
     </Link>
