@@ -11,7 +11,11 @@ const TrackGoogleAnalyticsEvent = (
   console.log("GA event:", category, ":", action, ":", label);
 
   // Send GA4 Event
-  ReactGA4.event(`evento: ${category} | ubicación: ${label}`);
+  ReactGA4.event({
+    category: category,
+    action: action,
+    label: label,
+  });
 };
 
 export default InitializeGoogleAnalytics;
