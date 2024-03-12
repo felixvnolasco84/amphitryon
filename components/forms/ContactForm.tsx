@@ -97,7 +97,7 @@ export function ContactForm() {
         TrackGoogleAnalyticsEvent(
           "click",
           "formulario_enviado",
-          window.location.pathname
+          data.name + " " + data.email + " " + data.phoneNumber + " " + data.dateEvent + " " + data.venue + " " + data.eventDescription
         );
       }
     } catch (error) {
