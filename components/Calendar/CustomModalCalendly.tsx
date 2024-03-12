@@ -23,13 +23,13 @@ const CustomModalCalendly = ({ url }: { url: string }) => {
         size={"contact"}
         variant={"contact"}
         onClick={() => {
-          // TrackGoogleAnalyticsEvent(
-          //   "agendar_cita",
-          //   "evento:",
-          //   window.location.pathname
-          // );
+          TrackGoogleAnalyticsEvent(
+            "agendar_cita",
+            "click_agendar_cita",
+            window.location.pathname
+          );
           //@ts-ignore
-          window?.dataLayer?.push({ evento: "agendar_cita" });
+          // window?.dataLayer?.push({ "evento": "agendar_cita" });
 
           setIsOpen(true);
         }}
