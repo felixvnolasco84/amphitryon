@@ -80,7 +80,7 @@ export default function HeroSectionCarrousel({}: {}) {
         }}
         plugins={[
           Autoplay({
-            delay: 2000,
+            delay: 7000,
           }),
         ]}
         className="m-auto w-full bg-black"
