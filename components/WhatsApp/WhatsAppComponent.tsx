@@ -22,8 +22,8 @@ export default function WhatsAppComponent() {
       <Button
         onClick={() =>
           TrackGoogleAnalyticsEvent(
-            "enviar_mensaje",
             "click",
+            "enviar_mensaje",
             window.location.pathname
           )
         }
