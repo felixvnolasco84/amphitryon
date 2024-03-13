@@ -6,6 +6,7 @@ import FeaturedServices from "@/components/Sections/FeaturedServices";
 import HeroSectionCarrousel from "@/components/Sections/HeroSectionCarrousel";
 import RentSection from "@/components/Sections/RentSection";
 import SingleFeature from "@/components/Sections/SingleFeature";
+import WhatsAppButtonHome from "@/components/WhatsApp/WhatsAppButtonHome";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { Button } from "@/components/ui/button";
@@ -39,19 +40,7 @@ export default function Home() {
           </Link>
           <div className="border-t-2 border-gray-300 pb-4"></div>
           {/* <span className="pb-4">O</span> */}
-          <Link
-            href={
-              "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
-            }
-            className="text-left underline"
-          >
-            <Button
-              size={"lg"}
-              className="relative bg-green-500 text-black hover:text-white"
-            >
-              Envíanos un mensaje por WhatsApp
-            </Button>
-          </Link>
+          <WhatsAppButtonHome />
         </div>
       </div>
       <WhatsAppComponent />

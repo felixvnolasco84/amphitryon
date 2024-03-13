@@ -21,16 +21,10 @@ export default function WhatsAppButton({ url }: { url: string }) {
           window.location.pathname
         )
       }
-      className="w-full"
+      className="rounded-md bg-green-400 py-2 text-center text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
       href={url}
     >
-      <Button
-        className="w-full bg-green-400 text-gray-800 hover:text-white"
-        size={"contact"}
-        variant={"contact"}
-      >
-        WhatsApp
-      </Button>
+      WhatsApp
     </Link>
   );
 }
