@@ -25,14 +25,11 @@ const TrackingFormLead = (
   form: z.infer<typeof FormSchema>
 ) => {
   // Send GA4 Event
-  ReactGA4.event(
-    {
-      category: category,
-      action: action,
-      label: label,
-    },
-    `form: ${form.name}, email: ${form.email}, phone: ${form.phoneNumber}, eventDescription: ${form.eventDescription}`
-  );
+  ReactGA4.event({
+    category: category,
+    action: action,
+    label: label,
+  });
 };
 
 export default InitializeGoogleAnalytics;
