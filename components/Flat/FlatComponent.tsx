@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image, { StaticImageData } from "next/image";
 import { Button } from "../ui/button";
