@@ -16,6 +16,8 @@ export default function CalendlyButton({ url }: { url: string }) {
     <Link className="w-full" href={url}>
       <Button
         onClick={() =>
+
+          //TODO: FIX THIS TRACKING EVENT FORM CAPITAL CASE "AGENDAR_CITA" TO SNAKE CASE "agendar_cita"
           TrackGoogleAnalyticsEvent(
             "agendar_cita",
             "click",

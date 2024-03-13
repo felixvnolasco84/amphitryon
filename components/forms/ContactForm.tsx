@@ -104,23 +104,8 @@ export function ContactForm() {
         TrackingFormLead( 
           "click",
           "formulario_enviado",
-          "Nombre:" +
-          data.name +
-            " " +
-            "Correo:" +
-            data.email +
-            " " +
-            "Teléfono:" +
-            data.phoneNumber +
-            " " +
-            "Fecha del Evento:" +
-            dateEvent +
-            " " +
-            "Venue:" +
-            data.venue +
-            " " +
-            "Descripción:" +
-            data.eventDescription
+          "formulario_enviado",
+          data
         );
       }
     } catch (error) {
