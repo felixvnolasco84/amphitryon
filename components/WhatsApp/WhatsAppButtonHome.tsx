@@ -7,6 +7,7 @@ import React from "react";
 export default function WhatsAppButtonHome() {
   return (
     <Link
+      target="_blank"
       onClick={() =>
         TrackGoogleAnalyticsEvent(
           "click",

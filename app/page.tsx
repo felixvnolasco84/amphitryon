@@ -39,7 +39,6 @@ export default function Home() {
             Antón Arias: (56) 2024 4047
           </Link>
           <div className="border-t-2 border-gray-300 pb-4"></div>
-          {/* <span className="pb-4">O</span> */}
           <WhatsAppButtonHome />
         </div>
       </div>
