@@ -10,8 +10,6 @@ const TrackGoogleAnalyticsEvent = (
   action: string,
   label: string
 ) => {
-  console.log("GA event:", category, ":", action, ":", label);
-
   // Send GA4 Event
   ReactGA4.event({
     category: category,
@@ -26,8 +24,6 @@ const TrackingFormLead = (
   label: string,
   form: z.infer<typeof FormSchema>
 ) => {
-  console.log("GA event:", category, ":", action, ":", label);
-
   // Send GA4 Event
   ReactGA4.event(
     {
@@ -35,14 +31,7 @@ const TrackingFormLead = (
       action: action,
       label: label,
     },
-    {
-      name: form.name,
-      email: form.email,
-      phone: form.phoneNumber,
-      eventDescription: form.eventDescription,
-      venue: form.venue,
-      dateEvent: form.dateEvent,
-    }
+    `form: ${form.name}, email: ${form.email}, phone: ${form.phoneNumber}, eventDescription: ${form.eventDescription}`
   );
 };
 
