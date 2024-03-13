@@ -31,14 +31,7 @@ export default function FlatComponent({
         download="Plano.pdf"
         className="mt-6 flex justify-center"
       >
-        <Button
-          onClick={() =>
-            TrackGoogleAnalyticsEvent(
-              "click",
-              `descarga_${window.location.pathname}`,
-              `descarga_${window.location.pathname}`
-            )
-          }
+        <Button         
           className="rounded-md bg-black px-4 py-2 text-white"
         >
           Descargar Plano
