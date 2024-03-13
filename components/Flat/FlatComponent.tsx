@@ -1,3 +1,5 @@
+"use client"
+
 import Image, { StaticImageData } from "next/image";
 import { Button } from "../ui/button";
 import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
