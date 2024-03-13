@@ -14,22 +14,19 @@ export default function WhatsAppComponent() {
   return (
     <Link
       target="_blank"
+      onClick={() =>
+        TrackGoogleAnalyticsEvent(
+          "click",
+          "enviar_mensaje",
+          window.location.pathname
+        )
+      }
       href={
         "https://wa.me/5538931801?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
       }
       className="container sticky bottom-2 z-50 mx-auto flex w-full justify-end rounded-md"
     >
-      <Button
-        onClick={() =>
-          TrackGoogleAnalyticsEvent(
-            "click",
-            "enviar_mensaje",
-            window.location.pathname
-          )
-        }
-        size={"lg"}
-        className="relative bg-green-400 text-gray-800"
-      >
+      <Button size={"lg"} className="relative bg-green-400 text-gray-800 hover:text-white">
         * WhatsApp
       </Button>
     </Link>

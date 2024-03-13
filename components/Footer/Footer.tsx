@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "@/public/images/Logo_Amphitryon_blanco.png";
 import Estrella from "@/public/svg/Vector_estrella.svg";
 import Link from "next/link";
+import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 
 export default function Footer() {
   return (
@@ -46,6 +47,13 @@ export default function Footer() {
 
           <div className="flex flex-col text-sm lg:gap-4 lg:text-base">
             <Link
+              onClick={() =>
+                TrackGoogleAnalyticsEvent(
+                  "click",
+                  "enviar_mensaje",
+                  window.location.pathname
+                )
+              }
               className="text-left underline"
               href={
                 "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"

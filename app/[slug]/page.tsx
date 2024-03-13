@@ -114,8 +114,7 @@ export default function PlacePage({ params }: Props) {
               </p>
             </div>
           ))}
-        </div>
-        {/* <RentPlaceFeaturedCarousel features={rentPlace.features} /> */}
+        </div>        
         <HeroSection isRentPlace={true} img={rentPlace.img} />
         <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
           <h3
@@ -146,8 +145,7 @@ export default function PlacePage({ params }: Props) {
         <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
         <CustomMapSection location={rentPlace.locationInMap} />
 
-        <div className="flex flex-col gap-2">
-          {/* <CalendlyButton url={rentPlace.calendlyURL} /> */}
+        <div className="flex flex-col gap-2">         
           <CustomModalCalendly url={rentPlace.calendlyURL} />
           <WhatsAppButton url={rentPlace.whatsAppURL} />
           <Link className="mx-auto" href={"/"}>

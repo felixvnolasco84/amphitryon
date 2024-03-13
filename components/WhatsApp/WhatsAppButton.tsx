@@ -12,16 +12,20 @@ export default function WhatsAppButton({ url }: { url: string }) {
     InitializeGoogleAnalytics();
   }, []);
   return (
-    <Link className="w-full" href={url}>
+    <Link
+      target="_blank"
+      onClick={() =>
+        TrackGoogleAnalyticsEvent(
+          "click",
+          "enviar_mensaje",
+          window.location.pathname
+        )
+      }
+      className="w-full"
+      href={url}
+    >
       <Button
-        onClick={() =>
-          TrackGoogleAnalyticsEvent(
-            "click",
-            "enviar_mensaje",
-            window.location.pathname
-          )
-        }
-        className="w-full bg-green-400 text-gray-800"
+        className="w-full bg-green-400 text-gray-800 hover:text-white"
         size={"contact"}
         variant={"contact"}
       >

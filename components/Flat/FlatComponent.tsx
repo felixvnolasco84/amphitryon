@@ -1,4 +1,6 @@
 import Image, { StaticImageData } from "next/image";
+import { Button } from "../ui/button";
+import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 
 export default function FlatComponent({
   flat,
@@ -27,9 +29,18 @@ export default function FlatComponent({
         download="Plano.pdf"
         className="mt-6 flex justify-center"
       >
-        <button className="rounded-md bg-black px-4 py-2 text-white">
+        <Button
+          onClick={() =>
+            TrackGoogleAnalyticsEvent(
+              "click",
+              `descarga_${window.location.pathname}`,
+              ""
+            )
+          }
+          className="rounded-md bg-black px-4 py-2 text-white"
+        >
           Descargar Plano
-        </button>
+        </Button>
       </a>
     </div>
   );
