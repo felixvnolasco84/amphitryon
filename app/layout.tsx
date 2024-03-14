@@ -11,18 +11,6 @@ export const metadata: Metadata = {
     "Encuentra el lugar perfecto para tus eventos privados - Grupo Amphytrion",
   description:
     "Grupo Amphytrion tiene para ti los lugares más exclusivos en las mejores zonas de Ciudad de México para tus eventos. ¡Conoce los spots disponibles! ",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
-  },
-};
-
-export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
 };
 
 export default function RootLayout({
@@ -31,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es-Mx">
+    <html lang="es">
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -56,16 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </div>
           <Footer />
         </div>
-        {/* <link
-          href="https://assets.calendly.com/assets/external/widget.css"
-          rel="stylesheet"
-        ></link>
-        <script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          type="text/javascript"
-          async
-        ></script> */}
-        {/* <Script></Script> */}
+        <Script></Script>
       </body>
     </html>
   );
