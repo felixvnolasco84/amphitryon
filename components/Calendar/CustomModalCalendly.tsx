@@ -7,6 +7,7 @@ import InitializeGoogleAnalytics, {
   TrackGoogleAnalyticsEvent,
 } from "@/lib/google-analytics";
 import { Button } from "../ui/button";
+import dynamic from "next/dynamic";
 
 const CustomModalCalendly = ({ url }: { url: string }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,10 +41,12 @@ const CustomModalCalendly = ({ url }: { url: string }) => {
         // prefill={props.prefill}
         onModalClose={() => setIsOpen(false)}
         open={isOpen}
-        rootElement={document.getElementById("root") as HTMLElement}
+        rootElement={document?.getElementById("root") as HTMLElement}
       />
     </div>
   );
 };
 
-export default CustomModalCalendly;
+export default dynamic(() => Promise.resolve(CustomModalCalendly), {
+  ssr: false,
+});

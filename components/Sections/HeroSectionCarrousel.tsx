@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-// import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
+import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
 import hero1 from "@/public/images/Hero/MoliereHero.jpg";
 import hero2 from "@/public/images/Hero/PepitaHero.jpg";
 import hero3 from "@/public/images/HeroNew.jpeg";
@@ -66,12 +66,12 @@ export default function HeroSectionCarrousel({}: {}) {
 
   return (
     <div className="flex flex-col lg:container">
-      {/* <InfiniteMovingMessages
+      <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      /> */}
+      />
 
       <Carousel
         // setApi={setApi}
@@ -108,12 +108,12 @@ export default function HeroSectionCarrousel({}: {}) {
         <CarouselPrevious />
       </Carousel>
 
-      {/* <InfiniteMovingMessages
+      <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      /> */}
+      />
     </div>
   );
 }

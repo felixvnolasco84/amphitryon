@@ -12,8 +12,8 @@ import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
-import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
+import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
 
 type Props = {
   params: { slug: string };
