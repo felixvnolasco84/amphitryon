@@ -51,6 +51,7 @@ export default function Footer() {
             <Link
               className="text-left underline"
               href={"https://www.instagram.com/grupoamphitryon/"}
+              target="_blank"
             >
               INSTAGRAM
             </Link>

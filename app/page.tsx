@@ -1,4 +1,5 @@
-import Calendly from "@/components/Calendar/Calendly";
+"use client";
+
 import CTADeposit from "@/components/Sections/CTASections/CTADeposit";
 import CTASection from "@/components/Sections/CTASections/CTASection";
 import FeaturedClients from "@/components/Sections/FeaturedClients";
@@ -9,14 +10,12 @@ import SingleFeature from "@/components/Sections/SingleFeature";
 import WhatsAppButtonHome from "@/components/WhatsApp/WhatsAppButtonHome";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { Button } from "@/components/ui/button";
-import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
+import { clashDisplayMedium } from "@/utils/fonts";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 lg:gap-20">
-      {/* <HeroSection isRentPlace={false} img={heroImage} /> */}
+    <main className="flex flex-col gap-10 lg:gap-20">     
       <HeroSectionCarrousel />
       <div className="container flex flex-col gap-10 lg:gap-20">
         <FeaturedClients />
@@ -26,7 +25,6 @@ export default function Home() {
         <CTADeposit />
         <SingleFeature />
         <ContactForm />
-
         <div className="order-8 mx-auto flex flex-col text-center">
           <h3
             className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}

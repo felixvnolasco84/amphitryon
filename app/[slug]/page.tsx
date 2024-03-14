@@ -1,3 +1,4 @@
+
 import HeroSection from "@/components/Sections/HeroSection";
 import { Metadata, ResolvingMetadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
@@ -5,12 +6,10 @@ import { clashDisplayMedium, clashDisplaySemibold } from "@/utils/fonts";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-
 import Arrow from "@/public/svg/Arrow_Icon.svg";
 import CustomMapSection from "@/components/Sections/CustomMapSection";
 import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
-import CalendlyButton from "@/components/Calendar/CalendlyButton";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
