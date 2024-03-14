@@ -2,7 +2,6 @@ import Image from "next/image";
 import Logo from "@/public/images/Logo_Amphitryon_blanco.png";
 import Estrella from "@/public/svg/Vector_estrella.svg";
 import Link from "next/link";
-import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 import FooterLinkComponent from "./FooterLinkComponent";
 
 export default function Footer() {
