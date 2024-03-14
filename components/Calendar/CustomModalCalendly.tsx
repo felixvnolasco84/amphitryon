@@ -27,7 +27,7 @@ const CustomModalCalendly = ({ url }: { url: string }) => {
             "click",
             "agendar_cita",
             window.location.pathname
-          );       
+          );
           setIsOpen(true);
         }}
       >
@@ -40,7 +40,7 @@ const CustomModalCalendly = ({ url }: { url: string }) => {
         // prefill={props.prefill}
         onModalClose={() => setIsOpen(false)}
         open={isOpen}
-        rootElement={document.getElementById("root") ?? document.body}
+        rootElement={document.getElementById("root") as HTMLElement}
       />
     </div>
   );
