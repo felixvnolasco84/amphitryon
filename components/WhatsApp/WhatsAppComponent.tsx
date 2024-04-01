@@ -12,7 +12,7 @@ export default function WhatsAppComponent() {
     InitializeGoogleAnalytics();
   }, []);
   return (
-    <div className="container sticky bottom-2 right-2 flex w-full justify-end">
+    <div className="right-2 bottom-2 sticky flex justify-end w-full container">
       <Link
         target="_blank"
         onClick={() =>
@@ -23,9 +23,9 @@ export default function WhatsAppComponent() {
           )
         }
         href={
-          "https://wa.me/5538931801?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+          "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
         }
-        className="container z-50 mx-0 w-fit rounded-md bg-green-400 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
+        className="z-50 bg-green-400 hover:bg-gray-800 mx-0 py-2 rounded-md w-fit text-gray-800 text-xl hover:text-white container"
       >
         * WhatsApp
       </Link>

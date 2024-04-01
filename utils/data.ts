@@ -229,7 +229,7 @@ export const rentPlaces: RentPlace[] = [
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
     whatsAppURL:
-      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
 
   {
@@ -367,7 +367,7 @@ export const rentPlaces: RentPlace[] = [
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
     whatsAppURL:
-      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
   {
     metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
@@ -476,6 +476,6 @@ export const rentPlaces: RentPlace[] = [
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000306",
     whatsAppURL:
-      "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
 ];

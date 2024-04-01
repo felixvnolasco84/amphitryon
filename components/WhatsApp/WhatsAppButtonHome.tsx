@@ -16,9 +16,9 @@ export default function WhatsAppButtonHome() {
         )
       }
       href={
-        "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+        "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
       }
-      className="rounded-md bg-green-500 p-2 text-left text-black hover:bg-gray-800 hover:text-white hover:underline"
+      className="bg-green-500 hover:bg-gray-800 p-2 rounded-md text-black text-left hover:text-white hover:underline"
     >
       Envíanos un mensaje por WhatsApp
     </Link>

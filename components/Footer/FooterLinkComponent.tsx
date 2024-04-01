@@ -17,7 +17,7 @@ export default function FooterLinkComponent() {
       }
       className="text-left underline"
       href={
-        "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+        "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
       }
     >
       WHATSAPP
