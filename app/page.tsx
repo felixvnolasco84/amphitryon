@@ -7,6 +7,7 @@ import FeaturedServices from "@/components/Sections/FeaturedServices";
 import HeroSectionCarrousel from "@/components/Sections/HeroSectionCarrousel";
 import RentSection from "@/components/Sections/RentSection";
 import SingleFeature from "@/components/Sections/SingleFeature";
+import CallButton from "@/components/WhatsApp/CallButton";
 import WhatsAppButtonHome from "@/components/WhatsApp/WhatsAppButtonHome";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
@@ -15,9 +16,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 lg:gap-20">     
+    <main className="flex flex-col gap-10 lg:gap-20">
       <HeroSectionCarrousel />
-      <div className="container flex flex-col gap-10 lg:gap-20">
+      <div className="flex flex-col gap-10 lg:gap-20 container">
         <FeaturedClients />
         <CTASection />
         <FeaturedServices />
@@ -25,7 +26,7 @@ export default function Home() {
         <CTADeposit />
         <SingleFeature />
         <ContactForm />
-        <div className="order-8 mx-auto flex flex-col text-center">
+        <div className="flex flex-col order-8 mx-auto text-center">
           <h3
             className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
           >
@@ -36,8 +37,12 @@ export default function Home() {
           <Link className="pb-4" href={"tel:5620244047"}>
             Antón Arias: (56) 2024 4047
           </Link>
-          <div className="border-t-2 border-gray-300 pb-4"></div>
-          <WhatsAppButtonHome />
+          <div className="border-gray-300 pb-4 border-t-2"></div>
+          <div className="flex flex-col gap-2">
+            <CallButton />
+            <WhatsAppButtonHome />
+          </div>
+
         </div>
       </div>
       <WhatsAppComponent />

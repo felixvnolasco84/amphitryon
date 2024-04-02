@@ -14,6 +14,7 @@ import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
+import CallButton from "@/components/WhatsApp/CallButton";
 
 type Props = {
   params: { slug: string };
@@ -40,8 +41,8 @@ export default function PlacePage({ params }: Props) {
   )!;
   return (
     <>
-      <div className="container flex flex-col gap-6 lg:gap-12">
-        <div className="grid grid-flow-col items-center justify-between gap-2">
+      <div className="flex flex-col gap-6 lg:gap-12 container">
+        <div className="justify-between items-center gap-2 grid grid-flow-col">
           <Link href={rentPlace.previousLink || ""} className="">
             <Button
               className="relative cursor-pointer"
@@ -52,7 +53,7 @@ export default function PlacePage({ params }: Props) {
                 src={Arrow}
                 fill
                 sizes="100vw"
-                className="object-cover object-center"
+                className="object-center object-cover"
                 alt="Arrow"
               />
             </Button>
@@ -79,7 +80,7 @@ export default function PlacePage({ params }: Props) {
                   src={Arrow}
                   fill
                   sizes="100vw"
-                  className="rotate-180 object-cover object-center"
+                  className="object-center object-cover rotate-180"
                   alt="Arrow"
                 />
               </Button>
@@ -94,16 +95,16 @@ export default function PlacePage({ params }: Props) {
                 src={Arrow}
                 fill
                 sizes="100vw"
-                className="rotate-180 object-cover object-center"
+                className="object-center object-cover rotate-180"
                 alt="Arrow"
               />
             </Button>
           )}
         </div>
-        <div className="grid-flow-col gap-4 lg:grid">
+        <div className="gap-4 lg:grid grid-flow-col">
           {rentPlace.features.map((feature, index) => (
-            <div className="border-t-2 border-black pt-2 lg:pt-4" key={index}>
-              <h3 className="text-xs text-[#727272] lg:text-sm">
+            <div className="pt-2 lg:pt-4 border-t-2 border-black" key={index}>
+              <h3 className="text-[#727272] text-xs lg:text-sm">
                 {feature.title}
               </h3>
               <p
@@ -113,9 +114,9 @@ export default function PlacePage({ params }: Props) {
               </p>
             </div>
           ))}
-        </div>        
+        </div>
         <HeroSection isRentPlace={true} img={rentPlace.img} />
-        <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
+        <div className="flex flex-col gap-2 lg:gap-4 bg-[#F8F8F8] p-4">
           <h3
             className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}
           >
@@ -123,14 +124,14 @@ export default function PlacePage({ params }: Props) {
           </h3>
           <p className="text-sm lg:text-base">{rentPlace.largeDescription}</p>
         </div>
-        <div className="hidden grid-cols-1 gap-2 align-baseline lg:grid lg:grid-cols-2 lg:gap-4">
+        <div className="gap-2 lg:gap-4 hidden lg:grid grid-cols-1 lg:grid-cols-2 align-baseline">
           {rentPlace.gallery.map((image, index) => (
             <div
               key={index}
-              className="relative flex aspect-square w-full flex-col gap-2"
+              className="relative flex flex-col gap-2 w-full aspect-square"
             >
               <Image
-                className="aspect-square object-cover object-center"
+                className="aspect-square object-center object-cover"
                 src={image}
                 alt=""
                 fill
@@ -144,8 +145,9 @@ export default function PlacePage({ params }: Props) {
         <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
         <CustomMapSection location={rentPlace.locationInMap} />
 
-        <div className="flex flex-col gap-2">         
+        <div className="flex flex-col gap-2">
           <CustomModalCalendly url={rentPlace.calendlyURL} />
+          <CallButton />
           <WhatsAppButton url={rentPlace.whatsAppURL} />
           <Link className="mx-auto" href={"/"}>
             <Button variant={"link"} size={"lg"}>
