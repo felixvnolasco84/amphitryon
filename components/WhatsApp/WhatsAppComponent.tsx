@@ -6,13 +6,15 @@ import { useEffect } from "react";
 import InitializeGoogleAnalytics, {
   TrackGoogleAnalyticsEvent,
 } from "@/lib/google-analytics";
+import CallButton from "./CallButton";
 
 export default function WhatsAppComponent() {
   useEffect(() => {
     InitializeGoogleAnalytics();
   }, []);
   return (
-    <div className="right-2 bottom-2 sticky flex justify-end w-full container">
+    <div className="right-2 bottom-2 sticky flex flex-col justify-end items-end gap-2 container">
+      <CallButton />
       <Link
         target="_blank"
         onClick={() =>

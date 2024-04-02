@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es-Mx">
       <head>
         <script
           defer
@@ -35,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <body className={`${clashDisplayRegular.className}`}>
         <div className="flex flex-col lg:gap-4">
           <Header />
-          <div id="root" className="flex flex-1 flex-col gap-4">
+          <div id="root" className="flex flex-col flex-1 gap-4">
             <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
               height="0"
