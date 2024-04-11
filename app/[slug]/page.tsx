@@ -148,7 +148,7 @@ export default function PlacePage({ params }: Props) {
         <div className="flex flex-col gap-2">
           <CustomModalCalendly url={rentPlace.calendlyURL} />
           <CallButton />
-          <WhatsAppButton url={rentPlace.whatsAppURL} />
+          <WhatsAppButton url1={rentPlace.whatsAppURL} url2="https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios" />
           <Link className="mx-auto" href={"/"}>
             <Button variant={"link"} size={"lg"}>
               Regresar al Inicio
