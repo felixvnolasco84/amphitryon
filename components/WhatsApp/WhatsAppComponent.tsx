@@ -10,7 +10,7 @@ import CallButton from "./CallButton";
 export default function WhatsAppComponent() {
   const [isUrl1, setIsUrl1] = useState(true);
   const url1 = "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios";
-  const url2 = "https://wa.me/5620244048?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios";
+  const url2 = "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios";
 
   const handleClick = () => {
     InitializeGoogleAnalytics();
