@@ -104,126 +104,128 @@ export const rentPlaces: RentPlace[] = [
     },
     district: "Polanco",
     prices: [
-      {
-        day: "Lunes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 37000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 32000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 47000,
-          },
-        ],
-      },
-      {
-        day: "Martes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 37000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 32000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 47000,
-          },
-        ],
-      },
-      {
-        day: "Miércoles",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 42000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 37000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 52000,
-          },
-        ],
-      },
-      {
-        day: "Jueves",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 44000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 39000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 53000,
-          },
-        ],
-      },
-      {
-        day: "Viernes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 62000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 52000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 77000,
-          },
-        ],
-      },
-      {
-        day: "Sábado",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 67000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 57000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 82000,
-          },
-        ],
-      },
-      {
-        day: "Domingo",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 37000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 32000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 47000,
-          },
-        ],
-      },
     ],
+    // prices: [
+    //   {
+    //     day: "Lunes",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 37000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 32000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 47000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Martes",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 37000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 32000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 47000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Miércoles",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 42000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 37000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 52000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Jueves",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 44000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 39000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 53000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Viernes",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 62000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 52000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 77000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Sábado",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 67000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 57000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 82000,
+    //       },
+    //     ],
+    //   },
+    //   {
+    //     day: "Domingo",
+    //     type: [
+    //       {
+    //         type: "ESPACIO A (100PX)",
+    //         price: 37000,
+    //       },
+    //       {
+    //         type: "ESPACIO B (80PX)",
+    //         price: 32000,
+    //       },
+    //       {
+    //         type: "COMPLETO (180PX)",
+    //         price: 47000,
+    //       },
+    //     ],
+    //   },
+    // ],
     flat: GALERIAFLAT,
     flatPDF: GALERIAFLATPDF,
     calendlyURL:

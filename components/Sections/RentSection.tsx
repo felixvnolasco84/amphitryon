@@ -42,7 +42,7 @@ export default function RentSection() {
             </div>
           </Link>
         ))}
-        <CalendarComponent />
+        {/* <CalendarComponent /> */}
       </div>
       {/* <RentPlaceCarousel items={rentPlaces} /> */}
     </div>
