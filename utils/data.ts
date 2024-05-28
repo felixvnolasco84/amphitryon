@@ -103,129 +103,128 @@ export const rentPlaces: RentPlace[] = [
       lng: -99.2012794,
     },
     district: "Polanco",
+    
     prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 41000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 36000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 51000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 41000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 36000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 51000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 46000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 41000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 56000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 48000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 43000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 57000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 66000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 56000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 81000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 71000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 61000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 86000,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 41000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 36000,
+          },
+          {
+            type: "COMPLETO (180PX)",
+            price: 51000,
+          },
+        ],
+      },
     ],
-    // prices: [
-    //   {
-    //     day: "Lunes",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 37000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 32000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 47000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Martes",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 37000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 32000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 47000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Miércoles",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 42000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 37000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 52000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Jueves",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 44000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 39000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 53000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Viernes",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 62000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 52000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 77000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Sábado",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 67000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 57000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 82000,
-    //       },
-    //     ],
-    //   },
-    //   {
-    //     day: "Domingo",
-    //     type: [
-    //       {
-    //         type: "ESPACIO A (100PX)",
-    //         price: 37000,
-    //       },
-    //       {
-    //         type: "ESPACIO B (80PX)",
-    //         price: 32000,
-    //       },
-    //       {
-    //         type: "COMPLETO (180PX)",
-    //         price: 47000,
-    //       },
-    //     ],
-    //   },
-    // ],
     flat: GALERIAFLAT,
     flatPDF: GALERIAFLATPDF,
     calendlyURL:
@@ -277,11 +276,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 20700,
+            price: 24700,
           },
           {
             type: "Completo (200PX)",
-            price: 32900,
+            price: 36900,
           },
         ],
       },
@@ -290,11 +289,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 20700,
+            price: 24700,
           },
           {
             type: "Completo (200PX)",
-            price: 32900,
+            price: 36900,
           },
         ],
       },
@@ -303,11 +302,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 30700,
+            price: 34700,
           },
           {
             type: "Completo (200PX)",
-            price: 52900,
+            price: 56900,
           },
         ],
       },
@@ -316,11 +315,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 30700,
+            price: 34700,
           },
           {
             type: "Completo (200PX)",
-            price: 52900,
+            price: 56900,
           },
         ],
       },
@@ -329,11 +328,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 36500,
+            price: 40500,
           },
           {
             type: "Completo (200PX)",
-            price: 64500,
+            price: 70500,
           },
         ],
       },
@@ -342,11 +341,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 36500,
+            price: 40500,
           },
           {
             type: "Completo (200PX)",
-            price: 64500,
+            price: 70500,
           },
         ],
       },
@@ -355,11 +354,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 20700,
+            price: 24700,
           },
           {
             type: "Completo (200PX)",
-            price: 32900,
+            price: 36900,
           },
         ],
       },
@@ -414,7 +413,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 25500,
+            price: 29500,
           },
         ],
       },
@@ -423,7 +422,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 25500,
+            price: 29500,
           },
         ],
       },
@@ -432,7 +431,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 30500,
+            price: 34500,
           },
         ],
       },
@@ -441,7 +440,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 30500,
+            price: 34500,
           },
         ],
       },
@@ -450,7 +449,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 35500,
+            price: 39500,
           },
         ],
       },
@@ -459,7 +458,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 35500,
+            price: 39500,
           },
         ],
       },
@@ -468,7 +467,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (90PX)",
-            price: 25500,
+            price: 29500,
           },
         ],
       },
