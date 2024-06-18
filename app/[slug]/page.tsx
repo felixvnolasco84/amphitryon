@@ -41,8 +41,8 @@ export default function PlacePage({ params }: Props) {
   )!;
   return (
     <>
-      <div className="flex flex-col gap-6 lg:gap-12 container">
-        <div className="justify-between items-center gap-2 grid grid-flow-col">
+      <div className="container flex flex-col gap-6 lg:gap-12">
+        <div className="grid grid-flow-col items-center justify-between gap-2">
           <Link href={rentPlace.previousLink || ""} className="">
             <Button
               className="relative cursor-pointer"
@@ -53,7 +53,7 @@ export default function PlacePage({ params }: Props) {
                 src={Arrow}
                 fill
                 sizes="100vw"
-                className="object-center object-cover"
+                className="object-cover object-center"
                 alt="Arrow"
               />
             </Button>
@@ -80,7 +80,7 @@ export default function PlacePage({ params }: Props) {
                   src={Arrow}
                   fill
                   sizes="100vw"
-                  className="object-center object-cover rotate-180"
+                  className="rotate-180 object-cover object-center"
                   alt="Arrow"
                 />
               </Button>
@@ -95,20 +95,24 @@ export default function PlacePage({ params }: Props) {
                 src={Arrow}
                 fill
                 sizes="100vw"
-                className="object-center object-cover rotate-180"
+                className="rotate-180 object-cover object-center"
                 alt="Arrow"
               />
             </Button>
           )}
         </div>
-        <div className="gap-4 lg:grid grid-flow-col">
+        <div
+          className={`${
+            rentPlace.features.length > 4 ? "grid-cols-5" : "grid-flow-col"
+          } gap-4 lg:grid `}
+        >
           {rentPlace.features.map((feature, index) => (
-            <div className="pt-2 lg:pt-4 border-t-2 border-black" key={index}>
-              <h3 className="text-[#727272] text-xs lg:text-sm">
+            <div className="border-t-2 border-black pt-2 lg:pt-4" key={index}>
+              <h3 className="text-xs text-[#727272] lg:text-sm">
                 {feature.title}
               </h3>
               <p
-                className={`${clashDisplayMedium.className} text-lg lg:text-xl xl:text-2xl`}
+                className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
               >
                 {feature.description}
               </p>
@@ -116,7 +120,7 @@ export default function PlacePage({ params }: Props) {
           ))}
         </div>
         <HeroSection isRentPlace={true} img={rentPlace.img} />
-        <div className="flex flex-col gap-2 lg:gap-4 bg-[#F8F8F8] p-4">
+        <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
           <h3
             className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}
           >
@@ -124,14 +128,14 @@ export default function PlacePage({ params }: Props) {
           </h3>
           <p className="text-sm lg:text-base">{rentPlace.largeDescription}</p>
         </div>
-        <div className="gap-2 lg:gap-4 hidden lg:grid grid-cols-1 lg:grid-cols-2 align-baseline">
+        <div className="hidden grid-cols-1 gap-2 align-baseline lg:grid lg:grid-cols-2 lg:gap-4">
           {rentPlace.gallery.map((image, index) => (
             <div
               key={index}
-              className="relative flex flex-col gap-2 w-full aspect-square"
+              className="relative flex aspect-square w-full flex-col gap-2"
             >
               <Image
-                className="aspect-square object-center object-cover"
+                className="aspect-square object-cover object-center"
                 src={image}
                 alt=""
                 fill
@@ -148,7 +152,10 @@ export default function PlacePage({ params }: Props) {
         <div className="flex flex-col gap-2">
           <CustomModalCalendly url={rentPlace.calendlyURL} />
           <CallButton />
-          <WhatsAppButton url1={rentPlace.whatsAppURL} url2="https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios" />
+          <WhatsAppButton
+            url1={rentPlace.whatsAppURL}
+            url2="https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+          />
           <Link className="mx-auto" href={"/"}>
             <Button variant={"link"} size={"lg"}>
               Regresar al Inicio

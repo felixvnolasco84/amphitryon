@@ -74,11 +74,11 @@ export const rentPlaces: RentPlace[] = [
     features: [
       {
         title: "Capacidad",
-        description: "180 PAX",
+        description: "140 PAX",
       },
       {
         title: "Horario",
-        description: "8:00 - 12:30",
+        description: "L - J: 8:00 AM - 10:00 PM, V - S: 8:00 AM - 11:00 PM, D: 8:00 AM - 7:00 PM",
       },
       {
         title: "Audio",
@@ -86,7 +86,7 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Mobilario",
-        description: "120 PAX CÓCTEL",
+        description: "120 PAX (INCLUÍDO)",
       },
       {
         title: "Estructura",
