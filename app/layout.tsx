@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-Mx">
-      <head>
+      {/* <head> */}
         {/* <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2FQ3KVBPJ"></script>
 <script>
@@ -41,7 +41,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-WNGXG4N4')`,
           }}
         /> */}
-      </head>
+      {/* </head> */}
       <body className={`${clashDisplayRegular.className}`}>
         <div className="flex flex-col lg:gap-4">
           <Header />
