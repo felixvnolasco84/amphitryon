@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-10 lg:gap-20">
       <HeroSectionCarrousel />
-      <div className="flex flex-col gap-10 lg:gap-20 container">
+      <div className="container flex flex-col gap-10 lg:gap-20">
         <FeaturedClients />
         <CTASection />
         <FeaturedServices />
@@ -26,23 +26,22 @@ export default function Home() {
         <CTADeposit />
         <SingleFeature />
         <ContactForm />
-        <div className="flex flex-col order-8 mx-auto text-center">
+        <div className="order-8 mx-auto flex flex-col text-center">
           <h3
             className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
           >
             LLámanos
           </h3>
-          <Link href={"tel:5538931801"}>Jimena Montenegro: (55) 3893 1801</Link>
+          <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
           <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
           <Link className="pb-4" href={"tel:5620244047"}>
             Antón Arias: (56) 2024 4047
           </Link>
-          <div className="border-gray-300 pb-4 border-t-2"></div>
+          <div className="border-t-2 border-gray-300 pb-4"></div>
           <div className="flex flex-col gap-2">
             <CallButton />
             <WhatsAppButtonHome />
           </div>
-
         </div>
       </div>
       <WhatsAppComponent />

@@ -23,9 +23,7 @@ export default function Footer() {
           </Link>
           {/* <h4 className="text-3xl lg:hidden">Let&apos;s Talk</h4> */}
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
-            <Link href={"tel:5538931801"}>
-              Jimena Montenegro: (55) 3893 1801
-            </Link>
+            <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
             <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
             <Link href={"tel:5620244047"}>Antón Arias: (56) 2024 4047</Link>
           </div>
