@@ -1,40 +1,58 @@
 "use client";
 
 import { useState } from "react";
-import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 import Link from "next/link";
+import InitializeGoogleAnalytics, {
+  TrackGoogleAnalyticsEvent,
+} from "@/lib/google-analytics";
 
-export default function WhatsAppButtonHome() {
-  const [isUrl1, setIsUrl1] = useState(true);
-  const url1 = "https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios";
-  const url2 = "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios";
+type WhatsAppButtonProps = {
+  url1: string; // Cesar
+  url2: string; // Anton
+  url3: string; // Salvador
+};
+
+export default function WhatsAppButton({
+  url1,
+  url2,
+  url3,
+}: WhatsAppButtonProps) {
+  const [urlIndex, setUrlIndex] = useState(0); // 0 para Cesar, 1 para Anton, 2 para Salvador
 
   const handleClick = () => {
-    TrackGoogleAnalyticsEvent("click", "enviar_mensaje", window.location.pathname);
-    setIsUrl1(!isUrl1);
+    InitializeGoogleAnalytics();
+    TrackGoogleAnalyticsEvent(
+      "click",
+      "enviar_mensaje",
+      window.location.pathname
+    );
+
+    // Generar número aleatorio entre 0 y 99
+    const randomNumber = Math.floor(Math.random() * 100);
+    // Asignar urlIndex basado en el número aleatorio
+    if (randomNumber < 40) {
+      // 0-39 para Cesar
+      setUrlIndex(0);
+    } else if (randomNumber < 80) {
+      // 40-79 para Anton
+      setUrlIndex(1);
+    } else {
+      // 80-99 para Salvador
+      setUrlIndex(2);
+    }
   };
 
+  // Determinar la URL a usar basado en urlIndex
+  const currentUrl = [url1, url2, url3][urlIndex];
+
   return (
-    <>
-      {isUrl1 ? (
-        <Link
-          target="_blank"
-          onClick={handleClick}
-          href={url1}
-          className="bg-green-500 hover:bg-gray-800 p-2 rounded-md text-black text-left hover:text-white hover:underline"
-        >
-          Envíanos un mensaje por WhatsApp
-        </Link>
-      ) : (
-        <Link
-          target="_blank"
-          onClick={handleClick}
-          href={url2}
-          className="bg-green-500 hover:bg-gray-800 p-2 rounded-md text-black text-left hover:text-white hover:underline"
-        >
-          Envíanos un mensaje por WhatsApp
-        </Link>
-      )}
-    </>
+    <Link
+      target="_blank"
+      onClick={handleClick}
+      href={currentUrl}
+      className="rounded-md bg-green-400 px-2 py-2 text-center text-gray-800 hover:bg-gray-800 hover:text-white"
+    >
+      Envíanos un mensaje por WhatsApp
+    </Link>
   );
 }

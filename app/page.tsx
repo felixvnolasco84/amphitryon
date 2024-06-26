@@ -40,7 +40,11 @@ export default function Home() {
           <div className="border-t-2 border-gray-300 pb-4"></div>
           <div className="flex flex-col gap-2">
             <CallButton />
-            <WhatsAppButtonHome />
+            <WhatsAppButtonHome
+              url1="https://wa.me/5513842959"
+              url2="https://wa.me/5620244047"
+              url3="https://wa.me/5542957398"
+            />
           </div>
         </div>
       </div>

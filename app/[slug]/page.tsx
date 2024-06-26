@@ -1,4 +1,3 @@
-
 import HeroSection from "@/components/Sections/HeroSection";
 import { Metadata, ResolvingMetadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
@@ -153,8 +152,9 @@ export default function PlacePage({ params }: Props) {
           <CustomModalCalendly url={rentPlace.calendlyURL} />
           <CallButton />
           <WhatsAppButton
-            url1={rentPlace.whatsAppURL}
-            url2="https://wa.me/5513842959?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios"
+            url1="https://wa.me/5513842959"
+            url2="https://wa.me/5620244047"
+            url3="https://wa.me/5542957398"
           />
           <Link className="mx-auto" href={"/"}>
             <Button variant={"link"} size={"lg"}>
