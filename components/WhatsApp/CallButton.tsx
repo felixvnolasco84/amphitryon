@@ -18,7 +18,7 @@ export default function CallButton() {
                 )
             }
             href={
-                "tel:5542957398"
+                "tel:5568688442"
             }
         >
             Llamar
