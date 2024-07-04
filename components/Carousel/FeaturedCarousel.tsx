@@ -46,7 +46,7 @@ export default function FeaturedCarousel({ items }: { items: any[] }) {
                 <div className="relative h-40 w-40 lg:h-60 lg:w-60">
                   <Image
                     src={item.img.src}
-                    alt=""
+                    alt="carrousel image"
                     className="object-cover object-center"
                     fill
                     sizes="100vw"

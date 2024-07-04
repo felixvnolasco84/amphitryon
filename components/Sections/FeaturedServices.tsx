@@ -1,6 +1,5 @@
 import { clashDisplayMedium } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
-import Group3 from "@/public/images/Group -1.png";
 
 import Money_Icon_Bill from "@/public/svg/Money_Icon_Bill.svg";
 import Money_Icon from "@/public/svg/Money_Icon_Orange.svg";
@@ -68,32 +67,6 @@ export default function FeaturedServices() {
           </div>
         ))}
       </div>
-      {/* <ServicesCarousel items={services} /> */}
-      {/* <div className="grid grid-cols-1 gap-2 lg:grid-cols-3">
-        {simpleServices.map((service) => (
-          <div
-            className="flex flex-col items-center gap-2 text-center lg:gap-4"
-            key={service.title}
-          >
-            <div className="relative h-[190px] w-3/4 lg:h-60 lg:w-60">
-              <Image
-                src={service.img.src}
-                alt=""
-                className="object-cover object-center"
-                fill
-                sizes="100vw"
-              />
-            </div>
-
-            <h4
-              className={`${clashDisplayMedium.className} text-lg lg:text-2xl my-01 lg:my-2`}
-            >
-              {service.title}
-            </h4>
-          </div>
-        ))}
-      </div> */}
-      {/* <FeaturedCarousel items={simpleServices} /> */}
     </div>
   );
 }

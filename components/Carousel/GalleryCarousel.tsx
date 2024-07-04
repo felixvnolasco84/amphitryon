@@ -32,7 +32,7 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
               <Image
                 className="aspect-square object-cover object-center"
                 src={item}
-                alt=""
+                alt="carruosel image"
                 fill
               />
             </div>

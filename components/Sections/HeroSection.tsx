@@ -48,7 +48,7 @@ export default function HeroSection({
           sizes="100vw"
           fill
           src={img}
-          alt=""
+          alt="Hero image"
         />
 
         {!isRentPlace && (

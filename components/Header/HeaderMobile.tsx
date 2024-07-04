@@ -34,30 +34,6 @@ export default function HeaderMobile() {
       </SheetTrigger>
       <SheetContent side={"left"}>
         <SheetHeader>
-          {/* <SheetTitle>
-            <Link href={"/"} className="relative h-[22px] w-[90px]">
-              <Image
-                className="object-fill object-center"
-                fill
-                sizes="100vw"
-                alt=""
-                src={Logo}
-              />
-            </Link>
-          </SheetTitle> 
-          <Link
-                  className="h-fit"
-                  href={`/${place.slug}`}
-                  // onClick={(e) => {
-                  //   e.preventDefault();
-                  //   document
-                  //     .getElementById("contacto")
-                  //     ?.scrollIntoView({ behavior: "smooth" });
-                  // }}
-                >
-                  <SheetClose className="text-white">Contacto</SheetClose>
-                </Link>
-          */}
           <SheetDescription className="flex h-3/4 flex-col justify-around text-2xl text-black">
             {rentPlaces.map((place) => (
               <SheetTrigger key={place.name}>

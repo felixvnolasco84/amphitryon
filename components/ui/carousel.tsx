@@ -219,7 +219,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <Image className="h-10 w-10 rotate-180" alt="" src={Arrow}></Image>
+      <Image className="h-10 w-10 rotate-180" alt="Previous Icon" src={Arrow}></Image>
       {/* <ArrowLeft className="h-8 w-8" /> */}
       <span className="sr-only">Previous slide</span>
     </Button>
@@ -249,7 +249,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <Image className="h-10 w-10" alt="" src={Arrow}></Image>
+      <Image className="h-10 w-10" alt="Next Icon" src={Arrow}></Image>
       
       {/* <ArrowRight className="h-8 w-8" /> */}
       <span className="sr-only">Next slide</span>

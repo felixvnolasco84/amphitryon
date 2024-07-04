@@ -94,7 +94,7 @@ export default function HeroSectionCarrousel({}: {}) {
                   sizes="100vw"
                   fill
                   src={item.image}
-                  alt=""
+                  alt="Carrousel image"
                 />
 
                 <h2 className="relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl">

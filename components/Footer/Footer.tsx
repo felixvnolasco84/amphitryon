@@ -17,7 +17,7 @@ export default function Footer() {
               className="object-fill object-center"
               fill
               sizes="100%"
-              alt=""
+              alt="image of Amphitryon logo"
               src={Logo}
             />
           </Link>

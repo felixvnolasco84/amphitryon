@@ -136,7 +136,7 @@ export default function PlacePage({ params }: Props) {
               <Image
                 className="aspect-square object-cover object-center"
                 src={image}
-                alt=""
+                alt="gallery image"
                 fill
                 sizes="100vw"
               />
