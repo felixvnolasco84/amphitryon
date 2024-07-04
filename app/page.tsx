@@ -1,6 +1,5 @@
-"use client";
-
 import CTADeposit from "@/components/Sections/CTASections/CTADeposit";
+import { Metadata, ResolvingMetadata } from "next";
 import CTASection from "@/components/Sections/CTASections/CTASection";
 import FeaturedClients from "@/components/Sections/FeaturedClients";
 import FeaturedServices from "@/components/Sections/FeaturedServices";
@@ -13,6 +12,26 @@ import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { clashDisplayMedium } from "@/utils/fonts";
 import Link from "next/link";
+
+type Props = {
+  params: { slug: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  return {
+    title:
+      "Encuentra el lugar perfecto para tus eventos privados - Grupo Amphytrion",
+    description:
+      "Grupo Amphytrion tiene para ti los lugares más exclusivos en las mejores zonas de Ciudad de México para tus eventos. ¡Conoce los spots disponibles! ",
+    alternates: {
+      canonical: `https://www.amphitryon.mx/`,
+    },
+  };
+}
 
 export default function Home() {
   return (

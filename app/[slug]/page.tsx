@@ -30,6 +30,9 @@ export async function generateMetadata(
   return {
     title: rentPlace?.metaTitle,
     description: rentPlace?.metaDescription,
+    alternates: {
+      canonical: `https://www.amphitryon.mx/${slug}`,
+    }
   };
 }
 
