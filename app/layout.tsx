@@ -1,11 +1,47 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { WithContext, Organization } from "schema-dts";
+import Script from "next/script";
 // import Script from "next/script";
 import "./globals.css";
 import { clashDisplayRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
+
+
+const jsonLd: WithContext<Organization> = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Grupo Amphytrion",
+  url: "https://www.amphitryon.mx/",
+  logo: "https://www.amphitryon.mx/logo.png",
+  description:
+    "Grupo Amphitryon ofrece espacios exclusivos para eventos privados en la Ciudad de México.",
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+52-55-1384-2959",
+      contactType: "Reservas",
+      name: "César González",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+52-56-2024-4047",
+      contactType: "Reservas",
+      name: "Antón Arias",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/amphitryon.mx",
+    "https://www.facebook.com/amphitryon.mx",
+  ],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ciudad de México",
+    addressCountry: "MX",
+  },
+};
 
 
 export default function RootLayout({
@@ -16,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="es-Mx">
       {/* <head> */}
-        {/* <!-- Google tag (gtag.js) -->
+      {/* <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2FQ3KVBPJ"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,7 +61,7 @@ export default function RootLayout({
 
     gtag('config', 'G-Z2FQ3KVBPJ');
   </script> */}
-        {/* <script
+      {/* <script
             defer
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -45,6 +81,13 @@ export default function RootLayout({
               height="0"
               width="0"
             ></iframe> */}
+            <Script
+              id="org-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(jsonLd),
+              }}
+            />
             {children}
           </div>
           <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />

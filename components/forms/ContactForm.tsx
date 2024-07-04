@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -128,20 +129,21 @@ export function ContactForm() {
           onSubmit={form.handleSubmit(onSubmit)}
           className={`flex w-full max-w-xl flex-col gap-5 lg:items-center`}
         >
-          <div className="flex w-full flex-col gap-4">
-            <FormField
+          <div className="flex w-full flex-col gap-y-1">
+            <FormField  
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem className="space-y-2">
+                <FormItem>
+                  <FormLabel>Nombre</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="NOMBRE"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
                   </FormControl>
+                  <FormDescription>Ingrese su nombre</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -151,14 +153,16 @@ export function ContactForm() {
               name="email"
               render={({ field }) => (
                 <FormItem>
+                  <FormLabel>Correo</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="CORREO"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
+                      
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
                   </FormControl>
+                  <FormDescription>Ingrese su correo</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -168,14 +172,16 @@ export function ContactForm() {
               name="phoneNumber"
               render={({ field }) => (
                 <FormItem>
+                  <FormLabel>Teléfono</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="TELÉFONO DE CONTACTO"
-                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
+                      
+                      className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
                     ></Input>
                   </FormControl>
+                  <FormDescription>Ingrese su teléfono</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -185,10 +191,10 @@ export function ContactForm() {
               name="dateEvent"
               render={({ field }) => (
                 <FormItem>
-                  {/* <FormLabel className="ml-2 text-muted-foreground">
+                  <FormLabel className="ml-2 text-muted-foreground">
                     Fecha del Evento
-                  </FormLabel> */}
-                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
+                  </FormLabel>
+                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
                     <DatePicker
                       onChange={(date) => {
                         setStartDate(date as Date);
@@ -196,11 +202,12 @@ export function ContactForm() {
                       }}
                       selected={startDate}
                       dateFormat="dd/MM/yyyy"
-                      placeholderText="FECHA DEL EVENTO"
-                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:p-6 lg:text-lg"
+                      
+                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                     />
                   </FormControl>
+                  <FormDescription>Ingrese la fecha del evento</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -210,13 +217,14 @@ export function ContactForm() {
               name="venue"
               render={({ field }) => (
                 <FormItem>
+                  <FormLabel>Venue</FormLabel>
                   <FormControl>
                     <Select
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
-                      <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg">
-                        <SelectValue placeholder="VENUE PREFERIDO" />
+                      <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
+                        <SelectValue  />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem
@@ -240,6 +248,7 @@ export function ContactForm() {
                       </SelectContent>
                     </Select>
                   </FormControl>
+                  <FormDescription>Seleccione el venue</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -249,13 +258,14 @@ export function ContactForm() {
               name="eventDescription"
               render={({ field }) => (
                 <FormItem>
+                  <FormLabel>Descripción del Evento</FormLabel>
                   <FormControl>
                     <Textarea
-                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:p-6 lg:text-lg"
-                      placeholder="NÚMERO DE INVITADOS"
+                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  lg:text-lg"
                       {...field}
                     />
                   </FormControl>
+                  <FormDescription>Ingrese la descripción del evento</FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
