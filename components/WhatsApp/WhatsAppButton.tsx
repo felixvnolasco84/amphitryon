@@ -22,13 +22,18 @@ export default function WhatsAppButton({ url1, url2, url3 }: WhatsAppButtonProps
     // Generar número aleatorio entre 0 y 99
     const randomNumber = Math.floor(Math.random() * 100);
     // Asignar urlIndex basado en el número aleatorio
-    if (randomNumber < 40) { // 0-39 para Cesar
-      setUrlIndex(0);
-    } else if (randomNumber < 80) { // 40-79 para Anton
+    // if (randomNumber < 40) { // 0-39 para Cesar
+    if (randomNumber < 50) { // 0-50 para Cesar
       setUrlIndex(1);
-    } else { // 80-99 para Salvador
+      // setUrlIndex(0);
+    } else if (randomNumber < 100) { // 40-79 para Anton
+      setUrlIndex(2);
+    }  else {
       setUrlIndex(2);
     }
+    // else { // 80-99 para Salvador
+    //   setUrlIndex(2);
+    // }
   };
 
   // Determinar la URL a usar basado en urlIndex

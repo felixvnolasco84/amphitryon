@@ -73,7 +73,7 @@ export const rentPlaces: RentPlace[] = [
       logo: "https://www.amphitryon.mx/images/Moliere2.png",
       description:
         "Moliere 310 es un espacio en Polanco con una terraza La Galería, capacidad para 180 personas, techo retráctil y vistas espectaculares de la Ciudad de México",
-      telephone: "+52-56-2024-4047",
+      telephone: "+52-55-6868-8442",
       priceRange: "$$$$",
       address: {
         "@type": "PostalAddress",
@@ -107,7 +107,7 @@ export const rentPlaces: RentPlace[] = [
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+52-56-2024-4047",
+          telephone: "+52-55-6868-8442",
           contactType: "Reservas",
         },
       ],
@@ -292,7 +292,7 @@ export const rentPlaces: RentPlace[] = [
       logo: "https://www.amphitryon.mx/images/Palmas1.png",
       description:
         "Palmas 781 es un espacio exclusivo en Lomas de Chapultepec, ideal para eventos con capacidad para hasta 200 personas. Ofrece mobiliario premium, sistema de sonido Bosé y un ambiente sofisticado.",
-      telephone: "+52-56-2024-4047",
+      telephone: "+52-55-6868-8442",
       priceRange: "$$$",
       address: {
         "@type": "PostalAddress",
@@ -326,7 +326,7 @@ export const rentPlaces: RentPlace[] = [
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+52-56-2024-4047",
+          telephone: "+52-55-6868-8442",
           contactType: "Reservas",
         },
       ],
@@ -476,7 +476,7 @@ export const rentPlaces: RentPlace[] = [
       logo: "https://www.amphitryon.mx/images/Tonala1.png",
       description:
         "Tonalá 171 ofrece un espacio exclusivo en la Colonia Roma Norte con capacidad para eventos de hasta 90 personas. Disfruta de una vista inigualable y un ambiente elegante en medio de la naturaleza.",
-      telephone: "+52-56-2024-4047",
+      telephone: "+52-55-6868-8442",
       priceRange: "$$",
       address: {
         "@type": "PostalAddress",
@@ -510,7 +510,7 @@ export const rentPlaces: RentPlace[] = [
       contactPoint: [
         {
           "@type": "ContactPoint",
-          telephone: "+52-56-2024-4047",
+          telephone: "+52-55-6868-8442",
           contactType: "Reservas",
         },
       ],
