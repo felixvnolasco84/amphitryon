@@ -15,7 +15,7 @@ const jsonLd: WithContext<Organization> = {
   "@type": "Organization",
   name: "Grupo Amphytrion",
   url: "https://www.amphitryon.mx/",
-  logo: "https://www.amphitryon.mx/logo.png",
+  logo: "https://www.amphitryon.mx/images/logo.png",
   description:
     "Grupo Amphitryon ofrece espacios exclusivos para eventos privados en la Ciudad de México.",
   contactPoint: [

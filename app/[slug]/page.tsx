@@ -1,4 +1,5 @@
 import HeroSection from "@/components/Sections/HeroSection";
+import Script from "next/script";
 import { Metadata, ResolvingMetadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
 import { clashDisplayMedium, clashDisplaySemibold } from "@/utils/fonts";
@@ -36,13 +37,29 @@ export async function generateMetadata(
   };
 }
 
+
+
 export default function PlacePage({ params }: Props) {
+
+  const slug1 = params.slug;
+
+  const place = rentPlaces.find(
+    (rentPlace) => rentPlace.slug === slug1
+  )!;
+
   const { slug } = params;
   const rentPlace: RentPlace = rentPlaces.find(
     (rentPlace) => rentPlace.slug === slug
   )!;
   return (
     <>
+      <Script
+        id="venue-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(place.jsonLd),
+        }}
+      />
       <div className="container flex flex-col gap-6 lg:gap-12">
         <div className="grid grid-flow-col items-center justify-between gap-2">
           <Link href={rentPlace.previousLink || ""} className="">

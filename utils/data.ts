@@ -33,6 +33,7 @@ const MACARELLAFLATPDF = "/pdfs/Macarella.pdf";
 const PEPITAFLATPDF = "/pdfs/Pepita.pdf";
 
 import { PricePlace } from "@/lib/utils";
+import { LocalBusiness, WithContext } from "schema-dts";
 
 export type Feature = {
   title: string;
@@ -59,10 +60,58 @@ export type RentPlace = {
   flatPDF: string;
   calendlyURL: string;
   whatsAppURL: string;
+  jsonLd: WithContext<LocalBusiness>;
 };
 
 export const rentPlaces: RentPlace[] = [
   {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Moliere 310",
+      url: "https://www.amphitryon.mx/moliere-310-polanco",
+      logo: "https://www.amphitryon.mx/images/Moliere2.png",
+      description:
+        "Moliere 310 es un espacio en Polanco con una terraza La Galería, capacidad para 180 personas, techo retráctil y vistas espectaculares de la Ciudad de México",
+      telephone: "+52-56-2024-4047",
+      priceRange: "$$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Moliere 310",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "11550",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.434692,
+        longitude: -99.195745,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "00:30",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-56-2024-4047",
+          contactType: "Reservas",
+        },
+      ],
+    },
     metaTitle: "Moliere 310 en Polanco - Grupo Amphytrion",
     metaDescription:
       "Este espacio es un verdadero oasis de sofisticación y comodidad. Es el escenario ideal para eventos de cualquier índole con tu familia, amigos o colegas de trabajo",
@@ -78,7 +127,8 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Horario",
-        description: "L - J: 8:00 AM - 10:00 PM, V - S: 8:00 AM - 11:00 PM, D: 8:00 AM - 7:00 PM",
+        description:
+          "L - J: 8:00 AM - 10:00 PM, V - S: 8:00 AM - 11:00 PM, D: 8:00 AM - 7:00 PM",
       },
       {
         title: "Audio",
@@ -103,7 +153,7 @@ export const rentPlaces: RentPlace[] = [
       lng: -99.2012794,
     },
     district: "Polanco",
-    
+
     prices: [
       {
         day: "Lunes",
@@ -234,6 +284,53 @@ export const rentPlaces: RentPlace[] = [
   },
 
   {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Palmas 781",
+      url: "https://www.amphitryon.mx/tonala-171-roma-norte",
+      logo: "https://www.amphitryon.mx/images/Palmas1.png",
+      description:
+        "Palmas 781 es un espacio exclusivo en Lomas de Chapultepec, ideal para eventos con capacidad para hasta 200 personas. Ofrece mobiliario premium, sistema de sonido Bosé y un ambiente sofisticado.",
+      telephone: "+52-56-2024-4047",
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Palmas 781",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "11000",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.426587,
+        longitude: -99.218727,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "02:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-56-2024-4047",
+          contactType: "Reservas",
+        },
+      ],
+    },
     metaTitle: "Palmas 781 en Lomas de Chapultepec - Grupo Amphytrion",
     metaDescription:
       "Ubicado en una de las zonas más recordadas de México, en esta ubicación disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión.",
@@ -371,6 +468,53 @@ export const rentPlaces: RentPlace[] = [
       "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
   {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Tonalá 171",
+      url: "https://www.amphitryon.mx/tonala-171-roma-norte",
+      logo: "https://www.amphitryon.mx/images/Tonala1.png",
+      description:
+        "Tonalá 171 ofrece un espacio exclusivo en la Colonia Roma Norte con capacidad para eventos de hasta 90 personas. Disfruta de una vista inigualable y un ambiente elegante en medio de la naturaleza.",
+      telephone: "+52-56-2024-4047",
+      priceRange: "$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Tonalá 171",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "06700",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.417047,
+        longitude: -99.161392,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "00:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-56-2024-4047",
+          contactType: "Reservas",
+        },
+      ],
+    },
     metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
     metaDescription:
       "Nuestra terraza te ofrece serenidad y sofisticación en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación",
