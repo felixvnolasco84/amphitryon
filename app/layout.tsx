@@ -27,7 +27,7 @@ const jsonLd: WithContext<Organization> = {
     },
     {
       "@type": "ContactPoint",
-      telephone: "+52-56-2024-4047",
+      telephone: "+52-55-6868-8442",
       contactType: "Reservas",
       name: "Antón Arias",
     },
