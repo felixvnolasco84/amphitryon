@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /aviso-de-privacidad
+Disallow: /*.otf$
 
 Sitemap: https://www.amphitryon.mx/sitemap.xml
