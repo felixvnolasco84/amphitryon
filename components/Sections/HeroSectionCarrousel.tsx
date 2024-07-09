@@ -13,9 +13,82 @@ import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovin
 import hero1 from "@/public/images/Hero/MoliereHero.jpg";
 import hero2 from "@/public/images/Hero/PepitaHero.jpg";
 import hero3 from "@/public/images/HeroNew.jpeg";
+import InfiniteMessages from "../InfiniteMovingCarrousel/InfiniteMessages";
 
 export default function HeroSectionCarrousel({}: {}) {
   const items = [
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
     {
       name: "SALONES PRIVADOS",
     },
@@ -66,6 +139,8 @@ export default function HeroSectionCarrousel({}: {}) {
 
   return (
     <div className="flex flex-col lg:container">
+
+      {/* <InfiniteMessages /> */}
       <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
