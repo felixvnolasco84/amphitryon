@@ -51,6 +51,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-Mx">
+    <head>
+      <meta name="robots" content="noindex, follow" />
+    </head>
       {/* <head> */}
       {/* <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2FQ3KVBPJ"></script>
