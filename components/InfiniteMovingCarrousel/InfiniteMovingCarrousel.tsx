@@ -25,7 +25,7 @@ export const InfiniteMovingMessages = ({
     addAnimation();
   }, []);
   const [start, setStart] = useState(false);
-  
+
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
@@ -72,14 +72,14 @@ export const InfiniteMovingMessages = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  overflow-hidden bg-[#FC9532] w-full",
+        "scroller relative z-20  overflow-hidden bg-[#FC9532]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex min-w-full shrink-0 gap-1 w-max flex-nowrap justify-between animate-scroll",
+          "flex  gap-1  w-max justify-between animate-scroll",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -95,7 +95,7 @@ export const InfiniteMovingMessages = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(20%_+_4px)] w-[calc(20%_+_4px)]"
+                className="user-select-none -z-1 pointer-events-none absolute"
               ></div>
               <span className="relative z-20 text-[10px] font-normal leading-[1.6] text-black">
                 {item.name}

@@ -13,7 +13,6 @@ import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovin
 import hero1 from "@/public/images/Hero/MoliereHero.jpg";
 import hero2 from "@/public/images/Hero/PepitaHero.jpg";
 import hero3 from "@/public/images/HeroNew.jpeg";
-import InfiniteMessages from "../InfiniteMovingCarrousel/InfiniteMessages";
 
 export default function HeroSectionCarrousel({}: {}) {
   const items = [

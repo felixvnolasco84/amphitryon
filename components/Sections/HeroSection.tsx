@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
+import InfiniteMessages from "../InfiniteMovingCarrousel/InfiniteMessages";
 
 export default function HeroSection({
   img,
@@ -35,13 +36,16 @@ export default function HeroSection({
     },
   ];
   return (
-    <div className={isRentPlace ? "flex flex-col" : "lg:container flex flex-col"}>
-      <InfiniteMovingMessages
+    <div
+      className={isRentPlace ? "flex flex-col" : "lg:container flex flex-col"}
+    >
+      <InfiniteMessages />
+      {/* <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      />
+      /> */}
       <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
           className="aspect-square object-cover object-center"
@@ -57,12 +61,12 @@ export default function HeroSection({
           </h2>
         )}
       </div>
-      <InfiniteMovingMessages
+      {/* <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      />
+      /> */}
     </div>
   );
 }
