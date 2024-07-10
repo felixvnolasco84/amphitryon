@@ -63,12 +63,12 @@ const clients: Client[] = [
 
 export default function FeaturedClients() {
   return (
-    <div className="order-1 flex flex-col gap-4 lg:gap-7 xl:gap-14">
-      <h3
+    <section className="order-1 flex flex-col gap-4 lg:gap-7 xl:gap-14">
+      <h2
         className={`${clashDisplayMedium.className} text-center text-xl lg:text-3xl`}
       >
         NUESTROS CLIENTES
-      </h3>
+      </h2>
       {/* <ClientsCarousel items={clients} /> */}
       <div className="grid grid-cols-5 items-center gap-4 lg:grid-cols-10 lg:gap-8 xl:gap-12">
         {clients.map((client, index) => (
@@ -80,6 +80,6 @@ export default function FeaturedClients() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }

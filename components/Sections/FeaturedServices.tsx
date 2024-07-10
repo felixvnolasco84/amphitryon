@@ -51,22 +51,20 @@ const simpleServices: SimpleService[] = [
 
 export default function FeaturedServices() {
   return (
-    <div className="order-5 flex flex-col gap-10 text-center lg:order-3 lg:gap-20">
-      <div className="grid grid-cols-1 gap-4 lg:grid lg:grid-cols-3 lg:gap-2">
-        {services.map((service) => (
-          <div
-            className="bg-[#F8F8F8] p-3 lg:p-6 lg:text-left"
-            key={service.name}
+    <section className="order-5 grid grid-cols-1 gap-4 lg:order-3 lg:grid lg:grid-cols-3 lg:gap-2">
+      {services.map((service) => (
+        <div
+          className="bg-[#F8F8F8] p-3 lg:p-6 lg:text-left"
+          key={service.name}
+        >
+          <h3
+            className={`${clashDisplayMedium.className} text-xl xl:text-2xla 2xl:text-3xl my-1 lg:my-2`}
           >
-            <h4
-              className={`${clashDisplayMedium.className} text-xl lg:text-2xl xl:text-3xl my-1 lg:my-2`}
-            >
-              {service.name}
-            </h4>
-            <p className="text-base text-[#222222]">{service.description}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+            {service.name}
+          </h3>
+          <p className="text-base text-[#222222]">{service.description}</p>
+        </div>
+      ))}
+    </section>
   );
 }

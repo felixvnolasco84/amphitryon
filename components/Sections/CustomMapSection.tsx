@@ -43,9 +43,11 @@ export default function CustomMapSection({
   }, [location]);
 
   return (
-    <div
-      className="aspect-square lg:aspect-auto lg:h-[500px] xl:h-[600px]"
-      ref={mapRef}
-    />
+    <section>
+      <div
+        className="aspect-square lg:aspect-auto lg:h-[500px] xl:h-[600px]"
+        ref={mapRef}
+      />
+    </section>
   );
 }

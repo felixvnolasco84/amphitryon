@@ -7,7 +7,7 @@ import { CalendarComponent } from "../Calendar/CalendarComponent";
 
 export default function RentSection() {
   return (
-    <div className="order-4 flex flex-col gap-6 lg:gap-12">
+    <section className="order-4 flex flex-col gap-6 lg:gap-12">
       <h2
         className={`${clashDisplayMedium.className} text-xl lg:text-3xl text-center`}
       >
@@ -45,6 +45,6 @@ export default function RentSection() {
         {/* <CalendarComponent /> */}
       </div>
       {/* <RentPlaceCarousel items={rentPlaces} /> */}
-    </div>
+    </section>
   );
 }

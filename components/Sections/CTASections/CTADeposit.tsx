@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTADeposit() {
   return (
-    <div className="order-5 flex justify-start lg:justify-end">
+    <section className="order-5 flex justify-start lg:justify-end">
       <div className="flex flex-row-reverse items-start gap-4 lg:w-7/12 lg:flex-row lg:items-center lg:gap-2">
         <p className="text-left text-lg lg:text-base">
           Asegura la fecha de tu evento sin problemas: reserva en línea con
@@ -24,6 +24,6 @@ export default function CTADeposit() {
           </Button>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

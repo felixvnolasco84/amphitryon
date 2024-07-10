@@ -137,9 +137,8 @@ export default function HeroSectionCarrousel({}: {}) {
   ];
 
   return (
-    <div className="flex flex-col lg:container">
-
-      {/* <InfiniteMessages /> */}
+    <section className="flex flex-col lg:container">
+      
       <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
@@ -188,6 +187,6 @@ export default function HeroSectionCarrousel({}: {}) {
         direction="right"
         speed="fast"
       />
-    </div>
+    </section>
   );
 }

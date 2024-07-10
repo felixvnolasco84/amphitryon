@@ -4,17 +4,17 @@ import Image from "next/image";
 
 export default function SingleFeature() {
   return (
-    <div className="order-6 flex flex-row items-start lg:flex-col">
+    <section className="order-6 flex flex-row items-start gap-3 lg:flex-col">
       <div className="relative aspect-square h-[60px] w-[60px] lg:h-[180px] lg:w-[180px]">
         <Image
           alt="Single feature icon"
-          className="object-cover object-center"
+          className="h-full w-full object-cover object-center"
           fill
           sizes="100%"
           src={AgregarIcono}
         />
       </div>
-      <div className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
+      <div className="flex w-fit flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
         <h3
           className={`${clashDisplayMedium.className} my-1 lg:my-2 text-xl lg:text-3xl`}
         >
@@ -28,6 +28,6 @@ export default function SingleFeature() {
           la atención que mereces para tu evento.
         </p>
       </div>
-    </div>
+    </section>
   );
 }

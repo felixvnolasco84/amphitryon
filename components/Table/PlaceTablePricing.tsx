@@ -8,7 +8,7 @@ export default function PlaceTablePricing({
   return (
     <>
       {prices.length > 0 && (
-        <div className="bg-gray-100 p-2 text-xl lg:p-6 lg:text-2xl xl:p-12 xl:text-3xl">
+        <section className="bg-gray-100 p-2 text-xl lg:p-6 lg:text-2xl xl:p-12 xl:text-3xl">
           <h2 className="mb-4 text-center text-2xl font-bold lg:mb-6 lg:text-4xl xl:mb-8 xl:text-5xl">
             Precios
           </h2>
@@ -46,7 +46,7 @@ export default function PlaceTablePricing({
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
       )}
     </>
   );

@@ -45,7 +45,7 @@ export default function Home() {
         <CTADeposit />
         <SingleFeature />
         <ContactForm />
-        <div className="order-8 mx-auto flex flex-col text-center">
+        <section className="order-8 mx-auto flex flex-col text-center">
           <h3
             className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
           >
@@ -65,7 +65,7 @@ export default function Home() {
               url3="https://wa.me/5542957398"
             />
           </div>
-        </div>
+        </section>
       </div>
       <WhatsAppComponent />
     </main>

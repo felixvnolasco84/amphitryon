@@ -6,7 +6,7 @@ import FooterLinkComponent from "./FooterLinkComponent";
 
 export default function Footer() {
   return (
-    <div className="bg-black text-white xl:text-3xl">
+    <footer className="bg-black text-white xl:text-3xl">
       <div className="container grid grid-cols-1 justify-between gap-6 py-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
           <Link
@@ -60,6 +60,6 @@ export default function Footer() {
         <Link href={"/aviso-de-privacidad"}>AVISO DE PRIVACIDAD.</Link>
         <p>DESARROLLADO POR POLYGON.</p>
       </div>
-    </div>
+    </footer>
   );
 }
