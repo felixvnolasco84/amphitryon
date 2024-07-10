@@ -1,6 +1,5 @@
 import Image, { StaticImageData } from "next/image";
 import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
-import InfiniteMessages from "../InfiniteMovingCarrousel/InfiniteMessages";
 
 export default function HeroSection({
   img,
@@ -9,6 +8,7 @@ export default function HeroSection({
   img: StaticImageData;
   isRentPlace: boolean;
 }) {
+  
   const items = [
     {
       name: "SALONES PRIVADOS",
@@ -34,19 +34,90 @@ export default function HeroSection({
     {
       name: ".",
     },
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "SALONES PRIVADOS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "RENTA DE TERRAZAS",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "CATERING",
+    },
+    {
+      name: ".",
+    },
+    {
+      name: "BARRAS",
+    },
+    {
+      name: ".",
+    },
   ];
+
   return (
     <div
-      // className={isRentPlace ? "flex flex-col" : "flex flex-col"}
-      className="flex flex-col"
+      className="flex flex-col lg:container"
     >
-      <InfiniteMessages />
-      {/* <InfiniteMovingMessages
+      <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      /> */}
+      />
       <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
           className="aspect-square object-cover object-center"
@@ -62,12 +133,12 @@ export default function HeroSection({
           </h2>
         )}
       </div>
-      {/* <InfiniteMovingMessages
+      <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
         speed="fast"
-      /> */}
+      />
     </div>
   );
 }

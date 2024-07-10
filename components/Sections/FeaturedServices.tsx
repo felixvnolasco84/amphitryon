@@ -58,7 +58,7 @@ export default function FeaturedServices() {
           key={service.name}
         >
           <h3
-            className={`${clashDisplayMedium.className} text-xl xl:text-2xla 2xl:text-3xl my-1 lg:my-2`}
+            className={`${clashDisplayMedium.className} text-xl xl:text-2xl my-1 lg:my-2`}
           >
             {service.name}
           </h3>
