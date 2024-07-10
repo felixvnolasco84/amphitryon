@@ -35,38 +35,36 @@ export async function generateMetadata(
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-10 lg:gap-20">
+    <main className="relative flex flex-col gap-10 lg:gap-20">
       <HeroSectionCarrousel />
-      <div className="container flex flex-col gap-10 lg:gap-20">
-        <FeaturedClients />
-        <CTASection />
-        <FeaturedServices />
-        <RentSection />
-        <CTADeposit />
-        <SingleFeature />
-        <ContactForm />
-        <section className="order-8 mx-auto flex flex-col text-center">
-          <h3
-            className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
-          >
-            LLámanos
-          </h3>
-          <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
-          <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
-          <Link className="pb-4" href={"tel:5620244047"}>
-            Antón Arias: (56) 2024 4047
-          </Link>
-          <div className="border-t-2 border-gray-300 pb-4"></div>
-          <div className="flex flex-col gap-2">
-            <CallButton />
-            <WhatsAppButtonHome
-              url1="https://wa.me/5513842959"
-              url2="https://wa.me/5620244047"
-              url3="https://wa.me/5542957398"
-            />
-          </div>
-        </section>
-      </div>
+      <FeaturedClients />
+      <CTASection />
+      <FeaturedServices />
+      <RentSection />
+      <CTADeposit />
+      <SingleFeature />
+      <ContactForm />
+      <section className="order-8 mx-auto flex flex-col text-center">
+        <h3
+          className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
+        >
+          LLámanos
+        </h3>
+        <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
+        <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
+        <Link className="pb-4" href={"tel:5620244047"}>
+          Antón Arias: (56) 2024 4047
+        </Link>
+        <div className="border-t-2 border-gray-300 pb-4"></div>
+        <div className="flex flex-col gap-2">
+          <CallButton />
+          <WhatsAppButtonHome
+            url1="https://wa.me/5513842959"
+            url2="https://wa.me/5620244047"
+            url3="https://wa.me/5542957398"
+          />
+        </div>
+      </section>
       <WhatsAppComponent />
     </main>
   );

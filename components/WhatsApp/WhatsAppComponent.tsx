@@ -19,14 +19,14 @@ export default function WhatsAppComponent() {
   };
 
   return (
-    <div className="right-2 bottom-2 sticky flex flex-col justify-end items-end gap-2 container">
+    <div className="sticky bottom-2 right-2 flex flex-col items-end justify-end gap-2">
       <CallButton />
       {isUrl1 ? (
         <Link
           target="_blank"
           onClick={handleClick}
           href={url1}
-          className="z-50 bg-green-400 hover:bg-gray-800 mx-0 py-2 rounded-md w-fit text-gray-800 text-xl hover:text-white container"
+          className="z-50 mx-0 w-fit rounded-md bg-green-400 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
         >
           * WhatsApp
         </Link>
@@ -35,7 +35,7 @@ export default function WhatsAppComponent() {
           target="_blank"
           onClick={handleClick}
           href={url2}
-          className="z-50 bg-green-400 hover:bg-gray-800 mx-0 py-2 rounded-md w-fit text-gray-800 text-xl hover:text-white container"
+          className="z-50 mx-0 w-fit rounded-md bg-green-400 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
         >
           * WhatsApp
         </Link>
