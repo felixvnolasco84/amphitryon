@@ -19,7 +19,7 @@ export default function WhatsAppComponent() {
   };
 
   return (
-    <div className="sticky bottom-2 right-2 flex flex-col items-end justify-end gap-2">
+    <div className="sticky bottom-2 right-2 order-9 flex flex-col items-end justify-end gap-2">
       <CallButton />
       {isUrl1 ? (
         <Link
