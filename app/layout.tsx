@@ -9,7 +9,6 @@ import Header from "@/components/Header/Header";
 import Head from "next/head";
 import Footer from "@/components/Footer/Footer";
 
-
 const jsonLd: WithContext<Organization> = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -43,7 +42,6 @@ const jsonLd: WithContext<Organization> = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,9 +49,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es-Mx">
-    <head>
-      <meta name="robots" content="noindex, follow" />
-    </head>
+      <head>
+        <meta name="robots" content="noindex, follow" />
+      </head>
       {/* <head> */}
       {/* <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2FQ3KVBPJ"></script>
@@ -76,22 +74,24 @@ export default function RootLayout({
           /> */}
       {/* </head> */}
       <body className={`${clashDisplayRegular.className}`}>
-        <div className="container flex flex-col lg:gap-4">
-          <Header />
-          <div id="root" className="flex flex-1 flex-col gap-3">
-            {/* <iframe
+        <div className="flex flex-col lg:gap-4">
+          <div className="container">
+            <Header />
+            <div id="root" className="flex flex-1 flex-col gap-3">
+              {/* <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
               height="0"
               width="0"
             ></iframe> */}
-            <Script
-              id="org-schema"
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
-                __html: JSON.stringify(jsonLd),
-              }}
-            />
-            {children}
+              <Script
+                id="org-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify(jsonLd),
+                }}
+              />
+              {children}
+            </div>
           </div>
           <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
           <Footer />
