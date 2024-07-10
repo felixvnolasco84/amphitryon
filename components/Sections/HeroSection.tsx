@@ -37,7 +37,8 @@ export default function HeroSection({
   ];
   return (
     <div
-      className={isRentPlace ? "flex flex-col" : "lg:container flex flex-col"}
+      // className={isRentPlace ? "flex flex-col" : "flex flex-col"}
+      className="flex flex-col"
     >
       <InfiniteMessages />
       {/* <InfiniteMovingMessages
