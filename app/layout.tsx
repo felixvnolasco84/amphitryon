@@ -76,9 +76,9 @@ export default function RootLayout({
           /> */}
       {/* </head> */}
       <body className={`${clashDisplayRegular.className}`}>
-        <div className="flex flex-col lg:gap-4">
+        <div className="container flex flex-col lg:gap-4">
           <Header />
-          <div id="root" className="flex flex-1 flex-col gap-4">
+          <div id="root" className="flex flex-1 flex-col gap-3">
             {/* <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
               height="0"

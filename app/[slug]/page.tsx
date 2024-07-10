@@ -60,7 +60,7 @@ export default function PlacePage({ params }: Props) {
           __html: JSON.stringify(place.jsonLd),
         }}
       />
-      <div className="container flex flex-col gap-6 py-4 lg:gap-12">
+      <div className="flex flex-col gap-6 py-4 lg:gap-12">
         <div className="grid grid-flow-col items-center justify-between gap-2">
           <Link href={rentPlace.previousLink || ""} className="">
             <Button

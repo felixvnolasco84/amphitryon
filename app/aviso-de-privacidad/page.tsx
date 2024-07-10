@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div
-      className={`container flex flex-col gap-y-7 text-justify lg:flex lg:gap-12`}
+      className={`flex flex-col gap-y-7 text-justify lg:flex lg:gap-12`}
     >
       <h1 className="text-2xl leading-relaxed lg:text-3xl xl:text-4xl">
         AVISO DE PRIVACIDAD

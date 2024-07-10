@@ -137,7 +137,7 @@ export default function HeroSectionCarrousel({}: {}) {
   ];
 
   return (
-    <section className="flex flex-col lg:container">
+    <section className="flex flex-col">
       
       <InfiniteMovingMessages
         pauseOnHover={false}
