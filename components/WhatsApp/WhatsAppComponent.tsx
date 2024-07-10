@@ -26,7 +26,7 @@ export default function WhatsAppComponent() {
           target="_blank"
           onClick={handleClick}
           href={url1}
-          className="z-50 mx-0 w-fit rounded-md bg-green-400 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
+          className="z-50 mx-0 w-fit rounded-md bg-green-400 px-1 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
         >
           * WhatsApp
         </Link>
@@ -35,7 +35,7 @@ export default function WhatsAppComponent() {
           target="_blank"
           onClick={handleClick}
           href={url2}
-          className="z-50 mx-0 w-fit rounded-md bg-green-400 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
+          className="z-50 mx-0 w-fit rounded-md bg-green-400 px-1 py-2 text-xl text-gray-800 hover:bg-gray-800 hover:text-white"
         >
           * WhatsApp
         </Link>
