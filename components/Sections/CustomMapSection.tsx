@@ -43,7 +43,7 @@ export default function CustomMapSection({
   }, [location]);
 
   return (
-    <section>
+    <section className="overflow-hidden rounded-md shadow-sm">
       <div
         className="aspect-square lg:aspect-auto lg:h-[500px] xl:h-[600px]"
         ref={mapRef}

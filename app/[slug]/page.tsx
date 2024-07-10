@@ -56,7 +56,7 @@ export default function PlacePage({ params }: Props) {
         }}
       />
       <div className="flex flex-col gap-6 py-4 lg:gap-12">
-        <div className="container flex flex-col gap-6 lg:gap-12">
+        <div className="container">
           <div className="grid grid-flow-col items-center justify-between gap-2">
             <Link href={rentPlace.previousLink || ""} className="">
               <Button
@@ -137,7 +137,7 @@ export default function PlacePage({ params }: Props) {
         </div>
         <HeroSection isRentPlace={true} img={rentPlace.img} />
 
-        <div className="container flex flex-col gap-6 lg:gap-12">
+        <div className="container flex flex-col gap-6 lg:gap-y-12">
           <section className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
             <h3
               className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}

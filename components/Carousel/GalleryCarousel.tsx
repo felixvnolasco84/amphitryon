@@ -15,13 +15,13 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
   const [api, setApi] = useState<any>();
 
   return (
-    <section>
+    <section className="lg:hidden">
       <Carousel
         setApi={setApi}
         opts={{
           align: "start",
         }}
-        className="m-auto w-full max-w-7xl lg:hidden"
+        className="m-auto w-full"
       >
         <CarouselContent>
           {items.map((item: any, index: number) => (

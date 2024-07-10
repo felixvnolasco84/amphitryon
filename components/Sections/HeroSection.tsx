@@ -8,7 +8,6 @@ export default function HeroSection({
   img: StaticImageData;
   isRentPlace: boolean;
 }) {
-  
   const items = [
     {
       name: "SALONES PRIVADOS",
@@ -109,9 +108,7 @@ export default function HeroSection({
   ];
 
   return (
-    <div
-      className="flex flex-col lg:container"
-    >
+    <section className="lg:container">
       <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
@@ -139,6 +136,6 @@ export default function HeroSection({
         direction="right"
         speed="fast"
       />
-    </div>
+    </section>
   );
 }

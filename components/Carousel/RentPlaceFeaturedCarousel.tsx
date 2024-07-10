@@ -40,7 +40,7 @@ export default function RentPlaceFeaturedCarousel({
         opts={{
           align: "start",
         }}
-        className="m-auto w-full max-w-7xl lg:hidden"
+        className="m-auto w-full lg:hidden"
       >
         <CarouselContent>
           {features.map((feature: any, index: number) => (

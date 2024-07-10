@@ -74,28 +74,24 @@ export default function RootLayout({
           /> */}
       {/* </head> */}
       <body className={`${clashDisplayRegular.className}`}>
-        <div className="flex flex-col lg:gap-4">
-          <div className="">
-            <Header />
-            <div id="root" className="flex flex-1 flex-col gap-3">
-              {/* <iframe
+        <Header />
+        <div id="root" className="flex flex-1 flex-col gap-3">
+          {/* <iframe
               src="https://www.googletagmanager.com/ns.html?id=GTM-WNGXG4N4"
               height="0"
               width="0"
             ></iframe> */}
-              <Script
-                id="org-schema"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                  __html: JSON.stringify(jsonLd),
-                }}
-              />
-              {children}
-            </div>
-          </div>
-          <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
-          <Footer />
+          <Script
+            id="org-schema"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(jsonLd),
+            }}
+          />
+          {children}
         </div>
+        <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
+        <Footer />
         {/* <Script></Script> */}
       </body>
     </html>

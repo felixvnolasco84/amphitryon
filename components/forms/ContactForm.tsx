@@ -122,7 +122,7 @@ export function ContactForm() {
 
   return (
     <section id="contacto" className="order-7 flex flex-col items-center gap-2">
-      <h3 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h3>
+      <h2 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h2>
       {showModalMessage && <SuccessMessage />}
       <Form {...form}>
         <form

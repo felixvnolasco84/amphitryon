@@ -34,7 +34,7 @@ export default function ClientsCarousel({ items }: { items: any[] }) {
         opts={{
           align: "start",
         }}
-        className="m-auto w-full max-w-7xl lg:hidden"
+        className="m-auto w-full lg:hidden"
       >
         <CarouselContent className="w-11/12 items-center">
           {items.map((item: any, index: number) => (
