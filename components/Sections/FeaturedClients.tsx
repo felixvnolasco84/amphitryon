@@ -1,16 +1,15 @@
 import { clashDisplayMedium } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
-import Clients from "@/public/images/clients.png";
-import Ambrosia from "@/public/images/clients/ambrosia.png";
-import Carso from "@/public/images/clients/carso.png";
-import Conde from "@/public/images/clients/conde nast.png";
-import Costenia from "@/public/images/clients/contenia.png";
-import Ipade from "@/public/images/clients/ipade.png";
-import Kuchen from "@/public/images/clients/kuchen.png";
-import Penguin from "@/public/images/clients/penguin.png";
-import Porcenalosa from "@/public/images/clients/porcelanosa.png";
-import Rolex from "@/public/images/clients/rolex.png";
-import Tous from "@/public/images/clients/tous.png";
+import Ambrosia from "@/public/images/clients/ambrosia.webp";
+import Carso from "@/public/images/clients/carso.webp";
+import Conde from "@/public/images/clients/conde nast.webp";
+import Costenia from "@/public/images/clients/contenia.webp";
+import Ipade from "@/public/images/clients/ipade.webp";
+import Kuchen from "@/public/images/clients/kuchen.webp";
+import Penguin from "@/public/images/clients/penguin.webp";
+import Porcenalosa from "@/public/images/clients/porcelanosa.webp";
+import Rolex from "@/public/images/clients/rolex.webp";
+import Tous from "@/public/images/clients/tous.webp";
 import ClientsCarousel from "../Carousel/ClientsCarousel";
 
 type Client = {

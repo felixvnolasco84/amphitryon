@@ -1,25 +1,25 @@
 import { StaticImageData } from "next/image";
 
-import MOLIERE from "@/public/images/Hero/MoliereHero.jpg";
-import PALMAS from "@/public/images/HeroNew.jpeg";
-import TONALÁ from "@/public/images/TonalaHome.png";
+import MOLIERE from "@/public/images/Hero/MoliereHero.webp";
+import PALMAS from "@/public/images/HeroNew.webp";
+import TONALÁ from "@/public/images/TonalaHome.webp";
 
 // MOLIERE IMAGES
-import Moliere2 from "@/public/images/Moliere2.png";
-import Moliere3 from "@/public/images/Moliere3.png";
-import Moliere4 from "@/public/images/Moliere4.png";
+import Moliere2 from "@/public/images/Moliere2.webp";
+import Moliere3 from "@/public/images/Moliere3.webp";
+import Moliere4 from "@/public/images/Moliere4.webp";
 
 // PALMAS IMAGES
-import Palmas1 from "@/public/images/Palmas1.png";
-import Palmas2 from "@/public/images/Palmas2.png";
-import Palmas3 from "@/public/images/Palmas3.png";
-import Palmas4 from "@/public/images/Palmas4.png";
+import Palmas1 from "@/public/images/Palmas1.webp";
+import Palmas2 from "@/public/images/Palmas2.webp";
+import Palmas3 from "@/public/images/Palmas3.webp";
+import Palmas4 from "@/public/images/Palmas4.webp";
 
 // TONALÁ IMAGES
-import Tonala1 from "@/public/images/Tonala1.png";
-import Tonala2 from "@/public/images/Tonala2.png";
-import Tonala3 from "@/public/images/Tonala3.png";
-import Tonala4 from "@/public/images/Tonala4.png";
+import Tonala1 from "@/public/images/Tonala1.webp";
+import Tonala2 from "@/public/images/Tonala2.webp";
+import Tonala3 from "@/public/images/Tonala3.webp";
+import Tonala4 from "@/public/images/Tonala4.webp";
 
 // FLATS
 import GALERIAFLAT from "@/public/flat/Galeria.png";

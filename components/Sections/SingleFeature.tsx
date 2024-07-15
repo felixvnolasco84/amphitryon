@@ -1,5 +1,5 @@
 import { clashDisplayMedium } from "@/utils/fonts";
-import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.png";
+import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.webp";
 import Image from "next/image";
 
 export default function SingleFeature() {

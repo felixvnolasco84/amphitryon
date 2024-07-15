@@ -10,9 +10,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovingCarrousel";
-import hero1 from "@/public/images/Hero/MoliereHero.jpg";
-import hero2 from "@/public/images/Hero/PepitaHero.jpg";
-import hero3 from "@/public/images/HeroNew.jpeg";
+import hero1 from "@/public/images/Hero/MoliereHero.webp";
+import hero2 from "@/public/images/Hero/PepitaHero.webp";
+import hero3 from "@/public/images/HeroNew.webp";
 
 export default function HeroSectionCarrousel({}: {}) {
   const items = [

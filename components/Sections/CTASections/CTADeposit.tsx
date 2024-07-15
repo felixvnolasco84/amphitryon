@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ReservaIcono from "@/public/images/Reserva_Icono.png";
+import ReservaIcono from "@/public/images/Reserva_Icono.webp";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
