@@ -2,7 +2,7 @@ import { FormSchema } from "@/components/forms/ContactForm";
 import * as z from "zod";
 import ReactGA4 from "react-ga4";
 const InitializeGoogleAnalytics = () => {
-  ReactGA4.initialize("GTM-WNGXG4N4");
+  ReactGA4.initialize("GTM-NBMB3DLT");
 };
 
 const TrackGoogleAnalyticsEvent = (
