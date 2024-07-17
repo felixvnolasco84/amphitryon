@@ -35,6 +35,7 @@ export async function generateMetadata(
 
 export default function Home() {
   return (
+    
     <main className="relative flex flex-col gap-10 py-4 lg:gap-20">
       <div className="lg:container">
         <HeroSectionCarrousel />

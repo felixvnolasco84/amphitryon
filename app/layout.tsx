@@ -50,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="es-Mx">
       <head>
-        <meta name="robots" content="follow" />
+        <meta name="robots" content="index, follow" />
       </head>
       {/* <head> */}
       {/* <!-- Google tag (gtag.js) -->
