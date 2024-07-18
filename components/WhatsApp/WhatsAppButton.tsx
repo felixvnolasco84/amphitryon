@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -12,28 +12,34 @@ type WhatsAppButtonProps = {
   url3: string; // Salvador
 };
 
-export default function WhatsAppButton({ url1, url2, url3 }: WhatsAppButtonProps) {
+export default function WhatsAppButton({
+  url1,
+  url2,
+  url3,
+}: WhatsAppButtonProps) {
   const [urlIndex, setUrlIndex] = useState(0); // 0 para Cesar, 1 para Anton, 2 para Salvador
 
   const handleClick = () => {
     InitializeGoogleAnalytics();
-    TrackGoogleAnalyticsEvent("click", "enviar_mensaje", window.location.pathname);
+    TrackGoogleAnalyticsEvent(
+      "click",
+      "enviar_mensaje",
+      window.location.pathname
+    );
 
     // Generar número aleatorio entre 0 y 99
     const randomNumber = Math.floor(Math.random() * 100);
     // Asignar urlIndex basado en el número aleatorio
-    // if (randomNumber < 40) { // 0-39 para Cesar
-    if (randomNumber < 50) { // 0-50 para Cesar
+    if (randomNumber < 33) {
+      // 0-32 para Cesar
+      setUrlIndex(0);
+    } else if (randomNumber < 66) {
+      // 33-65 para Anton
       setUrlIndex(1);
-      // setUrlIndex(0);
-    } else if (randomNumber < 100) { // 40-79 para Anton
-      setUrlIndex(2);
-    }  else {
+    } else {
+      // 66-99 para Salvador
       setUrlIndex(2);
     }
-    // else { // 80-99 para Salvador
-    //   setUrlIndex(2);
-    // }
   };
 
   // Determinar la URL a usar basado en urlIndex
