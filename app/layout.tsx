@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { WithContext, Organization } from "schema-dts";
 import Script from "next/script";
 // import Script from "next/script";
@@ -91,6 +91,7 @@ export default function RootLayout({
           {children}
         </div>
         <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
+        <GoogleTagManager gtmId="AW-16453854332" />
         <Footer />
         {/* <Script></Script> */}
       </body>
