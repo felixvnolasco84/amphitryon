@@ -6,6 +6,7 @@ import "./globals.css";
 import { clashDisplayRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { ConvexClientProvider } from "@/providers/convex-provider";
 
 const jsonLd: WithContext<Organization> = {
   "@context": "https://schema.org",
@@ -51,21 +52,23 @@ export default function RootLayout({
         <meta name="robots" content="index, follow" />
       </head>
       <body className={`${clashDisplayRegular.className}`}>
-        <Header />
-        <div id="root" className="flex flex-1 flex-col gap-3">
-          <Script
-            id="org-schema"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(jsonLd),
-            }}
-          />
-          {children}
-        </div>
-        <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
-        {/* <GoogleTagManager gtmId="AW-16453854332" /> */}
-        <GoogleTagManager gtmId="GTM-NBMB3DLT" />
-        <Footer />
+        <ConvexClientProvider>
+          <Header />
+          <div id="root" className="flex flex-1 flex-col gap-3">
+            <Script
+              id="org-schema"
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(jsonLd),
+              }}
+            />
+            {children}
+          </div>
+          <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
+          {/* <GoogleTagManager gtmId="AW-16453854332" /> */}
+          <GoogleTagManager gtmId="GTM-NBMB3DLT" />
+          <Footer />
+        </ConvexClientProvider>
       </body>
     </html>
   );

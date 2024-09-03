@@ -7,11 +7,12 @@ import HeroSectionCarrousel from "@/components/Sections/HeroSectionCarrousel";
 import RentSection from "@/components/Sections/RentSection";
 import SingleFeature from "@/components/Sections/SingleFeature";
 import CallButton from "@/components/WhatsApp/CallButton";
-import WhatsAppButtonHome from "@/components/WhatsApp/WhatsAppButtonHome";
+
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { clashDisplayMedium } from "@/utils/fonts";
 import Link from "next/link";
+import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 
 type Props = {
   params: { slug: string };
@@ -35,7 +36,6 @@ export async function generateMetadata(
 
 export default function Home() {
   return (
-    
     <main className="relative flex flex-col gap-10 py-4 lg:gap-20">
       <div className="lg:container">
         <HeroSectionCarrousel />
@@ -62,13 +62,10 @@ export default function Home() {
           <div className="border-t-2 border-gray-300 pb-4"></div>
           <div className="flex flex-col gap-2">
             <CallButton />
-            <WhatsAppButtonHome
-              url1="https://wa.me/5513842959"
-              url2="https://wa.me/5620244047"
-              url3="https://wa.me/5542957398"
-            />
+            <WhatsAppButton title="Envíanos un mensaje por WhatsApp" />
           </div>
         </section>
+
         <WhatsAppComponent />
       </div>
     </main>
