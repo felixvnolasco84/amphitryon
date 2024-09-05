@@ -10,12 +10,13 @@ export const create = mutation({
       .query("WhatsAppContact")
       .order("desc")
       .first();
+    const message = "Hola, me gustaría recibir más informes.";
     if (lastContact?.receivedBy === "Cesar") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Anton" });
-      return "https://wa.me/5620244047";
+      return `https://wa.me/5620244047?text=${encodeURIComponent(message)}`;
     } else {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Cesar" });
-      return "https://wa.me/5513842959";
+      return `https://wa.me/5513842959?text=${encodeURIComponent(message)}`;
     }
   },
 });
