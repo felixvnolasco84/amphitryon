@@ -10,18 +10,12 @@ export const create = mutation({
       .query("WhatsAppContact")
       .order("desc")
       .first();
-    if (lastContact?.receivedBy === "Salvador") {
-      await ctx.db.insert("WhatsAppContact", { receivedBy: "Cesar" });
-      return "https://wa.me/5513842959";
-    } else if (lastContact?.receivedBy === "Cesar") {
+    if (lastContact?.receivedBy === "Cesar") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Anton" });
       return "https://wa.me/5620244047";
-    } else if (lastContact?.receivedBy === "Anton") {
-      await ctx.db.insert("WhatsAppContact", { receivedBy: "Salvador" });
-      return "https://wa.me/5542957398";
+    } else {
+      await ctx.db.insert("WhatsAppContact", { receivedBy: "Cesar" });
+      return "https://wa.me/5513842959";
     }
-
-    await ctx.db.insert("WhatsAppContact", { receivedBy: "Cesar" });
-    return "https://wa.me/5513842959";
   },
 });
