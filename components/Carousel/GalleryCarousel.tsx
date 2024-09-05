@@ -35,6 +35,7 @@ export default function GalleryCarousel({ items }: { items: any[] }) {
                   src={item}
                   alt="carruosel image"
                   fill
+                  sizes="100vw"
                 />
               </div>
             </CarouselItem>

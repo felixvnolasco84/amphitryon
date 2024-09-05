@@ -56,7 +56,7 @@ export default function PlacePage({ params }: Props) {
         }}
       />
       <div className="flex flex-col gap-6 py-4 lg:gap-12">
-        <div className="container">
+        <div className="container space-y-8">
           <div className="grid grid-flow-col items-center justify-between gap-2">
             <Link href={rentPlace.previousLink || ""} className="">
               <Button
@@ -167,7 +167,7 @@ export default function PlacePage({ params }: Props) {
           <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
           <CustomMapSection location={rentPlace.locationInMap} />
           <section id="contacto" className="flex flex-col gap-2">
-            <CustomModalCalendly url={rentPlace.calendlyURL} />
+            {/* <CustomModalCalendly url={rentPlace.calendlyURL} /> */}
             <CallButton />
             <WhatsAppButton title="WhatsApp" />
             <Link className="mx-auto" href={"/"}>

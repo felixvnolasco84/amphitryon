@@ -10,12 +10,17 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
+import { Button } from "../ui/button";
 
 export default function HeaderMobile() {
   return (
     <Sheet>
-      <SheetTrigger>
-        <div className="rounded-md bg-orange-400 p-1">
+      <SheetTrigger asChild>
+        <Button
+          variant={"ghost"}
+          size={"icon"}
+          className="rounded-md bg-orange-400 hover:bg-orange-400/80"
+        >
           <svg
             className="h-6 w-6"
             fill="none"
@@ -30,7 +35,7 @@ export default function HeaderMobile() {
               d="M4 6h16M4 12h16m-7 6h7"
             />
           </svg>
-        </div>
+        </Button>
       </SheetTrigger>
       <SheetContent side={"left"}>
         <SheetHeader>

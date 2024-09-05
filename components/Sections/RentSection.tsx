@@ -24,7 +24,7 @@ export default function RentSection() {
               <Image
                 className="h-full w-full object-cover object-center"
                 fill
-                sizes="100%"
+                sizes="100vw"
                 src={place.img}
                 alt={place.name}
               />

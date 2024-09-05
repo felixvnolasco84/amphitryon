@@ -29,7 +29,7 @@ export default function FlatComponent({
           src={flat}
           alt="Flat"
           fill
-          sizes="100%"
+          sizes="100vw"
           className="h-full w-full object-cover object-center"
         />
       </div>

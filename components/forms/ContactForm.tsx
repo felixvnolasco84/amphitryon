@@ -35,7 +35,10 @@ import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
 import dynamic from "next/dynamic";
-import { TrackGoogleAnalyticsEvent, TrackingFormLead } from "@/lib/google-analytics";
+import {
+  TrackGoogleAnalyticsEvent,
+  TrackingFormLead,
+} from "@/lib/google-analytics";
 
 const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
   ssr: false,
@@ -88,12 +91,11 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
-
-      let dateEvent = new Date(data.dateEvent).toLocaleDateString("es-MX", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      });
+    let dateEvent = new Date(data.dateEvent).toLocaleDateString("es-MX", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
 
     try {
       setIsLoading(true);
@@ -102,7 +104,7 @@ export function ContactForm() {
         setShowModalMessage(true);
         setIsLoading(false);
         form.reset();
-        TrackingFormLead( 
+        TrackingFormLead(
           "click",
           "formulario_enviado",
           "formulario_enviado",
@@ -130,7 +132,7 @@ export function ContactForm() {
           className={`flex w-full max-w-xl flex-col gap-5 lg:items-center`}
         >
           <div className="flex w-full flex-col gap-y-1">
-            <FormField  
+            <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
@@ -156,7 +158,6 @@ export function ContactForm() {
                   <FormLabel>Correo</FormLabel>
                   <FormControl>
                     <Input
-                      
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -175,7 +176,6 @@ export function ContactForm() {
                   <FormLabel>Teléfono</FormLabel>
                   <FormControl>
                     <Input
-                      
                       className="resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                       {...field}
@@ -202,7 +202,6 @@ export function ContactForm() {
                       }}
                       selected={startDate}
                       dateFormat="dd/MM/yyyy"
-                      
                       className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                     />
@@ -224,7 +223,7 @@ export function ContactForm() {
                       defaultValue={field.value}
                     >
                       <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
-                        <SelectValue  />
+                        <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem
@@ -265,7 +264,9 @@ export function ContactForm() {
                       {...field}
                     />
                   </FormControl>
-                  <FormDescription>Ingrese la descripción del evento</FormDescription>
+                  <FormDescription>
+                    Ingrese la descripción del evento
+                  </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
@@ -293,7 +294,7 @@ export function ContactForm() {
               >
                 Enviar
               </Button>
-              <CustomModal url="https://calendly.com/amphitryonterrazas/" />
+              {/* <CustomModal url="https://calendly.com/amphitryonterrazas/" /> */}
             </div>
           )}
         </form>

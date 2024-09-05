@@ -18,7 +18,7 @@ export default function CTADeposit() {
               src={ReservaIcono}
               alt="MOLIERE 310, POLANCO"
               fill
-              sizes="100%"
+              sizes="100vw"
               className="object-cover object-center"
             />
           </Button>

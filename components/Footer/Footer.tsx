@@ -16,7 +16,7 @@ export default function Footer() {
             <Image
               className="object-fill object-center"
               fill
-              sizes="100%"
+              sizes="100vw"
               alt="image of Amphitryon logo"
               src={Logo}
             />
@@ -37,6 +37,7 @@ export default function Footer() {
                   src={Estrella}
                   className="object-cover object-center"
                   fill
+                  sizes="100vw"
                   alt="Star icon"
                 />
               </div>

@@ -10,7 +10,7 @@ export default function SingleFeature() {
           alt="Single feature icon"
           className="h-full w-full object-cover object-center"
           fill
-          sizes="100%"
+          sizes="100vw"
           src={AgregarIcono}
         />
       </div>
