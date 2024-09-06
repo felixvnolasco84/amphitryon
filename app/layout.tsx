@@ -65,7 +65,7 @@ export default function RootLayout({
             {children}
           </div>
           <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
-          {/* <GoogleTagManager gtmId="AW-16453854332" /> */}
+          <GoogleTagManager gtmId="AW-16453854332" />
           <GoogleTagManager gtmId="GTM-NBMB3DLT" />
           <Footer />
         </ConvexClientProvider>
