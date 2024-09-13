@@ -12,17 +12,14 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
           <Link
             href={"/"}
-            className="relative h-[22px] w-[90px] lg:h-[50px] lg:w-[195px]"
           >
             <Image
-              className="object-fill object-center"
-              fill
+              width={195}
               sizes="100vw"
               alt="image of Amphitryon logo"
               src={Logo}
             />
           </Link>
-          {/* <h4 className="text-3xl lg:hidden">Let&apos;s Talk</h4> */}
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
             <Link target="_blank" href={"tel:5542957398"}>
               <Button
