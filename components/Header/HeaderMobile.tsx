@@ -20,6 +20,7 @@ export default function HeaderMobile() {
           variant={"ghost"}
           size={"icon"}
           className="rounded-md bg-orange-400 hover:bg-orange-400/80"
+          aria-label="Open menu"
         >
           <svg
             className="h-6 w-6"

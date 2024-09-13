@@ -32,12 +32,12 @@ export default function FooterLinkComponent() {
 
   return (
     <Button
-      size={"default"}
+      className="text-lg underline"
       variant={"ghost"}
-      className="rounded-md bg-transparent p-0 text-center text-lg text-white underline hover:bg-transparent hover:text-white"
+      size={"sm"}
       onClick={handleClick}
     >
-      WhatsApp
+      WHATSAPP
     </Button>
   );
 }

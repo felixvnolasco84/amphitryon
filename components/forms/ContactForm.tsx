@@ -95,11 +95,7 @@ export function ContactForm() {
         setShowModalMessage(true);
         setIsLoading(false);
         form.reset();
-        TrackingFormLead(
-          "click",
-          "formulario_enviado",
-          "formulario_enviado",        
-        );
+        TrackingFormLead("click", "formulario_enviado", "formulario_enviado");
       }
     } catch (error) {
       console.log(error);
@@ -181,10 +177,8 @@ export function ContactForm() {
               name="dateEvent"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="ml-2 text-muted-foreground">
-                    Fecha del Evento
-                  </FormLabel>
-                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
+                  <FormLabel className="ml-2">Fecha del Evento</FormLabel>
+                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
                     <DatePicker
                       onChange={(date) => {
                         setStartDate(date as Date);
@@ -192,7 +186,7 @@ export function ContactForm() {
                       }}
                       selected={startDate}
                       dateFormat="dd/MM/yyyy"
-                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:text-lg"
+                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                     />
                   </FormControl>
@@ -212,7 +206,10 @@ export function ContactForm() {
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
-                      <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
+                      <SelectTrigger
+                        className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg"
+                        aria-label="Select Venue"
+                      >
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -250,7 +247,7 @@ export function ContactForm() {
                   <FormLabel>Descripción del Evento</FormLabel>
                   <FormControl>
                     <Textarea
-                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  lg:text-lg"
+                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  lg:text-lg"
                       {...field}
                     />
                   </FormControl>
