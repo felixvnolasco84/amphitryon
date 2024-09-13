@@ -113,7 +113,7 @@ export default function HeroSection({
         pauseOnHover={false}
         items={items}
         direction="right"
-        speed="fast"
+        speed="normal"
       />
       <div className="relative aspect-[9/12] w-full lg:aspect-[16/12]">
         <Image
@@ -134,7 +134,7 @@ export default function HeroSection({
         pauseOnHover={false}
         items={items}
         direction="right"
-        speed="fast"
+        speed="normal"
       />
     </section>
   );

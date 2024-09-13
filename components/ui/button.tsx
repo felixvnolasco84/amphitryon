@@ -26,7 +26,7 @@ const buttonVariants = cva(
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
-        arrow: "w-[24px] h-[48px] lg:h-[97px] lg:w-[49px]",
+        arrow: "w-[34px] h-[58px] lg:h-[117px] lg:w-[69px]",
         contact: "h-12 w-full rounded-xl text-xl",
       },
     },

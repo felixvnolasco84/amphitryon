@@ -37,7 +37,6 @@ export default function Footer() {
               <Button
                 className="text-lg underline"
                 variant={"ghost"}
-                
               >
                 César González: (55) 1384 2959
               </Button>
@@ -45,8 +44,7 @@ export default function Footer() {
             <Link target="_blank" href={"tel:5620244047"}>
               <Button
                 className="text-lg underline"
-                variant={"ghost"}
-                
+                variant={"ghost"}                
               >
                 Antón Arias: (56) 2024 4047
               </Button>
@@ -55,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center gap-2 lg:items-end lg:gap-6 xl:gap-12">
           <div className="relative">
-            <h4 className="text-4xl lg:block xl:text-6xl">Hablemos</h4>
+            <h3 className="text-4xl lg:block xl:text-6xl">Hablemos</h3>
             <div className="absolute right-0 top-0">
               <div className="relative h-4 w-4">
                 <Image
