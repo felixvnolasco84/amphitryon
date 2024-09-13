@@ -24,29 +24,29 @@ export default function Footer() {
           </Link>
           {/* <h4 className="text-3xl lg:hidden">Let&apos;s Talk</h4> */}
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
-            <Link href={"tel:5542957398"}>
+            <Link target="_blank" href={"tel:5542957398"}>
               <Button
                 className="text-lg underline"
                 variant={"ghost"}
-                size={"sm"}
+                
               >
                 Salvador Mier: (55) 4295 7398
               </Button>
             </Link>
-            <Link href={"tel:5513842959"}>
+            <Link target="_blank" href={"tel:5513842959"}>
               <Button
                 className="text-lg underline"
                 variant={"ghost"}
-                size={"sm"}
+                
               >
                 César González: (55) 1384 2959
               </Button>
             </Link>
-            <Link href={"tel:5620244047"}>
+            <Link target="_blank" href={"tel:5620244047"}>
               <Button
                 className="text-lg underline"
                 variant={"ghost"}
-                size={"sm"}
+                
               >
                 Antón Arias: (56) 2024 4047
               </Button>
