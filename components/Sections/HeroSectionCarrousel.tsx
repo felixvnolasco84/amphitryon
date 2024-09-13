@@ -165,6 +165,7 @@ export default function HeroSectionCarrousel({}: {}) {
                   className="aspect-square object-cover object-center"
                   sizes="100vw"
                   fill
+                  loading="eager"
                   src={item.image}
                   alt="Carrousel image"
                 />
