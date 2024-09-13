@@ -1,34 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import Calendly from "./Calendly";
+import React from "react";
 import CustomCalendar from "./CustomCalendar";
 
 export const CalendarComponent = () => {
-  // const terrazas = [
-  //   {
-  //     name: "La Galería",
-  //     url: "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=000409",
-  //     dotColor: "#A6E0DA",
-  //   },
-  //   {
-  //     name: "Macarella",
-  //     url: "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=1&hide_gdpr_banner=1&text_color=080808&primary_color=000205",
-  //     dotColor: "#EBC3A4",
-  //   },
-  //   {
-  //     name: "Terraza Pepita",
-  //     url: "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=000306",
-  //     dotColor: "#7EB2FC",
-  //   },
-  // ];
-
-  // const [calendlyUrl, setCalendlyUrl] = useState(terrazas[0].url);
-
-  // const handleOptionClick = (newUrl: string) => {
-  //   setCalendlyUrl(newUrl);
-  // };
-
   return (
     <div className="lg:min-h-none flex min-h-[600px] flex-col gap-4 lg:max-h-[472px] lg:justify-between xl:max-h-[660px]">
       <div className="flex items-center justify-center bg-[#EFEFEF] py-4 text-center lg:h-1/6">
@@ -36,7 +11,6 @@ export const CalendarComponent = () => {
       </div>
       <div className="lg:h-4/6">
         <CustomCalendar />
-        {/* <Calendly url={calendlyUrl} /> */}
       </div>
       <div className="flex items-center justify-around bg-[#EFEFEF] py-4">
         <div className="flex items-center gap-1">

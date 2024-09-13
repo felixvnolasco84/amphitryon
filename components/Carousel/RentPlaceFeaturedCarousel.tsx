@@ -7,8 +7,6 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import Link from "next/link";
 import { clashDisplayMedium } from "@/utils/fonts";
 
 export default function RentPlaceFeaturedCarousel({

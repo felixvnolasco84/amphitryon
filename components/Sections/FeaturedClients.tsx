@@ -10,7 +10,6 @@ import Penguin from "@/public/images/clients/penguin.webp";
 import Porcenalosa from "@/public/images/clients/porcelanosa.webp";
 import Rolex from "@/public/images/clients/rolex.webp";
 import Tous from "@/public/images/clients/tous.webp";
-import ClientsCarousel from "../Carousel/ClientsCarousel";
 
 type Client = {
   name: string;

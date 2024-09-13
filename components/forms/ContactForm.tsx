@@ -23,7 +23,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { sendContactEmail } from "@/app/_actions";
@@ -34,15 +34,12 @@ import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
-import dynamic from "next/dynamic";
-import {
-  TrackGoogleAnalyticsEvent,
-  TrackingFormLead,
-} from "@/lib/google-analytics";
+// import dynamic from "next/dynamic";
+import { TrackingFormLead } from "@/lib/google-analytics";
 
-const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
-  ssr: false,
-});
+// const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
+//   ssr: false,
+// });
 
 export const FormSchema = z.object({
   name: z
@@ -91,12 +88,6 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
-    let dateEvent = new Date(data.dateEvent).toLocaleDateString("es-MX", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-
     try {
       setIsLoading(true);
       const response = await sendContactEmail(data);
@@ -107,8 +98,7 @@ export function ContactForm() {
         TrackingFormLead(
           "click",
           "formulario_enviado",
-          "formulario_enviado",
-          data
+          "formulario_enviado",        
         );
       }
     } catch (error) {

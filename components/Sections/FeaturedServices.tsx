@@ -1,19 +1,8 @@
 import { clashDisplayMedium } from "@/utils/fonts";
-import Image, { StaticImageData } from "next/image";
 
-import Money_Icon_Bill from "@/public/svg/Money_Icon_Bill.svg";
-import Money_Icon from "@/public/svg/Money_Icon_Orange.svg";
-import Money_Icon_Smartphone from "@/public/svg/Money_Icon_Smartphone.svg";
-import ServicesCarousel from "../Carousel/ServicesCarousel";
-import FeaturedCarousel from "../Carousel/FeaturedCarousel";
 type Service = {
   name: string;
   description: string;
-};
-
-type SimpleService = {
-  title: string;
-  img: StaticImageData;
 };
 
 const services: Service[] = [
@@ -31,21 +20,6 @@ const services: Service[] = [
     name: "ESPACIO LISTOS",
     description:
       "Nuestros espacios para eventos están listos para usar, lo que significa que ya incluyen mobiliario, sistema de sonido, limpieza e iluminación. Esto te permite reducir los costos de producción y simplificar la planificación de tu evento. Disfruta de la comodidad y ahorra tiempo y dinero.",
-  },
-];
-
-const simpleServices: SimpleService[] = [
-  {
-    title: "Pago de reserva con tarjeta",
-    img: Money_Icon_Smartphone,
-  },
-  {
-    title: "Sistema de Facturación en Línea",
-    img: Money_Icon,
-  },
-  {
-    title: "Sistema de contrato en línea",
-    img: Money_Icon_Bill,
   },
 ];
 

@@ -1,5 +1,5 @@
 import CTADeposit from "@/components/Sections/CTASections/CTADeposit";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import CTASection from "@/components/Sections/CTASections/CTASection";
 import FeaturedClients from "@/components/Sections/FeaturedClients";
 import FeaturedServices from "@/components/Sections/FeaturedServices";
@@ -14,15 +14,7 @@ import { clashDisplayMedium } from "@/utils/fonts";
 import Link from "next/link";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 
-type Props = {
-  params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
-};
-
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title:
       "Encuentra el lugar perfecto para tus eventos privados - Grupo Amphytrion",

@@ -1,11 +1,8 @@
-import { v } from "convex/values";
-
-import { mutation, query } from "./_generated/server";
-import { Doc, Id } from "./_generated/dataModel";
+import { mutation } from "./_generated/server";
 
 export const create = mutation({
   args: {},
-  handler: async (ctx, args) => {
+  handler: async (ctx) => {
     const lastContact = await ctx.db
       .query("WhatsAppContact")
       .order("desc")

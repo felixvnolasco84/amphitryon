@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 import {
   Carousel,
@@ -13,6 +13,12 @@ import Image from "next/image";
 
 export default function GalleryCarousel({ items }: { items: any[] }) {
   const [api, setApi] = useState<any>();
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+  }, [api]);
 
   return (
     <section className="lg:hidden">

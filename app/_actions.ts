@@ -1,7 +1,5 @@
 "use server";
 
-import ContactFormEmail from "@/template/email/ContactFormEmail";
-
 import * as z from "zod";
 import { Resend } from "resend";
 import { FormSchema } from "@/components/forms/ContactForm";
