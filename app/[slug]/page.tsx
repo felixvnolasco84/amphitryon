@@ -150,7 +150,7 @@ export default function PlacePage({ params }: Props) {
           <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
 
           <Suspense fallback={<div>Cargando mapa...</div>}>
-            <CustomMapSection location={rentPlace.locationInMap} />
+            <CustomMapSection query={rentPlace.querySearchMaps} />
           </Suspense>
 
           <section id="contacto" className="flex flex-col gap-2">

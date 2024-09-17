@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/next-script-for-ga */
+import { PrismicPreview } from "@prismicio/next";
+import { repositoryName } from "@/prismicio";
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { WithContext, Organization } from "schema-dts";
 import Script from "next/script";
@@ -63,6 +65,7 @@ export default function RootLayout({
               }}
             />
             {children}
+            <PrismicPreview repositoryName={"Amphytrion"} />
           </div>
           <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
           <GoogleTagManager gtmId="AW-16453854332" />
