@@ -1,4 +1,5 @@
 import { createClient } from "@/prismicio";
+import { PrismicRichText } from "@prismicio/react";
 import Image from "next/image";
 
 export default async function Page({ params }: { params: { uid: string } }) {
@@ -29,13 +30,20 @@ export default async function Page({ params }: { params: { uid: string } }) {
   //   });
 
   return (
-    <div className="container grid grid-cols-2 items-center justify-center gap-4 py-12">
-      <div className="relative aspect-video">
-        <Image src={data.postimage.url} alt={data.postimage.alt} fill />
+    <div className="container space-y-4 py-12">
+      <div className="grid grid-cols-2 items-center justify-center gap-4">
+        <div className="relative aspect-video">
+          <Image src={data.postimage.url} alt={data.postimage.alt} fill />
+        </div>
+        <div className="flex flex-col space-y-2">
+          <h1 className="text-xl lg:text-3xl">{data.posttitle}</h1>
+          <p className="text-lg leading-tight text-muted-foreground lg:text-xl">
+            {data.autor}
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col space-y-2">
-        <h1 className="text-xl lg:text-3xl">{data.posttitle}</h1>
-        <p className="text-lg leading-tight text-muted-foreground lg:text-xl">{data.autor}</p>
+      <div className="grid grid-cols-1 gap-4">
+        <PrismicRichText field={data.postcontent} />
       </div>
     </div>
   );
