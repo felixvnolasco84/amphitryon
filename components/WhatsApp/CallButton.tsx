@@ -14,7 +14,7 @@ export default function CallButton() {
       }
       href={"tel:5568688442"}
     >
-      <Button className="text-lg" size={"lg"} variant={"primary"}>
+      <Button className="text-lg" size={"lg"} variant={"contact"}>
         Llamar
       </Button>
     </Link>
