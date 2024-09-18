@@ -12,7 +12,7 @@ export default function CallButton() {
       onClick={() =>
         TrackGoogleAnalyticsEvent("click", "llamar", window.location.pathname)
       }
-      href={"tel:5568688442"}
+      href={"tel:5542957398"}
     >
       Llamar
     </Link>
