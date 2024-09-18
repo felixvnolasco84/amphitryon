@@ -3,6 +3,7 @@ import Logo from "@/public/images/Logo_Amphitryon_blanco.png";
 import Estrella from "@/public/svg/Vector_estrella.svg";
 import Link from "next/link";
 import FooterLinkComponent from "./FooterLinkComponent";
+import { Button } from "../ui/button";
 
 export default function Footer() {
   return (
@@ -11,26 +12,45 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
           <Link
             href={"/"}
-            className="relative h-[22px] w-[90px] lg:h-[50px] lg:w-[195px]"
           >
             <Image
-              className="object-fill object-center"
-              fill
+              width={195}
               sizes="100vw"
               alt="image of Amphitryon logo"
               src={Logo}
             />
           </Link>
-          {/* <h4 className="text-3xl lg:hidden">Let&apos;s Talk</h4> */}
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
-            <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
-            <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
-            <Link href={"tel:5620244047"}>Antón Arias: (56) 2024 4047</Link>
+            <Link target="_blank" href={"tel:5542957398"}>
+              <Button
+                className="text-lg underline"
+                variant={"ghost"}
+                
+              >
+                Salvador Mier: (55) 4295 7398
+              </Button>
+            </Link>
+            <Link target="_blank" href={"tel:5513842959"}>
+              <Button
+                className="text-lg underline"
+                variant={"ghost"}
+              >
+                César González: (55) 1384 2959
+              </Button>
+            </Link>
+            <Link target="_blank" href={"tel:5620244047"}>
+              <Button
+                className="text-lg underline"
+                variant={"ghost"}                
+              >
+                Antón Arias: (56) 2024 4047
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 lg:items-end lg:gap-6 xl:gap-12">
           <div className="relative">
-            <h4 className="text-4xl lg:block xl:text-6xl">Hablemos</h4>
+            <h3 className="text-4xl lg:block xl:text-6xl">Hablemos</h3>
             <div className="absolute right-0 top-0">
               <div className="relative h-4 w-4">
                 <Image
@@ -44,14 +64,19 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col text-sm lg:gap-4 lg:text-base">
+          <div className="flex flex-col text-sm lg:gap-2 lg:text-base">
             <FooterLinkComponent />
             <Link
-              className="text-left underline"
               href={"https://www.instagram.com/grupoamphitryon/"}
               target="_blank"
             >
-              INSTAGRAM
+              <Button
+                className="text-lg underline"
+                variant={"ghost"}
+                size={"sm"}
+              >
+                INSTAGRAM
+              </Button>
             </Link>
           </div>
         </div>

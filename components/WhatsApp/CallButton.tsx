@@ -3,7 +3,10 @@
 import Link from "next/link";
 import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
 import React from "react";
+<<<<<<< HEAD
 import { Button } from "../ui/button";
+=======
+>>>>>>> 990d324e186b1545d8859ae5ede49ce5f39a1a65
 
 export default function CallButton() {
   return (
@@ -13,7 +16,11 @@ export default function CallButton() {
       onClick={() =>
         TrackGoogleAnalyticsEvent("click", "llamar", window.location.pathname)
       }
+<<<<<<< HEAD
       href={"tel:5542957398"}
+=======
+      href={"tel:5568688442"}
+>>>>>>> 990d324e186b1545d8859ae5ede49ce5f39a1a65
     >
       Llamar
     </Link>

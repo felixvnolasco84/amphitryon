@@ -51,8 +51,8 @@ export type RentPlace = {
   features: Feature[];
   largeDescription: string;
   location: string;
-  previousLink?: string;
-  nextLink?: string;
+  previousLink: string;
+  nextLink: string;
   locationInMap: { lat: number; lng: number };
   district: string;
   prices: PricePlace[];

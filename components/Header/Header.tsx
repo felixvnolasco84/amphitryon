@@ -7,27 +7,26 @@ export default function Header() {
   return (
     <header className="container sticky top-0 z-50 flex items-center justify-between border-b-2 border-[#707070] bg-white px-4 pb-3 pt-6 text-lg lg:pb-5 lg:pt-5 xl:pb-6 xl:pt-12">
       <nav className="w-full">
-        <ul className="flex flex-row items-center justify-between gap-4">
+        <div className="grid grid-cols-2 items-center justify-between lg:grid-cols-3">
           <Link
             href={"/"}
-            className="relative h-[22px] w-[90px] lg:h-[42px] lg:w-[160px] xl:h-[50px] xl:w-[195px]"
           >
             <Image
-              className="object-fill object-center"
-              fill
+              className="object-fill object-center" 
+              width={195}              
               sizes="100vw"
               alt="image of Amphitryon logo"
               src={Logo}
             />
           </Link>
 
-          <Link href={"/"}>
+          <Link className="hidden lg:block" href={"/"}>
             <h1 className="text-center text-xs lg:text-base xl:text-lg">
               GRUPO DE ESPACIOS PARA EVENTOS PRIVADOS
             </h1>
           </Link>
 
-          <li className="items-center gap-4 lg:flex">
+          <div className="flex items-center justify-end space-x-2">
             <Link
               className="hidden h-fit hover:underline lg:block lg:text-base xl:text-lg"
               href="#contacto"
@@ -35,8 +34,8 @@ export default function Header() {
               Contacto
             </Link>
             <HeaderMobile />
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
     </header>
   );

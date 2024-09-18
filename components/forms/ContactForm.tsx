@@ -23,7 +23,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "../ui/input";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import { sendContactEmail } from "@/app/_actions";
@@ -34,15 +34,12 @@ import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
-import dynamic from "next/dynamic";
-import {
-  TrackGoogleAnalyticsEvent,
-  TrackingFormLead,
-} from "@/lib/google-analytics";
+// import dynamic from "next/dynamic";
+import { TrackingFormLead } from "@/lib/google-analytics";
 
-const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
-  ssr: false,
-});
+// const CustomModal = dynamic(() => import("../Calendar/CustomModalCalendly"), {
+//   ssr: false,
+// });
 
 export const FormSchema = z.object({
   name: z
@@ -91,12 +88,6 @@ export function ContactForm() {
   });
 
   async function onSubmit(data: z.infer<typeof FormSchema>) {
-    let dateEvent = new Date(data.dateEvent).toLocaleDateString("es-MX", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
-
     try {
       setIsLoading(true);
       const response = await sendContactEmail(data);
@@ -104,12 +95,7 @@ export function ContactForm() {
         setShowModalMessage(true);
         setIsLoading(false);
         form.reset();
-        TrackingFormLead(
-          "click",
-          "formulario_enviado",
-          "formulario_enviado",
-          data
-        );
+        TrackingFormLead("click", "formulario_enviado", "formulario_enviado");
       }
     } catch (error) {
       console.log(error);
@@ -191,10 +177,8 @@ export function ContactForm() {
               name="dateEvent"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="ml-2 text-muted-foreground">
-                    Fecha del Evento
-                  </FormLabel>
-                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
+                  <FormLabel className="ml-2">Fecha del Evento</FormLabel>
+                  <FormControl className="flex h-10 w-full resize-none rounded-3xl border border-input p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
                     <DatePicker
                       onChange={(date) => {
                         setStartDate(date as Date);
@@ -202,7 +186,7 @@ export function ContactForm() {
                       }}
                       selected={startDate}
                       dateFormat="dd/MM/yyyy"
-                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base text-muted-foreground focus-visible:ring-orange-400 lg:text-lg"
+                      className="w-full resize-none rounded-3xl bg-[#F4F4F4] p-5 text-base focus-visible:ring-orange-400 lg:text-lg"
                       disabled={isLoading}
                     />
                   </FormControl>
@@ -222,7 +206,10 @@ export function ContactForm() {
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                     >
-                      <SelectTrigger className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base text-muted-foreground ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg">
+                      <SelectTrigger
+                        className="flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 lg:text-lg"
+                        aria-label="Select Venue"
+                      >
                         <SelectValue />
                       </SelectTrigger>
                       <SelectContent>
@@ -260,7 +247,7 @@ export function ContactForm() {
                   <FormLabel>Descripción del Evento</FormLabel>
                   <FormControl>
                     <Textarea
-                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  lg:text-lg"
+                      className="items-center justify-between focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 [&>span]:line-clamp-1 flex h-10 w-full resize-none rounded-3xl border border-input bg-[#F4F4F4] p-5 text-base ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50  lg:text-lg"
                       {...field}
                     />
                   </FormControl>

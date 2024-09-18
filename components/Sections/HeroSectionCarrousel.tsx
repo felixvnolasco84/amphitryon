@@ -137,12 +137,12 @@ export default function HeroSectionCarrousel({}: {}) {
   ];
 
   return (
-    <section className="flex flex-col">      
+    <section className="flex flex-col">
       <InfiniteMovingMessages
         pauseOnHover={false}
         items={items}
         direction="right"
-        speed="fast"
+        speed="normal"
       />
 
       <Carousel
@@ -165,6 +165,7 @@ export default function HeroSectionCarrousel({}: {}) {
                   className="aspect-square object-cover object-center"
                   sizes="100vw"
                   fill
+                  loading="eager"
                   src={item.image}
                   alt="Carrousel image"
                 />
@@ -184,7 +185,7 @@ export default function HeroSectionCarrousel({}: {}) {
         pauseOnHover={false}
         items={items}
         direction="right"
-        speed="fast"
+        speed="normal"
       />
     </section>
   );

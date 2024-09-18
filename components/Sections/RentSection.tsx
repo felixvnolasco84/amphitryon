@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
-import { CalendarComponent } from "../Calendar/CalendarComponent";
+// import { CalendarComponent } from "../Calendar/CalendarComponent";
 
 export default function RentSection() {
   return (
@@ -44,7 +44,6 @@ export default function RentSection() {
         ))}
         {/* <CalendarComponent /> */}
       </div>
-      {/* <RentPlaceCarousel items={rentPlaces} /> */}
     </section>
   );
 }

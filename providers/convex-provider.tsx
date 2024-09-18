@@ -1,8 +1,7 @@
 "use client";
 
 import { ConvexProvider } from "convex/react";
-import { AuthLoading, Authenticated, ConvexReactClient } from "convex/react";
-import Spinner from "@/components/spinner";
+import { ConvexReactClient } from "convex/react";
 
 interface ConvexClientProviderProps {
   children: React.ReactNode;

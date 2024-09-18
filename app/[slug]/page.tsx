@@ -1,19 +1,19 @@
 import HeroSection from "@/components/Sections/HeroSection";
 import Script from "next/script";
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
 import { clashDisplayMedium, clashDisplaySemibold } from "@/utils/fonts";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Arrow from "@/public/svg/Arrow_Icon.svg";
+import React, { Suspense } from "react";
 import CustomMapSection from "@/components/Sections/CustomMapSection";
 import PlaceTablePricing from "@/components/Table/PlaceTablePricing";
 import FlatComponent from "@/components/Flat/FlatComponent";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
-import CustomModalCalendly from "@/components/Calendar/CustomModalCalendly";
 import CallButton from "@/components/WhatsApp/CallButton";
 
 type Props = {
@@ -21,10 +21,7 @@ type Props = {
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
   const rentPlace = rentPlaces.find((service: any) => service.slug === slug);
 
@@ -58,8 +55,9 @@ export default function PlacePage({ params }: Props) {
       <div className="flex flex-col gap-6 py-4 lg:gap-12">
         <div className="container space-y-8">
           <div className="grid grid-flow-col items-center justify-between gap-2">
-            <Link href={rentPlace.previousLink || ""} className="">
+            <Link href={rentPlace.previousLink} className="">
               <Button
+                disabled={!rentPlace.previousLink}
                 className="relative cursor-pointer"
                 variant={"arrow"}
                 size={"arrow"}
@@ -84,24 +82,9 @@ export default function PlacePage({ params }: Props) {
                 {rentPlace.description}
               </h2>
             </div>
-            {rentPlace.nextLink ? (
-              <Link href={rentPlace.nextLink}>
-                <Button
-                  className="relative cursor-pointer disabled:cursor-not-allowed"
-                  variant={"arrow"}
-                  size={"arrow"}
-                >
-                  <Image
-                    src={Arrow}
-                    fill
-                    sizes="100vw"
-                    className="rotate-180 object-cover object-center"
-                    alt="Arrow"
-                  />
-                </Button>
-              </Link>
-            ) : (
+            <Link href={rentPlace.nextLink}>
               <Button
+                disabled={!rentPlace.nextLink}
                 className="relative cursor-pointer disabled:cursor-not-allowed"
                 variant={"arrow"}
                 size={"arrow"}
@@ -114,7 +97,7 @@ export default function PlacePage({ params }: Props) {
                   alt="Arrow"
                 />
               </Button>
-            )}
+            </Link>
           </div>
           <section
             className={`${
@@ -165,7 +148,11 @@ export default function PlacePage({ params }: Props) {
           <GalleryCarousel items={rentPlace.gallery} />
           <PlaceTablePricing prices={rentPlace.prices} />
           <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
-          <CustomMapSection location={rentPlace.locationInMap} />
+
+          <Suspense fallback={<div>Cargando mapa...</div>}>
+            <CustomMapSection location={rentPlace.locationInMap} />
+          </Suspense>
+
           <section id="contacto" className="flex flex-col gap-2">
             {/* <CustomModalCalendly url={rentPlace.calendlyURL} /> */}
             <CallButton />

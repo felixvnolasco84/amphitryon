@@ -1,5 +1,5 @@
 import { defineSchema, defineTable } from "convex/server";
-import { v, Infer } from "convex/values";
+import { v } from "convex/values";
 
 export default defineSchema({
   WhatsAppContact: defineTable({
