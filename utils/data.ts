@@ -13,10 +13,10 @@ import CASAJARANA2 from '@/public/images/CASA-JARANA (2).png'
 import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
 
 //TATEL IMAGES
-import TATEL from '@/public/images/Hero/TATELHero.png'
+import TATEL from '@/public/images/TATEL (4).png'
 import TATEL1 from '@/public/images/TATEL (1).png'
 import TATEL2 from '@/public/images/TATEL (3).png'
-import TATEL3 from '@/public/images/TATEL (4).png'
+import TATEL3 from '@/public/images/Hero/TATELHero.png'
 import TATEL4 from '@/public/images/TATEL (5).png'
 
 // MOLIERE IMAGES
