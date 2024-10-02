@@ -15,6 +15,7 @@ import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import GalleryCarousel from "@/components/Carousel/GalleryCarousel";
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import CallButton from "@/components/WhatsApp/CallButton";
+import ComplexFlatComponent from "@/components/Flat/ComplexFlatComponent";
 
 type Props = {
   params: { slug: string };
@@ -109,11 +110,24 @@ export default function PlacePage({ params }: Props) {
                 <h3 className="text-xs text-[#727272] lg:text-sm">
                   {feature.title}
                 </h3>
-                <p
-                  className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
-                >
-                  {feature.description}
-                </p>
+                {Array.isArray(feature.description) ? (
+                  <p
+                    className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
+                  >
+                    {feature.description.map((description, index) => (
+                      <>
+                        <span key={index}>{description}</span>
+                        <br />
+                      </>
+                    ))}
+                  </p>
+                ) : (
+                  <p
+                    className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
+                  >
+                    {feature.description}
+                  </p>
+                )}
               </div>
             ))}
           </section>
@@ -147,13 +161,20 @@ export default function PlacePage({ params }: Props) {
           </section>
           <GalleryCarousel items={rentPlace.gallery} />
           <PlaceTablePricing prices={rentPlace.prices} />
-          <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
+
+          {rentPlace.complexFlat && rentPlace.complexFlat.length > 0 && (
+            <ComplexFlatComponent complexFlat={rentPlace.complexFlat} />
+          )}
+
+          {!rentPlace.complexFlat && rentPlace.flat && (
+            <FlatComponent flat={rentPlace.flat} flatPDF={rentPlace.flatPDF} />
+          )}
 
           <Suspense fallback={<div>Cargando mapa...</div>}>
             <CustomMapSection location={rentPlace.locationInMap} />
           </Suspense>
 
-          <section id="contacto" className="flex flex-col gap-2">
+          <section id="contacto" className="flex flex-col items-center gap-2">
             {/* <CustomModalCalendly url={rentPlace.calendlyURL} /> */}
             <CallButton />
             <WhatsAppButton title="WhatsApp" />
