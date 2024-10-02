@@ -7,7 +7,7 @@ import TONALÁ from "@/public/images/TonalaHome.webp";
 
 //CASA JARANA IMAGES
 
-import CASAJARANA from '@/public/images/Hero/CASAJARANAHero.png'
+import CASAJARANA from '@/public/images/Hero/CasaJaranaHero.png'
 import CASAJARANA1 from '@/public/images/CASA-JARANA (1).png'
 import CASAJARANA2 from '@/public/images/CASA-JARANA (2).png' 
 import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
