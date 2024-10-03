@@ -30,17 +30,20 @@ export const EmailTemplateResend = ({
   <Html>
     <Head />
     <Preview>
-      Hemos recibido tu solicitusd, a continuación compartimos los detalles
+      Hemos recibido tu solicitud, a continuación compartimos los detalles
     </Preview>
     <Body style={main}>
       <Container style={container}>
         <Img
-          src={"https://www.amphitryon.mx/images/logo.png"}
+          src={"https://www.amphitryon.mx/images/Logo_Amphitryon_blanco.png"}
           width="90"
-          height="22"
           alt="Amphitryon Logo"
+          style={{
+            backgroundColor: "#000000",
+            borderRadius: "5px",
+            padding: "10px",
+          }}
         />
-
         <Text style={title}>
           <strong>Confirmación de Contacto</strong>
         </Text>
@@ -117,8 +120,8 @@ const text = {
 
 const button = {
   fontSize: "14px",
-  backgroundColor: "#FC9532",
-  color: "#000",
+  backgroundColor: "#000000",
+  color: "#ffffff",
   lineHeight: 1.5,
   borderRadius: "0.5em",
   padding: "12px 24px",
