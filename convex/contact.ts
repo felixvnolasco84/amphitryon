@@ -11,10 +11,12 @@ export const create = mutation({
     if (lastContact?.receivedBy === "Cesar") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Anton" });
       return `https://wa.me/5620244047?text=${encodeURIComponent(message)}`;
-    } else if (lastContact?.receivedBy === "Anton") {
-      await ctx.db.insert("WhatsAppContact", { receivedBy: "Inés Torres" });
-      return `https://wa.me/5523053711?text=${encodeURIComponent(message)}`;
-    } else {
+    }
+    // else if (lastContact?.receivedBy === "Anton") {
+    //   await ctx.db.insert("WhatsAppContact", { receivedBy: "Inés Torres" });
+    //   return `https://wa.me/5523053711?text=${encodeURIComponent(message)}`;
+    // }
+    else {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Cesar" });
       return `https://wa.me/5513842959?text=${encodeURIComponent(message)}`;
     }
