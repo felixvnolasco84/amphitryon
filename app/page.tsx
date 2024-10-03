@@ -13,6 +13,7 @@ import { ContactForm } from "@/components/forms/ContactForm";
 import { clashDisplayMedium } from "@/utils/fonts";
 import Link from "next/link";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
+import { Button } from "@/components/ui/button";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -46,10 +47,32 @@ export default function Home() {
           >
             LLámanos
           </h3>
-          <Link href={"tel:5542957398"}>Salvador Mier: (55) 4295 7398</Link>
-          <Link href={"tel:5513842959"}>César González: (55) 1384 2959</Link>
+          <div className="grid grid-cols-2">
+            <Link target="_blank" href={"tel:5523053711"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Inés Torres (55) 2305 3711
+              </Button>
+            </Link>
+            <Link target="_blank" href={"mailto:ines@amphitryon.mx"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                ines@amphitryon.mx
+              </Button>
+            </Link>
+          </div>
+          <Link href={"tel:5542957398"}>
+            <Button className="text-lg underline" variant={"ghost"}>
+              Salvador Mier: (55) 4295 7398
+            </Button>
+          </Link>
+          <Link href={"tel:5513842959"}>
+            <Button className="text-lg underline" variant={"ghost"}>
+              César González: (55) 1384 2959
+            </Button>
+          </Link>
           <Link className="pb-4" href={"tel:5620244047"}>
-            Antón Arias: (56) 2024 4047
+            <Button className="text-lg underline" variant={"ghost"}>
+              Antón Arias: (56) 2024 4047
+            </Button>
           </Link>
           <div className="border-t-2 border-gray-300 pb-4"></div>
           <div className="flex flex-col gap-2">
