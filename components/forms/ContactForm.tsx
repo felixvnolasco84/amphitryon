@@ -215,6 +215,18 @@ export function ContactForm() {
                       <SelectContent>
                         <SelectItem
                           className={`${clashDisplayRegular.className} text-lg`}
+                          value="TATEL"
+                        >
+                          TATEL
+                        </SelectItem>
+                        <SelectItem
+                          className={`${clashDisplayRegular.className} text-lg`}
+                          value="Casa Jarana"
+                        >
+                          Casa Jarana
+                        </SelectItem>
+                        <SelectItem
+                          className={`${clashDisplayRegular.className} text-lg`}
                           value="La Galeria"
                         >
                           La Galería

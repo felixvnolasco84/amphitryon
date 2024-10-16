@@ -10,9 +10,7 @@ export default function Footer() {
     <footer className="bg-black px-4 text-white xl:text-3xl">
       <div className="container grid grid-cols-1 justify-between gap-6 py-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
-          <Link
-            href={"/"}
-          >
+          <Link href={"/"}>
             <Image
               width={195}
               sizes="100vw"
@@ -21,28 +19,30 @@ export default function Footer() {
             />
           </Link>
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
+            <div className="grid grid-cols-2">
+              <Link target="_blank" href={"tel:5523053711"}>
+                <Button className="text-lg underline" variant={"ghost"}>
+                  Inés Torres (55) 2305 3711
+                </Button>
+              </Link>
+              <Link target="_blank" href={"mailto:ines@amphitryon.mx"}>
+                <Button className="text-lg underline" variant={"ghost"}>
+                  ines@amphitryon.mx
+                </Button>
+              </Link>
+            </div>
             <Link target="_blank" href={"tel:5542957398"}>
-              <Button
-                className="text-lg underline"
-                variant={"ghost"}
-                
-              >
+              <Button className="text-lg underline" variant={"ghost"}>
                 Salvador Mier: (55) 4295 7398
               </Button>
             </Link>
             <Link target="_blank" href={"tel:5513842959"}>
-              <Button
-                className="text-lg underline"
-                variant={"ghost"}
-              >
+              <Button className="text-lg underline" variant={"ghost"}>
                 César González: (55) 1384 2959
               </Button>
             </Link>
             <Link target="_blank" href={"tel:5620244047"}>
-              <Button
-                className="text-lg underline"
-                variant={"ghost"}                
-              >
+              <Button className="text-lg underline" variant={"ghost"}>
                 Antón Arias: (56) 2024 4047
               </Button>
             </Link>
@@ -83,8 +83,16 @@ export default function Footer() {
       </div>
       <div className="container flex flex-col items-center justify-between gap-2 border-white py-4 text-xs text-white lg:flex-row lg:gap-4 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg">
         <p>CIUDAD DE MÉXICO, MÉXICO.</p>
-        <Link href={"/aviso-de-privacidad"}>AVISO DE PRIVACIDAD.</Link>
-        <p>DESARROLLADO POR POLYGON.</p>
+        <Link href={"/aviso-de-privacidad"}>
+          <Button className="text-lg underline" variant={"ghost"} size={"sm"}>
+            AVISO DE PRIVACIDAD.
+          </Button>
+        </Link>
+        <Link href={"https://www.polygonag.com/"} target="_blank">
+          <Button className="text-lg underline" variant={"ghost"} size={"sm"}>
+            DESARROLLADO POR POLYGON.
+          </Button>
+        </Link>
       </div>
     </footer>
   );

@@ -21,15 +21,9 @@ const jsonLd: WithContext<Organization> = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+52-55-1384-2959",
-      contactType: "Reservas",
-      name: "César González",
-    },
-    {
-      "@type": "ContactPoint",
-      telephone: "+52-55-6868-8442",
-      contactType: "Reservas",
-      name: "Antón Arias",
+      telephone: "+52-55-2305-3711",
+      contactType: "Contacto",
+      name: "Grupo Amphytrion",
     },
   ],
   sameAs: [

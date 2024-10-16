@@ -4,6 +4,21 @@ import MOLIERE from "@/public/images/Hero/MoliereHero.webp";
 import PALMAS from "@/public/images/HeroNew.webp";
 import TONALÁ from "@/public/images/TonalaHome.webp";
 
+
+//CASA JARANA IMAGES
+
+import CASAJARANA from '@/public/images/Hero/CasaJaranaHero.png'
+import CASAJARANA1 from '@/public/images/CASA-JARANA (1).png'
+import CASAJARANA2 from '@/public/images/CASA-JARANA (2).png' 
+import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
+
+//TATEL IMAGES
+import TATEL from '@/public/images/TATEL (4).png'
+import TATEL1 from '@/public/images/TATEL (1).png'
+import TATEL2 from '@/public/images/TATEL (3).png'
+import TATEL3 from '@/public/images/Hero/TATELHero.png'
+import TATEL4 from '@/public/images/TATEL (5).png'
+
 // MOLIERE IMAGES
 import Moliere2 from "@/public/images/Moliere2.webp";
 import Moliere3 from "@/public/images/Moliere3.webp";
@@ -22,11 +37,32 @@ import Tonala3 from "@/public/images/Tonala3.webp";
 import Tonala4 from "@/public/images/Tonala4.webp";
 
 // FLATS
+
+import CASAJARANAFLAT from "@/public/flat/CASA_JARANA.png";
+
+//TATEL FLAT
+import TATELSALONPRINCIPALImage from "@/public/flat/TATELSalonPrincipal.png";
+import TATELJardin from "@/public/flat/TATEL_JARDIN.png";
+import TATELPrivados from "@/public/flat/TATEL_PRIVADOS.png";
+import TATELTerraza from "@/public/flat/TATEL_TERRAZA.png";
+import TATELWelcomeDrinks from "@/public/flat/TATEL_WELCOME_DRINKS.png";
+
+
+
+
 import GALERIAFLAT from "@/public/flat/Galeria.png";
 import PEPITAFLAT from "@/public/flat/Pepita.png";
 import MACARELLAFLAT from "@/public/flat/Tonala.png";
 
 //FLAT PDF
+const CASAJARANAFLATPDF = "/pdfs/CASA_JARANA.pdf";  
+
+//TATEL FLAT PDF
+const TATELSALONPRINCIPAL = "/pdfs/TATEL SALON PRINCIPAL.pdf";
+const TATELJARDIN = "/pdfs/TATEL JARDIN.pdf";
+const TATELPRIVADOS = "/pdfs/TATEL PRIVADOS.pdf";
+const TATELTERRAZA = "/pdfs/TATEL TERRAZA.pdf";
+const TATELWELCOMEDRINKS = "/pdfs/TATEL WELCOME DRINKS.pdf";
 
 const GALERIAFLATPDF = "/pdfs/La Galeria.pdf";
 const MACARELLAFLATPDF = "/pdfs/Macarella.pdf";
@@ -37,7 +73,7 @@ import { LocalBusiness, WithContext } from "schema-dts";
 
 export type Feature = {
   title: string;
-  description: string;
+  description: string | string[];
 };
 
 export type RentPlace = {
@@ -57,14 +93,443 @@ export type RentPlace = {
   locationInMap: { lat: number; lng: number };
   district: string;
   prices: PricePlace[];
+  priceDisclaimer?: string;
   flat: StaticImageData;
   flatPDF: string;
+  complexFlat?: { flat: StaticImageData; flatPDF: string }[];
   calendlyURL: string;
   whatsAppURL: string;
   jsonLd: WithContext<LocalBusiness>;
 };
 
 export const rentPlaces: RentPlace[] = [
+  {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "TATEL",
+      url: "https://www.amphitryon.mx/tatel-polanco",
+      logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",
+      description:
+        "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
+      telephone: "+52-55-2305-3711",
+      priceRange: "$$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Av. Pdte. Masaryk 183, Chapultepec Morales, Polanco V Secc, Miguel Hidalgo, 11560 Ciudad de México, CDMX",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "11560",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.431593,
+        longitude: -99.189084,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "2:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-55-2305-3711",
+          contactType: "Reservas",
+        },
+      ],
+    },
+    metaTitle: "TATEL en Polanco - Grupo Amphytrion",
+    metaDescription:
+      "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
+    slug: "tatel-polanco",
+    name: "MASARYK 183",
+    description: "TATEL",
+    img: TATEL,
+    gallery: [TATEL, TATEL1, TATEL2, TATEL3, TATEL4],
+    features: [
+      {
+        title: "Capacidad",
+        description: [
+          "CASA COMPLETA: 500 PX",
+          "TERRAZA: 200 PX",
+          "SALÓN: 200 PX",
+          "BAR: 90 PX",
+        ],
+      },
+      {
+        title: "Horario",
+        description: "8:00 AM - 2:00 AM",
+      },
+      {
+        title: "Audio",
+        description: "MEYER",
+      },
+      {
+        title: "Mobilario",
+        description: "350 PAX (INCLUÍDO)",
+      },
+    ],
+    largeDescription:
+      "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 500 personas, este sofisticado espacio se divide en tres ambientes únicos: un amplio salón ideal para cenas o conferencias, una terraza encantadora para disfrutar del aire libre y un bar exclusivo donde la mezcla de cocteles premium crea el ambiente perfecto para cualquier ocasión. TATEL garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
+    location: "Polanco",
+    previousLink: "/tonala-171-roma-norte",
+    nextLink: "/casa-jarana-roma-norte",
+    locationInMap: {
+      lat: 19.431593,
+      lng: -99.189084,
+    },
+    district: "Polanco",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 70000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 150000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 40000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 70000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 150000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 40000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 80000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 150000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 40000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 80000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 180000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 45000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 90000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 180000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 50000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 90000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 180000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 50000,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "TERRAZA O SALÓN (200PX)",
+            price: 70000,
+          },
+          {
+            type: "COMPLETO (500 PX)",
+            price: 150000,
+          },
+          {
+            type: "BAR (100 PX)",
+            price: 40000,
+          },
+        ],
+      },
+    ],
+    priceDisclaimer: "*PRECIOS VARÍAN EN FIN DE AÑO",
+    flat: TATELSALONPRINCIPALImage,
+    flatPDF: TATELSALONPRINCIPAL,
+    complexFlat: [
+      {
+        flat: TATELSALONPRINCIPALImage,
+        flatPDF: TATELSALONPRINCIPAL,
+      },
+      {
+        flat: TATELJardin,
+        flatPDF: TATELJARDIN,
+      },
+      {
+        flat: TATELPrivados,
+        flatPDF: TATELPRIVADOS,
+      },
+      {
+        flat: TATELTerraza,
+        flatPDF: TATELTERRAZA,
+      },
+      {
+        flat: TATELWelcomeDrinks,
+        flatPDF: TATELWELCOMEDRINKS,
+      },
+    ],
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/tatel?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  },
+  {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "CASA JARANA",
+      url: "https://www.amphitryon.mx/casa-jarana-roma-norte",
+      // logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",
+      description:
+        "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, Casa Jarana ofrece un refugio lleno de estilo y carácter, ideal para escapar del bullicio urbano",
+      telephone: "+52-55-2305-3711",
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress:
+          "Calle de Durango 279, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "06700",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.419211,
+        longitude: -99.170745,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "07:00",
+          closes: "2:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-55-2305-3711",
+          contactType: "Reservas",
+        },
+      ],
+    },
+    metaTitle: "CASA JARANA en Roma Norte - Grupo Amphytrion",
+    metaDescription:
+      "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, Casa Jarana ofrece un refugio lleno de estilo y carácter, ideal para escapar del bullicio urbano",
+    slug: "casa-jarana-roma-norte",
+    name: "DURANGO 279",
+    description: "CASA JARANA",
+    img: CASAJARANA,
+    gallery: [CASAJARANA, CASAJARANA1, CASAJARANA2, CASAJARANA3],
+    features: [
+      {
+        title: "Capacidad",
+        description: ["150 PX CASA COMPLETA", "80 PX POR PISO"],
+      },
+      {
+        title: "Horario",
+        description: "7:00 AM - 2:00 AM",
+      },
+      {
+        title: "Audio",
+        description: "BOSÉ",
+      },
+      {
+        title: "Mobilario",
+        description: "80 PX (INCLUÍDO)",
+      },
+    ],
+    largeDescription:
+      "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, Casa Jarana ofrece un refugio lleno de estilo y carácter, ideal para escapar del bullicio urbano. Con su vibrante terraza rodeada de vegetación, es el escenario perfecto para transformar cualquier evento en una experiencia inolvidable. Su arquitectura contemporánea, combinada con toques tradicionales, se integra de manera armónica con la atmósfera dinámica y artística de la Roma.Cada evento en Casa Jarana refleja la fusión entre modernidad y tradición, ofreciendo un entorno sofisticado, pero relajado, donde cada detalle ha sido pensado para crear una experiencia única y en sintonía con el espíritu creativo de la zona. ",
+    location: "Roma Norte",
+    previousLink: "/tatel-polanco",
+    nextLink: "/moliere-310-polanco",
+    locationInMap: {
+      lat: 19.419211,
+      lng: -99.170745,
+    },
+    district: "Roma Norte",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 49000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 34300,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 49000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 34300,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 49000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 34300,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 57000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 39900,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 69000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 48300,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 78000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 54600,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "CASA COMPLETA (150 PX)",
+            price: 49000,
+          },
+          {
+            type: "POR PISO (80 PX)",
+            price: 34300,
+          },
+        ],
+      },
+    ],
+    priceDisclaimer: "*PRECIOS VARÍAN EN FIN DE AÑO",
+    flat: CASAJARANAFLAT,
+    flatPDF: CASAJARANAFLATPDF,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/casa-jarana-roma-norte?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  },
   {
     jsonLd: {
       "@context": "https://schema.org",
@@ -129,7 +594,7 @@ export const rentPlaces: RentPlace[] = [
       {
         title: "Horario",
         description:
-          "L - J: 8:00 AM - 10:00 PM, V - S: 8:00 AM - 11:00 PM, D: 8:00 AM - 7:00 PM",
+         ["Lunes - Jueves:" , "8:00 AM - 10:00 PM", "Viernes - Sábado:", "8:00 AM - 11:00 PM", "Domingo:", "8:00 AM - 7:00 PM"],
       },
       {
         title: "Audio",
@@ -147,7 +612,7 @@ export const rentPlaces: RentPlace[] = [
     largeDescription:
       "¡Descubre la magia de nuestra terraza La Galería! Ubicada en el corazón de Polanco, ofrecemos una de las mejores vistas de la Ciudad de México. Disfruta de la transición de día a noche mientras te maravillas con la belleza urbana. Nuestro espacio cuenta con un techo retráctil y cortinas motorizadas, operadas por un sistema eléctrico totalmente automatizado, que te permite disfrutar al máximo al aire libre en cualquier clima. Permitimos que la naturaleza y la elegancia se fusionen para brindarte una experiencia inolvidable en tu próximo evento.",
     location: "Polanco",
-    previousLink: "/tonala-171-roma-norte",
+    previousLink: "/casa-jarana-roma-norte",
     nextLink: "/palmas-781-lomas-de-chapultepec",
     locationInMap: {
       lat: 19.4364466,
@@ -284,7 +749,6 @@ export const rentPlaces: RentPlace[] = [
       "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
     querySearchMaps: "terraza polanco+CDMX",
   },
-
   {
     jsonLd: {
       "@context": "https://schema.org",
@@ -548,7 +1012,7 @@ export const rentPlaces: RentPlace[] = [
       "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonalá, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
     location: "Roma Norte",
     previousLink: "/palmas-781-lomas-de-chapultepec",
-    nextLink: "/moliere-310-polanco",
+    nextLink: "/tatel-polanco",
     locationInMap: {
       lat: 19.4135428,
       lng: -99.1642174,
