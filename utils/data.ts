@@ -4,20 +4,19 @@ import MOLIERE from "@/public/images/Hero/MoliereHero.webp";
 import PALMAS from "@/public/images/HeroNew.webp";
 import TONALÁ from "@/public/images/TonalaHome.webp";
 
-
 //CASA JARANA IMAGES
 
-import CASAJARANA from '@/public/images/Hero/CasaJaranaHero.png'
-import CASAJARANA1 from '@/public/images/CASA-JARANA (1).png'
-import CASAJARANA2 from '@/public/images/CASA-JARANA (2).png' 
-import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
+import CASAJARANA from "@/public/images/Hero/CasaJaranaHero.png";
+import CASAJARANA1 from "@/public/images/CASA-JARANA (1).png";
+import CASAJARANA2 from "@/public/images/CASA-JARANA (2).png";
+import CASAJARANA3 from "@/public/images/CASA-JARANA (3).png";
 
 //TATEL IMAGES
-import TATEL from '@/public/images/TATEL (4).png'
-import TATEL1 from '@/public/images/TATEL (1).png'
-import TATEL2 from '@/public/images/TATEL (3).png'
-import TATEL3 from '@/public/images/Hero/TATELHero.png'
-import TATEL4 from '@/public/images/TATEL (5).png'
+import TATEL from "@/public/images/TATEL (4).png";
+import TATEL1 from "@/public/images/TATEL (1).png";
+import TATEL2 from "@/public/images/TATEL (3).png";
+import TATEL3 from "@/public/images/Hero/TATELHero.png";
+import TATEL4 from "@/public/images/TATEL (5).png";
 
 // MOLIERE IMAGES
 import Moliere2 from "@/public/images/Moliere2.webp";
@@ -47,15 +46,12 @@ import TATELPrivados from "@/public/flat/TATEL_PRIVADOS.png";
 import TATELTerraza from "@/public/flat/TATEL_TERRAZA.png";
 import TATELWelcomeDrinks from "@/public/flat/TATEL_WELCOME_DRINKS.png";
 
-
-
-
 import GALERIAFLAT from "@/public/flat/Galeria.png";
 import PEPITAFLAT from "@/public/flat/Pepita.png";
 import MACARELLAFLAT from "@/public/flat/Tonala.png";
 
 //FLAT PDF
-const CASAJARANAFLATPDF = "/pdfs/CASA_JARANA.pdf";  
+const CASAJARANAFLATPDF = "/pdfs/CASA_JARANA.pdf";
 
 //TATEL FLAT PDF
 const TATELSALONPRINCIPAL = "/pdfs/TATEL SALON PRINCIPAL.pdf";
@@ -89,7 +85,7 @@ export type RentPlace = {
   location: string;
   previousLink: string;
   nextLink: string;
-  querySearchMaps: string;
+  querySearchMaps?: string;
   locationInMap: { lat: number; lng: number };
   district: string;
   prices: PricePlace[];
@@ -593,8 +589,14 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Horario",
-        description:
-         ["Lunes - Jueves:" , "8:00 AM - 10:00 PM", "Viernes - Sábado:", "8:00 AM - 11:00 PM", "Domingo:", "8:00 AM - 7:00 PM"],
+        description: [
+          "Lunes - Jueves:",
+          "8:00 AM - 10:00 PM",
+          "Viernes - Sábado:",
+          "8:00 AM - 11:00 PM",
+          "Domingo:",
+          "8:00 AM - 7:00 PM",
+        ],
       },
       {
         title: "Audio",

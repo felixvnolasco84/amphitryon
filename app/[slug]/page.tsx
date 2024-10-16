@@ -171,7 +171,9 @@ export default function PlacePage({ params }: Props) {
           )}
 
           <Suspense fallback={<div>Cargando mapa...</div>}>
-            <CustomMapSection query={rentPlace.querySearchMaps} />
+            {rentPlace.querySearchMaps && (
+              <CustomMapSection query={rentPlace.querySearchMaps} />
+            )}
           </Suspense>
 
           <section id="contacto" className="flex flex-col items-center gap-2">
