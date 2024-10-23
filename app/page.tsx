@@ -47,29 +47,22 @@ export default function Home() {
           >
             LLámanos
           </h3>
-          <div className="grid grid-cols-2">
-            <Link target="_blank" href={"tel:5523053711"}>
-              <Button className="text-lg underline" variant={"ghost"}>
-                Inés Torres (55) 2305 3711
-              </Button>
-            </Link>
-            <Link target="_blank" href={"mailto:ines@amphitryon.mx"}>
-              <Button className="text-lg underline" variant={"ghost"}>
-                ines@amphitryon.mx
-              </Button>
-            </Link>
-          </div>
-          <Link href={"tel:5542957398"}>
+          <Link target="_blank" href={"tel:5523053711"}>
+            <Button className="text-lg underline" variant={"ghost"}>
+              Inés Torres (55) 2305 3711
+            </Button>
+          </Link>
+          <Link target="_blank" href={"tel:5542957398"}>``
             <Button className="text-lg underline" variant={"ghost"}>
               Salvador Mier: (55) 4295 7398
             </Button>
           </Link>
-          <Link href={"tel:5513842959"}>
+          <Link target="_blank" href={"tel:5513842959"}>``
             <Button className="text-lg underline" variant={"ghost"}>
               César González: (55) 1384 2959
             </Button>
           </Link>
-          <Link className="pb-4" href={"tel:5620244047"}>
+          <Link target="_blank" className="pb-4" href={"tel:5620244047"}>
             <Button className="text-lg underline" variant={"ghost"}>
               Antón Arias: (56) 2024 4047
             </Button>
