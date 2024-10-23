@@ -19,19 +19,12 @@ export default function Footer() {
             />
           </Link>
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
-            <div className="grid grid-cols-2">
-              <Link target="_blank" href={"tel:5523053711"}>
-                <Button className="text-lg underline" variant={"ghost"}>
-                  Inés Torres (55) 2305 3711
-                </Button>
-              </Link>
-              <Link target="_blank" href={"mailto:ines@amphitryon.mx"}>
-                <Button className="text-lg underline" variant={"ghost"}>
-                  ines@amphitryon.mx
-                </Button>
-              </Link>
-            </div>
-            <Link target="_blank" href={"tel:5542957398"}>
+            <Link target="_blank" href={"tel:5523053711"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Inés Torres (55) 2305 3711
+              </Button>
+            </Link>
+            <Link target="_blank" href={"tel:5542957398"}>           
               <Button className="text-lg underline" variant={"ghost"}>
                 Salvador Mier: (55) 4295 7398
               </Button>
