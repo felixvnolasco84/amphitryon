@@ -931,160 +931,160 @@ export const rentPlaces: RentPlace[] = [
     whatsAppURL:
       "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
-  {
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Tonalá 171",
-      url: "https://www.amphitryon.mx/tonala-171-roma-norte",
-      logo: "https://www.amphitryon.mx/images/Tonala1.png",
-      description:
-        "Tonalá 171 ofrece un espacio exclusivo en la Colonia Roma Norte con capacidad para eventos de hasta 90 personas. Disfruta de una vista inigualable y un ambiente elegante en medio de la naturaleza.",
-      telephone: "+52-55-6868-8442",
-      priceRange: "$$",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Tonalá 171",
-        addressLocality: "Ciudad de México",
-        addressRegion: "CDMX",
-        postalCode: "06700",
-        addressCountry: "MX",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 19.417047,
-        longitude: -99.161392,
-      },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
-          ],
-          opens: "08:00",
-          closes: "00:00",
-        },
-      ],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+52-55-6868-8442",
-          contactType: "Reservas",
-        },
-      ],
-    },
-    metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
-    metaDescription:
-      "Nuestra terraza te ofrece serenidad y sofisticación en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación",
-    slug: "tonala-171-roma-norte",
-    name: "TONALÁ 171",
-    description: "TERRAZA PEPITA",
-    img: TONALÁ,
-    gallery: [Tonala1, Tonala2, Tonala3, Tonala4],
-    features: [
-      {
-        title: "Capacidad",
-        description: "90 PAX",
-      },
-      {
-        title: "Horario",
-        description: "8:00 - 0:00",
-      },
-      {
-        title: "Audio",
-        description: "MEYER SOUND",
-      },
-      {
-        title: "Mobilario",
-        description: "INCLUÍDO",
-      },
-    ],
-    largeDescription:
-      "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonalá, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
-    location: "Roma Norte",
-    previousLink: "/palmas-781-lomas-de-chapultepec",
-    nextLink: "/tatel-polanco",
-    locationInMap: {
-      lat: 19.4135428,
-      lng: -99.1642174,
-    },
-    district: "ROMA NORTE",
-    prices: [
-      {
-        day: "Lunes",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 35000,
-          },
-        ],
-      },
-      {
-        day: "Martes",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 35000,
-          },
-        ],
-      },
-      {
-        day: "Miércoles",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 40000,
-          },
-        ],
-      },
-      {
-        day: "Jueves",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 40000,
-          },
-        ],
-      },
-      {
-        day: "Viernes",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 45000,
-          },
-        ],
-      },
-      {
-        day: "Sábado",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 45000,
-          },
-        ],
-      },
-      {
-        day: "Domingo",
-        type: [
-          {
-            type: "Terraza (90PX)",
-            price: 35000,
-          },
-        ],
-      },
-    ],
-    flat: PEPITAFLAT,
-    flatPDF: PEPITAFLATPDF,
-    calendlyURL:
-      "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000306",
-    whatsAppURL:
-      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
-  },
+  // {
+  //   jsonLd: {
+  //     "@context": "https://schema.org",
+  //     "@type": "LocalBusiness",
+  //     name: "Tonalá 171",
+  //     url: "https://www.amphitryon.mx/tonala-171-roma-norte",
+  //     logo: "https://www.amphitryon.mx/images/Tonala1.png",
+  //     description:
+  //       "Tonalá 171 ofrece un espacio exclusivo en la Colonia Roma Norte con capacidad para eventos de hasta 90 personas. Disfruta de una vista inigualable y un ambiente elegante en medio de la naturaleza.",
+  //     telephone: "+52-55-6868-8442",
+  //     priceRange: "$$",
+  //     address: {
+  //       "@type": "PostalAddress",
+  //       streetAddress: "Tonalá 171",
+  //       addressLocality: "Ciudad de México",
+  //       addressRegion: "CDMX",
+  //       postalCode: "06700",
+  //       addressCountry: "MX",
+  //     },
+  //     geo: {
+  //       "@type": "GeoCoordinates",
+  //       latitude: 19.417047,
+  //       longitude: -99.161392,
+  //     },
+  //     openingHoursSpecification: [
+  //       {
+  //         "@type": "OpeningHoursSpecification",
+  //         dayOfWeek: [
+  //           "Monday",
+  //           "Tuesday",
+  //           "Wednesday",
+  //           "Thursday",
+  //           "Friday",
+  //           "Saturday",
+  //           "Sunday",
+  //         ],
+  //         opens: "08:00",
+  //         closes: "00:00",
+  //       },
+  //     ],
+  //     contactPoint: [
+  //       {
+  //         "@type": "ContactPoint",
+  //         telephone: "+52-55-6868-8442",
+  //         contactType: "Reservas",
+  //       },
+  //     ],
+  //   },
+  //   metaTitle: "Tonalá 171 en Roma Norte - Grupo Amphytrion",
+  //   metaDescription:
+  //     "Nuestra terraza te ofrece serenidad y sofisticación en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación",
+  //   slug: "tonala-171-roma-norte",
+  //   name: "TONALÁ 171",
+  //   description: "TERRAZA PEPITA",
+  //   img: TONALÁ,
+  //   gallery: [Tonala1, Tonala2, Tonala3, Tonala4],
+  //   features: [
+  //     {
+  //       title: "Capacidad",
+  //       description: "90 PAX",
+  //     },
+  //     {
+  //       title: "Horario",
+  //       description: "8:00 - 0:00",
+  //     },
+  //     {
+  //       title: "Audio",
+  //       description: "MEYER SOUND",
+  //     },
+  //     {
+  //       title: "Mobilario",
+  //       description: "INCLUÍDO",
+  //     },
+  //   ],
+  //   largeDescription:
+  //     "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, nuestra terraza te ofrece un refugio sereno y sofisticado en medio del bullicio de la ciudad de México. Disfruta de una vista incomparable rodeada de exuberante vegetación, convirtiendo tu evento en una experiencia verdaderamente especial. Con capacidad para hasta 90 personas en formato cóctel y de hasta 40 personas en formato todos sentados, nuestro espacio es el escenario perfecto para reuniones íntimas y eventos exclusivos. Sumérgete en la arquitectura excepcional de una de las casas más distinguidas de la ciudad, donde cada detalle está cuidadosamente diseñado para ofrecerte un ambiente de lujo y exclusividad, en sintonía con las buenas vibras de la Colonia Roma. Déjate envolver por la atmósfera única de Terraza Tonalá, donde la fusión entre la naturaleza y la elegancia crea un entorno mágico y encantador. Escapa de la rutina y haz de tu evento una experiencia inolvidable en medio de la tranquilidad y belleza de nuestra terraza. ¡Te esperamos para crear momentos memorables juntos!",
+  //   location: "Roma Norte",
+  //   previousLink: "/palmas-781-lomas-de-chapultepec",
+  //   nextLink: "/tatel-polanco",
+  //   locationInMap: {
+  //     lat: 19.4135428,
+  //     lng: -99.1642174,
+  //   },
+  //   district: "ROMA NORTE",
+  //   prices: [
+  //     {
+  //       day: "Lunes",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 35000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Martes",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 35000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Miércoles",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 40000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Jueves",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 40000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Viernes",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 45000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Sábado",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 45000,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       day: "Domingo",
+  //       type: [
+  //         {
+  //           type: "Terraza (90PX)",
+  //           price: 35000,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  //   flat: PEPITAFLAT,
+  //   flatPDF: PEPITAFLATPDF,
+  //   calendlyURL:
+  //     "https://calendly.com/amphitryonterrazas/terraza-pepita?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000306",
+  //   whatsAppURL:
+  //     "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  // },
 ];
