@@ -5,4 +5,7 @@ export default defineSchema({
   WhatsAppContact: defineTable({
     receivedBy: v.string(),
   }),
+  CallContact: defineTable({
+    receivedBy: v.string(),
+  }),
 });
