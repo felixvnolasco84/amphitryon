@@ -185,7 +185,7 @@ export const rentPlaces: RentPlace[] = [
     largeDescription:
       "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 500 personas, este sofisticado espacio se divide en tres ambientes únicos: un amplio salón ideal para cenas o conferencias, una terraza encantadora para disfrutar del aire libre y un bar exclusivo donde la mezcla de cocteles premium crea el ambiente perfecto para cualquier ocasión. TATEL garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
     location: "Polanco",
-    previousLink: "/tonala-171-roma-norte",
+    previousLink: "/palmas-781-lomas-de-chapultepec",
     nextLink: "/casa-jarana-roma-norte",
     locationInMap: {
       lat: 19.431593,
@@ -197,7 +197,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Lunes",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 70000,
           },
           {
@@ -205,8 +205,8 @@ export const rentPlaces: RentPlace[] = [
             price: 150000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 40000,
+            type: "BAR + SALON (200 PX)",
+            price: 110000,
           },
         ],
       },
@@ -214,7 +214,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Martes",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 70000,
           },
           {
@@ -222,8 +222,8 @@ export const rentPlaces: RentPlace[] = [
             price: 150000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 40000,
+            type: "BAR + SALON (200 PX)",
+            price: 110000,
           },
         ],
       },
@@ -231,7 +231,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Miércoles",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 80000,
           },
           {
@@ -239,8 +239,8 @@ export const rentPlaces: RentPlace[] = [
             price: 150000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 40000,
+            type: "BAR + SALON (200 PX)",
+            price: 120000,
           },
         ],
       },
@@ -248,7 +248,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Jueves",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 80000,
           },
           {
@@ -256,8 +256,8 @@ export const rentPlaces: RentPlace[] = [
             price: 180000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 45000,
+            type: "BAR + SALON (200 PX)",
+            price: 125000,
           },
         ],
       },
@@ -265,7 +265,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Viernes",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 90000,
           },
           {
@@ -273,8 +273,8 @@ export const rentPlaces: RentPlace[] = [
             price: 180000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 50000,
+            type: "BAR + SALON (200 PX)",
+            price: 140000,
           },
         ],
       },
@@ -282,7 +282,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Sábado",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 90000,
           },
           {
@@ -290,8 +290,8 @@ export const rentPlaces: RentPlace[] = [
             price: 180000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 50000,
+            type: "BAR + SALON (200 PX)",
+            price: 150000,
           },
         ],
       },
@@ -299,7 +299,7 @@ export const rentPlaces: RentPlace[] = [
         day: "Domingo",
         type: [
           {
-            type: "TERRAZA O SALÓN (200PX)",
+            type: "TERRAZA (170PX)",
             price: 70000,
           },
           {
@@ -307,8 +307,8 @@ export const rentPlaces: RentPlace[] = [
             price: 150000,
           },
           {
-            type: "BAR (100 PX)",
-            price: 40000,
+            type: "BAR + SALON (200 PX)",
+            price: 110000,
           },
         ],
       },
@@ -434,11 +434,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 49000,
+            price: 56500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 34300,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 40300,
           },
         ],
       },
@@ -447,11 +447,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 49000,
+            price: 56500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 34300,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 40300,
           },
         ],
       },
@@ -460,11 +460,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 49000,
+            price: 56500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 34300,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 40300,
           },
         ],
       },
@@ -473,11 +473,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 57000,
+            price: 65500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 39900,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 46600,
           },
         ],
       },
@@ -486,11 +486,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 69000,
+            price: 78500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 48300,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 55700,
           },
         ],
       },
@@ -499,11 +499,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 78000,
+            price: 88500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 54600,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 62700,
           },
         ],
       },
@@ -512,11 +512,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (150 PX)",
-            price: 49000,
+            price: 56500,
           },
           {
-            type: "POR PISO (80 PX)",
-            price: 34300,
+            type: "PLANTA BAJA O TERRAZA (80 PX)",
+            price: 40300,
           },
         ],
       },
@@ -592,8 +592,14 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Horario",
-        description:
-         ["Lunes - Jueves:" , "8:00 AM - 10:00 PM", "Viernes - Sábado:", "8:00 AM - 11:00 PM", "Domingo:", "8:00 AM - 7:00 PM"],
+        description: [
+          "Lunes - Jueves:",
+          "8:00 AM - 10:00 PM",
+          "Viernes - Sábado:",
+          "8:00 AM - 11:00 PM",
+          "Domingo:",
+          "8:00 AM - 7:00 PM",
+        ],
       },
       {
         title: "Audio",
@@ -625,37 +631,20 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 46000,
+            price: 51000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 41000,
+            price: 46000,
           },
           {
-            type: "COMPLETO (180PX)",
-            price: 56000,
+            type: "COMPLETO (150PX)",
+            price: 61000,
           },
         ],
       },
       {
         day: "Martes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 46000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 41000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 56000,
-          },
-        ],
-      },
-      {
-        day: "Miércoles",
         type: [
           {
             type: "ESPACIO A (100PX)",
@@ -666,8 +655,25 @@ export const rentPlaces: RentPlace[] = [
             price: 46000,
           },
           {
-            type: "COMPLETO (180PX)",
-            price: 60000,
+            type: "COMPLETO (150PX)",
+            price: 61000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 56000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 51000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 66000,
           },
         ],
       },
@@ -676,37 +682,20 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 53000,
+            price: 58000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 48000,
+            price: 53000,
           },
           {
-            type: "COMPLETO (180PX)",
-            price: 61000,
+            type: "COMPLETO (150PX)",
+            price: 67000,
           },
         ],
       },
       {
         day: "Viernes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 71000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 61000,
-          },
-          {
-            type: "COMPLETO (180PX)",
-            price: 86000,
-          },
-        ],
-      },
-      {
-        day: "Sábado",
         type: [
           {
             type: "ESPACIO A (100PX)",
@@ -717,8 +706,25 @@ export const rentPlaces: RentPlace[] = [
             price: 66000,
           },
           {
-            type: "COMPLETO (180PX)",
-            price: 90000,
+            type: "COMPLETO (150PX)",
+            price: 81000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 81000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 71000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 96000,
           },
         ],
       },
@@ -727,15 +733,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 46000,
+            price: 51000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 41000,
+            price: 46000,
           },
           {
-            type: "COMPLETO (180PX)",
-            price: 56000,
+            type: "COMPLETO (150PX)",
+            price: 61000,
           },
         ],
       },
@@ -825,7 +831,7 @@ export const rentPlaces: RentPlace[] = [
       "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 200 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
     location: "Lomas de Chapultepec",
     previousLink: "/moliere-310-polanco",
-    nextLink: "/tonala-171-roma-norte",
+    nextLink: "/tatel-polanco",
     locationInMap: {
       lat: 19.429364,
       lng: -99.216756,
@@ -837,11 +843,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 30500,
+            price: 35200,
           },
           {
             type: "Completo (200PX)",
-            price: 42500,
+            price: 47400,
           },
         ],
       },
@@ -850,11 +856,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 30500,
+            price: 35200,
           },
           {
             type: "Completo (200PX)",
-            price: 42500,
+            price: 47400,
           },
         ],
       },
@@ -863,11 +869,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 40500,
+            price: 45200,
           },
           {
             type: "Completo (200PX)",
-            price: 62500,
+            price: 67400,
           },
         ],
       },
@@ -876,11 +882,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 40500,
+            price: 45200,
           },
           {
             type: "Completo (200PX)",
-            price: 62500,
+            price: 67400,
           },
         ],
       },
@@ -889,11 +895,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 46000,
+            price: 51000,
           },
           {
             type: "Completo (200PX)",
-            price: 77000,
+            price: 81000,
           },
         ],
       },
@@ -902,11 +908,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 46000,
+            price: 51000,
           },
           {
             type: "Completo (200PX)",
-            price: 77000,
+            price: 81000,
           },
         ],
       },
@@ -915,11 +921,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 30500,
+            price: 35200,
           },
           {
             type: "Completo (200PX)",
-            price: 42500,
+            price: 47400,
           },
         ],
       },
