@@ -57,9 +57,9 @@ export default function Home() {
               Salvador Mier: (55) 4295 7398
             </Button>
           </Link>
-          <Link target="_blank" href={"tel:5513842959"}>
+          <Link target="_blank" href={"tel:5544502253"}>
             <Button className="text-lg underline" variant={"ghost"}>
-              César González: (55) 1384 2959
+              Rafael González: (55) 4450 2253
             </Button>
           </Link>
           <Link target="_blank" className="pb-4" href={"tel:5620244047"}>

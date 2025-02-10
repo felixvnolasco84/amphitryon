@@ -106,11 +106,11 @@ export const rentPlaces: RentPlace[] = [
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "TATEL",
+      name: "Terraza Masaryk 183",
       url: "https://www.amphitryon.mx/tatel-polanco",
       logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",
       description:
-        "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
+        "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
       telephone: "+52-55-2305-3711",
       priceRange: "$$$$",
       address: {
@@ -151,12 +151,12 @@ export const rentPlaces: RentPlace[] = [
         },
       ],
     },
-    metaTitle: "TATEL en Polanco - Grupo Amphytrion",
+    metaTitle: "Terraza Masaryk 183 en Polanco - Grupo Amphytrion",
     metaDescription:
-      "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
+      "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
     slug: "tatel-polanco",
     name: "MASARYK 183",
-    description: "TATEL",
+    description: "Terraza Masaryk 183",
     img: TATEL,
     gallery: [TATEL, TATEL1, TATEL2, TATEL3, TATEL4],
     features: [
@@ -183,7 +183,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     largeDescription:
-      "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 500 personas, este sofisticado espacio se divide en tres ambientes únicos: un amplio salón ideal para cenas o conferencias, una terraza encantadora para disfrutar del aire libre y un bar exclusivo donde la mezcla de cocteles premium crea el ambiente perfecto para cualquier ocasión. TATEL garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
+      "Ubicado en una de las zonas más exclusivas de Polanco, TATEL es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 500 personas, este sofisticado espacio se divide en tres ambientes únicos: un amplio salón ideal para cenas o conferencias, una terraza encantadora para disfrutar del aire libre y un bar exclusivo donde la mezcla de cocteles premium crea el ambiente perfecto para cualquier ocasión. Terraza Masaryk 183 garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
     location: "Polanco",
     previousLink: "/palmas-781-lomas-de-chapultepec",
     nextLink: "/casa-jarana-roma-norte",

@@ -217,7 +217,7 @@ export function ContactForm() {
                           className={`${clashDisplayRegular.className} text-lg`}
                           value="TATEL"
                         >
-                          TATEL
+                          Terraza Masaryk 183
                         </SelectItem>
                         <SelectItem
                           className={`${clashDisplayRegular.className} text-lg`}
