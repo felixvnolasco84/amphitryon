@@ -19,9 +19,14 @@ export default function Footer() {
             />
           </Link>
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
-            <Link target="_blank" href={"tel:5523053711"}>
+            {/* <Link target="_blank" href={"tel:5523053711"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Inés Torres (55) 2305 3711
+              </Button>
+            </Link> */}
+            <Link target="_blank" href={"tel:5544502253"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Rafael González: (55) 4450 2253
               </Button>
             </Link>
             <Link target="_blank" href={"tel:5542957398"}>
@@ -29,16 +34,12 @@ export default function Footer() {
                 Salvador Mier: (55) 4295 7398
               </Button>
             </Link>
-            <Link target="_blank" href={"tel:5544502253"}>
-              <Button className="text-lg underline" variant={"ghost"}>
-                Rafael González: (55) 4450 2253
-              </Button>
-            </Link>
-            <Link target="_blank" href={"tel:5620244047"}>
+
+            {/* <Link target="_blank" href={"tel:5620244047"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Antón Arias: (56) 2024 4047
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
         <div className="flex flex-col items-center gap-2 lg:items-end lg:gap-6 xl:gap-12">
