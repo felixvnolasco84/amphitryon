@@ -15,9 +15,9 @@ import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
 //TATEL IMAGES
 import TATEL from '@/public/images/TATEL (4).png'
 import TATEL1 from '@/public/images/TATEL (1).png'
-import TATEL2 from '@/public/images/TATEL (3).png'
-import TATEL3 from '@/public/images/Hero/TATELHero.png'
-import TATEL4 from '@/public/images/TATEL (5).png'
+// import TATEL2 from '@/public/images/TATEL (3).png'
+// import TATEL3 from '@/public/images/Hero/TATELHero.png'
+// import TATEL4 from '@/public/images/TATEL (5).png'
 
 // MOLIERE IMAGES
 import Moliere2 from "@/public/images/Moliere2.webp";
@@ -158,7 +158,7 @@ export const rentPlaces: RentPlace[] = [
     name: "MASARYK 183",
     description: "Terraza Masaryk 183",
     img: TATEL,
-    gallery: [TATEL, TATEL1, TATEL2, TATEL3, TATEL4],
+    gallery: [TATEL, TATEL1],
     features: [
       {
         title: "Capacidad",
@@ -258,26 +258,26 @@ export const rentPlaces: RentPlace[] = [
     flat: TATELSALONPRINCIPALImage,
     flatPDF: TATELSALONPRINCIPAL,
     complexFlat: [
-      {
-        flat: TATELSALONPRINCIPALImage,
-        flatPDF: TATELSALONPRINCIPAL,
-      },
-      {
-        flat: TATELJardin,
-        flatPDF: TATELJARDIN,
-      },
-      {
-        flat: TATELPrivados,
-        flatPDF: TATELPRIVADOS,
-      },
+      // {
+      //   flat: TATELSALONPRINCIPALImage,
+      //   flatPDF: TATELSALONPRINCIPAL,
+      // },
+      // {
+      //   flat: TATELJardin,
+      //   flatPDF: TATELJARDIN,
+      // },
+      // {
+      //   flat: TATELPrivados,
+      //   flatPDF: TATELPRIVADOS,
+      // },
       {
         flat: TATELTerraza,
         flatPDF: TATELTERRAZA,
       },
-      {
-        flat: TATELWelcomeDrinks,
-        flatPDF: TATELWELCOMEDRINKS,
-      },
+      // {
+      //   flat: TATELWelcomeDrinks,
+      //   flatPDF: TATELWELCOMEDRINKS,
+      // },
     ],
     calendlyURL:
       "https://calendly.com/amphitryonterrazas/tatel?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
