@@ -180,7 +180,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     largeDescription:
-      "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 500 personas, este sofisticado espacio se divide en tres ambientes únicos: un amplio salón ideal para cenas o conferencias, una terraza encantadora para disfrutar del aire libre y un bar exclusivo donde la mezcla de cocteles premium crea el ambiente perfecto para cualquier ocasión. Terraza Masaryk 183 garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
+      "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 200 personas, una terraza encantadora para disfrutar del aire libre. Terraza Masaryk 183 garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
     location: "Polanco",
     previousLink: "/palmas-781-lomas-de-chapultepec",
     nextLink: "/casa-jarana-roma-norte",
