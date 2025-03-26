@@ -163,10 +163,7 @@ export const rentPlaces: RentPlace[] = [
       {
         title: "Capacidad",
         description: [
-          "CASA COMPLETA: 500 PX",
           "TERRAZA: 200 PX",
-          "SALÓN: 200 PX",
-          "BAR: 90 PX",
         ],
       },
       {
@@ -200,14 +197,6 @@ export const rentPlaces: RentPlace[] = [
             type: "TERRAZA (170PX)",
             price: 73400,
           },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 150000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 110000,
-          },
         ],
       },
       {
@@ -216,14 +205,6 @@ export const rentPlaces: RentPlace[] = [
           {
             type: "TERRAZA (170PX)",
             price: 73400,
-          },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 150000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 110000,
           },
         ],
       },
@@ -234,14 +215,6 @@ export const rentPlaces: RentPlace[] = [
             type: "TERRAZA (170PX)",
             price: 83400,
           },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 150000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 120000,
-          },
         ],
       },
       {
@@ -250,14 +223,6 @@ export const rentPlaces: RentPlace[] = [
           {
             type: "TERRAZA (170PX)",
             price: 83400,
-          },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 180000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 125000,
           },
         ],
       },
@@ -268,14 +233,6 @@ export const rentPlaces: RentPlace[] = [
             type: "TERRAZA (170PX)",
             price: 93400,
           },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 180000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 140000,
-          },
         ],
       },
       {
@@ -285,14 +242,6 @@ export const rentPlaces: RentPlace[] = [
             type: "TERRAZA (170PX)",
             price: 93400,
           },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 180000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 150000,
-          },
         ],
       },
       {
@@ -301,14 +250,6 @@ export const rentPlaces: RentPlace[] = [
           {
             type: "TERRAZA (170PX)",
             price: 73400,
-          },
-          {
-            type: "COMPLETO (500 PX)",
-            price: 150000,
-          },
-          {
-            type: "BAR + SALON (200 PX)",
-            price: 110000,
           },
         ],
       },
