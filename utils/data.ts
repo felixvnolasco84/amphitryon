@@ -176,7 +176,7 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Mobilario",
-        description: "350 PAX (INCLUÍDO)",
+        description: "200 PAX (INCLUÍDO)",
       },
     ],
     largeDescription:
