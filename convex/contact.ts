@@ -12,8 +12,11 @@ export const create = mutation({
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Salvador Mier" });
       return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
-      await ctx.db.insert("WhatsAppContact", { receivedBy: "Rafael González" });
+      await ctx.db.insert("WhatsAppContact", { receivedBy: "Luisa Gomez" });
       return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
+    } else if (lastContact?.receivedBy === "Luisa Gomez") {
+      await ctx.db.insert("WhatsAppContact", { receivedBy: "Rafael González" });
+      return `https://wa.me/5610070314?text=${encodeURIComponent(message)}`;
     }
   },
 });
@@ -35,6 +38,8 @@ export const getLastContact = query({
       return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
       return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
+    } else if (lastContact?.receivedBy === "Luisa Gomez") {
+      return `https://wa.me/5610070314?text=${encodeURIComponent(message)}`;
     }
   },
 });
