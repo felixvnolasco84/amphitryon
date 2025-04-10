@@ -163,7 +163,7 @@ export const rentPlaces: RentPlace[] = [
       {
         title: "Capacidad",
         description: [
-          "TERRAZA: 200 PX",
+          "TERRAZA: 150 PX",
         ],
       },
       {
@@ -176,7 +176,7 @@ export const rentPlaces: RentPlace[] = [
       },
       {
         title: "Mobilario",
-        description: "200 PAX (INCLUÍDO)",
+        description: "150 PAX (INCLUÍDO)",
       },
     ],
     largeDescription:
@@ -753,7 +753,7 @@ export const rentPlaces: RentPlace[] = [
     features: [
       {
         title: "Capacidad",
-        description: "200 PAX",
+        description: "180 PAX",
       },
       {
         title: "Horario",
@@ -769,7 +769,7 @@ export const rentPlaces: RentPlace[] = [
       },
     ],
     largeDescription:
-      "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 200 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
+      "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 180 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
     location: "Lomas de Chapultepec",
     previousLink: "/moliere-310-polanco",
     nextLink: "/tatel-polanco",
@@ -784,11 +784,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 35200,
+            price: 38500,
           },
           {
-            type: "Completo (200PX)",
-            price: 47400,
+            type: "Completo (180PX)",
+            price: 51000,
           },
         ],
       },
@@ -797,11 +797,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 35200,
+            price: 38500,
           },
           {
-            type: "Completo (200PX)",
-            price: 47400,
+            type: "Completo (180PX)",
+            price: 51000,
           },
         ],
       },
@@ -810,11 +810,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 45200,
+            price: 48500,
           },
           {
-            type: "Completo (200PX)",
-            price: 67400,
+            type: "Completo (180PX)",
+            price: 71000,
           },
         ],
       },
@@ -823,11 +823,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 45200,
+            price: 48500,
           },
           {
-            type: "Completo (200PX)",
-            price: 67400,
+            type: "Completo (180PX)",
+            price: 71000,
           },
         ],
       },
@@ -836,11 +836,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 51000,
+            price: 54500,
           },
           {
-            type: "Completo (200PX)",
-            price: 81000,
+            type: "Completo (180PX)",
+            price: 84500,
           },
         ],
       },
@@ -849,11 +849,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 51000,
+            price: 54500,
           },
           {
-            type: "Completo (200PX)",
-            price: 81000,
+            type: "Completo (180PX)",
+            price: 84500,
           },
         ],
       },
@@ -862,11 +862,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 35200,
+            price: 38500,
           },
           {
-            type: "Completo (200PX)",
-            price: 47400,
+            type: "Completo (180PX)",
+            price: 51000,
           },
         ],
       },
