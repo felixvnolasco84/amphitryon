@@ -47,12 +47,12 @@ export default function Home() {
           >
             LLámanos
           </h3>
-          {/* <Link target="_blank" href={"tel:5523053711"}>
-            <Button className="text-lg underline" variant={"ghost"}>
-              Inés Torres (55) 2305 3711
-            </Button>
-          </Link> */}
-          <Link target="_blank" href={"tel:5544502253"}>
+          <Link target="_blank" href={"tel:5513842959"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Cesar Gonzalez: (55) 1384 2959
+              </Button>
+            </Link>
+          {/* <Link target="_blank" href={"tel:5544502253"}>
             <Button className="text-lg underline" variant={"ghost"}>
               Rafael González: (55) 4450 2253
             </Button>
@@ -66,7 +66,7 @@ export default function Home() {
             <Button className="text-lg underline" variant={"ghost"}>
               Luisa Gomez: (56) 1007 0314
             </Button>
-          </Link>
+          </Link> */}
 
           {/* <Link target="_blank" className="pb-4" href={"tel:5620244047"}>
             <Button className="text-lg underline" variant={"ghost"}>

@@ -24,7 +24,7 @@ export default function Footer() {
                 Inés Torres (55) 2305 3711
               </Button>
             </Link> */}
-            <Link target="_blank" href={"tel:5544502253"}>
+            {/* <Link target="_blank" href={"tel:5544502253"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Rafael González: (55) 4450 2253
               </Button>
@@ -38,8 +38,13 @@ export default function Footer() {
               <Button className="text-lg underline" variant={"ghost"}>
                 Luisa Gomez: (56) 1007 0314
               </Button>
-            </Link>
+            </Link> */}
 
+            <Link target="_blank" href={"tel:5513842959"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Cesar Gonzalez: (55) 1384 2959
+              </Button>
+            </Link>
             {/* <Link target="_blank" href={"tel:5620244047"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Antón Arias: (56) 2024 4047

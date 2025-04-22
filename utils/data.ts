@@ -106,6 +106,414 @@ export const rentPlaces: RentPlace[] = [
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      name: "Palmas 781",
+      url: "https://www.amphitryon.mx/tonala-171-roma-norte",
+      logo: "https://www.amphitryon.mx/images/Palmas1.png",
+      description:
+        "Palmas 781 es un espacio exclusivo en Lomas de Chapultepec, ideal para eventos con capacidad para hasta 200 personas. Ofrece mobiliario premium, sistema de sonido Bosé y un ambiente sofisticado.",
+      telephone: "+52-55-6868-8442",
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Palmas 781",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "11000",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.426587,
+        longitude: -99.218727,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "02:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-55-6868-8442",
+          contactType: "Reservas",
+        },
+      ],
+    },
+    metaTitle: "Palmas 781 en Lomas de Chapultepec - Grupo Amphytrion",
+    metaDescription:
+      "Ubicado en una de las zonas más recordadas de México, en esta ubicación disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión.",
+    slug: "palmas-781-lomas-de-chapultepec",
+    name: "PALMAS 781",
+    description: "MACARELLA",
+    img: PALMAS,
+    gallery: [Palmas1, Palmas2, Palmas3, Palmas4],
+    features: [
+      {
+        title: "Capacidad",
+        description: "180 PAX",
+      },
+      {
+        title: "Horario",
+        description: "8:00 - 2:00",
+      },
+      {
+        title: "Audio",
+        description: "BOSÉ",
+      },
+      {
+        title: "Mobilario",
+        description: "INCLUÍDO",
+      },
+    ],
+    largeDescription:
+      "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 180 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
+    location: "Lomas de Chapultepec",
+    previousLink: "/moliere-310-polanco",
+    nextLink: "/tatel-polanco",
+    locationInMap: {
+      lat: 19.429364,
+      lng: -99.216756,
+    },
+    district: "Lomas de Chapultepec",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 38500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 51000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 38500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 51000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 48500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 71000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 48500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 71000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 54500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 84500,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 54500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 84500,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "Terraza (80PX)",
+            price: 38500,
+          },
+          {
+            type: "Completo (180PX)",
+            price: 51000,
+          },
+        ],
+      },
+    ],
+    flat: MACARELLAFLAT,
+    flatPDF: MACARELLAFLATPDF,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  },
+  {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Moliere 310",
+      url: "https://www.amphitryon.mx/moliere-310-polanco",
+      logo: "https://www.amphitryon.mx/images/Moliere2.png",
+      description:
+        "Moliere 310 es un espacio en Polanco con una terraza La Galería, capacidad para 180 personas, techo retráctil y vistas espectaculares de la Ciudad de México",
+      telephone: "+52-55-6868-8442",
+      priceRange: "$$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Moliere 310",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "11550",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 19.434692,
+        longitude: -99.195745,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "00:30",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-55-6868-8442",
+          contactType: "Reservas",
+        },
+      ],
+    },
+    metaTitle: "Moliere 310 en Polanco - Grupo Amphytrion",
+    metaDescription:
+      "Este espacio es un verdadero oasis de sofisticación y comodidad. Es el escenario ideal para eventos de cualquier índole con tu familia, amigos o colegas de trabajo",
+    slug: "moliere-310-polanco",
+    name: "MOLIERE 310",
+    description: "LA GALERÍA",
+    img: MOLIERE,
+    gallery: [MOLIERE, Moliere2, Moliere3, Moliere4],
+    features: [
+      {
+        title: "Capacidad",
+        description: "140 PAX",
+      },
+      {
+        title: "Horario",
+        description: [
+          "Lunes - Jueves:",
+          "8:00 AM - 10:00 PM",
+          "Viernes - Sábado:",
+          "8:00 AM - 11:00 PM",
+          "Domingo:",
+          "8:00 AM - 7:00 PM",
+        ],
+      },
+      {
+        title: "Audio",
+        description: "SONANCE",
+      },
+      {
+        title: "Mobilario",
+        description: "120 PAX (INCLUÍDO)",
+      },
+      {
+        title: "Estructura",
+        description: "TECHO RETRÁCTIL",
+      },
+    ],
+    largeDescription:
+      "¡Descubre la magia de nuestra terraza La Galería! Ubicada en el corazón de Polanco, ofrecemos una de las mejores vistas de la Ciudad de México. Disfruta de la transición de día a noche mientras te maravillas con la belleza urbana. Nuestro espacio cuenta con un techo retráctil y cortinas motorizadas, operadas por un sistema eléctrico totalmente automatizado, que te permite disfrutar al máximo al aire libre en cualquier clima. Permitimos que la naturaleza y la elegancia se fusionen para brindarte una experiencia inolvidable en tu próximo evento.",
+    location: "Polanco",
+    previousLink: "/casa-jarana-roma-norte",
+    nextLink: "/palmas-781-lomas-de-chapultepec",
+    locationInMap: {
+      lat: 19.4364466,
+      lng: -99.2012794,
+    },
+    district: "Polanco",
+
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 51000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 46000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 61000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 51000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 46000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 61000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 56000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 51000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 66000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 58000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 53000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 67000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 76000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 66000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 81000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 81000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 71000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 96000,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "ESPACIO A (100PX)",
+            price: 51000,
+          },
+          {
+            type: "ESPACIO B (80PX)",
+            price: 46000,
+          },
+          {
+            type: "COMPLETO (150PX)",
+            price: 61000,
+          },
+        ],
+      },
+    ],
+    flat: GALERIAFLAT,
+    flatPDF: GALERIAFLATPDF,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  },
+  {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
       name: "Terraza Masaryk 183",
       url: "https://www.amphitryon.mx/tatel-polanco",
       logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",
@@ -470,414 +878,8 @@ export const rentPlaces: RentPlace[] = [
     whatsAppURL:
       "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
   },
-  {
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Moliere 310",
-      url: "https://www.amphitryon.mx/moliere-310-polanco",
-      logo: "https://www.amphitryon.mx/images/Moliere2.png",
-      description:
-        "Moliere 310 es un espacio en Polanco con una terraza La Galería, capacidad para 180 personas, techo retráctil y vistas espectaculares de la Ciudad de México",
-      telephone: "+52-55-6868-8442",
-      priceRange: "$$$$",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Moliere 310",
-        addressLocality: "Ciudad de México",
-        addressRegion: "CDMX",
-        postalCode: "11550",
-        addressCountry: "MX",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 19.434692,
-        longitude: -99.195745,
-      },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
-          ],
-          opens: "08:00",
-          closes: "00:30",
-        },
-      ],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+52-55-6868-8442",
-          contactType: "Reservas",
-        },
-      ],
-    },
-    metaTitle: "Moliere 310 en Polanco - Grupo Amphytrion",
-    metaDescription:
-      "Este espacio es un verdadero oasis de sofisticación y comodidad. Es el escenario ideal para eventos de cualquier índole con tu familia, amigos o colegas de trabajo",
-    slug: "moliere-310-polanco",
-    name: "MOLIERE 310",
-    description: "LA GALERÍA",
-    img: MOLIERE,
-    gallery: [MOLIERE, Moliere2, Moliere3, Moliere4],
-    features: [
-      {
-        title: "Capacidad",
-        description: "140 PAX",
-      },
-      {
-        title: "Horario",
-        description: [
-          "Lunes - Jueves:",
-          "8:00 AM - 10:00 PM",
-          "Viernes - Sábado:",
-          "8:00 AM - 11:00 PM",
-          "Domingo:",
-          "8:00 AM - 7:00 PM",
-        ],
-      },
-      {
-        title: "Audio",
-        description: "SONANCE",
-      },
-      {
-        title: "Mobilario",
-        description: "120 PAX (INCLUÍDO)",
-      },
-      {
-        title: "Estructura",
-        description: "TECHO RETRÁCTIL",
-      },
-    ],
-    largeDescription:
-      "¡Descubre la magia de nuestra terraza La Galería! Ubicada en el corazón de Polanco, ofrecemos una de las mejores vistas de la Ciudad de México. Disfruta de la transición de día a noche mientras te maravillas con la belleza urbana. Nuestro espacio cuenta con un techo retráctil y cortinas motorizadas, operadas por un sistema eléctrico totalmente automatizado, que te permite disfrutar al máximo al aire libre en cualquier clima. Permitimos que la naturaleza y la elegancia se fusionen para brindarte una experiencia inolvidable en tu próximo evento.",
-    location: "Polanco",
-    previousLink: "/casa-jarana-roma-norte",
-    nextLink: "/palmas-781-lomas-de-chapultepec",
-    locationInMap: {
-      lat: 19.4364466,
-      lng: -99.2012794,
-    },
-    district: "Polanco",
 
-    prices: [
-      {
-        day: "Lunes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 51000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 46000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 61000,
-          },
-        ],
-      },
-      {
-        day: "Martes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 51000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 46000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 61000,
-          },
-        ],
-      },
-      {
-        day: "Miércoles",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 56000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 51000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 66000,
-          },
-        ],
-      },
-      {
-        day: "Jueves",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 58000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 53000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 67000,
-          },
-        ],
-      },
-      {
-        day: "Viernes",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 76000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 66000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 81000,
-          },
-        ],
-      },
-      {
-        day: "Sábado",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 81000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 71000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 96000,
-          },
-        ],
-      },
-      {
-        day: "Domingo",
-        type: [
-          {
-            type: "ESPACIO A (100PX)",
-            price: 51000,
-          },
-          {
-            type: "ESPACIO B (80PX)",
-            price: 46000,
-          },
-          {
-            type: "COMPLETO (150PX)",
-            price: 61000,
-          },
-        ],
-      },
-    ],
-    flat: GALERIAFLAT,
-    flatPDF: GALERIAFLATPDF,
-    calendlyURL:
-      "https://calendly.com/amphitryonterrazas/la-galeria?hide_event_type_details=0&hide_gdpr_banner=0&primary_color=000409",
-    whatsAppURL:
-      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
-  },
-  {
-    jsonLd: {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      name: "Palmas 781",
-      url: "https://www.amphitryon.mx/tonala-171-roma-norte",
-      logo: "https://www.amphitryon.mx/images/Palmas1.png",
-      description:
-        "Palmas 781 es un espacio exclusivo en Lomas de Chapultepec, ideal para eventos con capacidad para hasta 200 personas. Ofrece mobiliario premium, sistema de sonido Bosé y un ambiente sofisticado.",
-      telephone: "+52-55-6868-8442",
-      priceRange: "$$$",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Palmas 781",
-        addressLocality: "Ciudad de México",
-        addressRegion: "CDMX",
-        postalCode: "11000",
-        addressCountry: "MX",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 19.426587,
-        longitude: -99.218727,
-      },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday",
-          ],
-          opens: "08:00",
-          closes: "02:00",
-        },
-      ],
-      contactPoint: [
-        {
-          "@type": "ContactPoint",
-          telephone: "+52-55-6868-8442",
-          contactType: "Reservas",
-        },
-      ],
-    },
-    metaTitle: "Palmas 781 en Lomas de Chapultepec - Grupo Amphytrion",
-    metaDescription:
-      "Ubicado en una de las zonas más recordadas de México, en esta ubicación disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión.",
-    slug: "palmas-781-lomas-de-chapultepec",
-    name: "PALMAS 781",
-    description: "MACARELLA",
-    img: PALMAS,
-    gallery: [Palmas1, Palmas2, Palmas3, Palmas4],
-    features: [
-      {
-        title: "Capacidad",
-        description: "180 PAX",
-      },
-      {
-        title: "Horario",
-        description: "8:00 - 2:00",
-      },
-      {
-        title: "Audio",
-        description: "BOSÉ",
-      },
-      {
-        title: "Mobilario",
-        description: "INCLUÍDO",
-      },
-    ],
-    largeDescription:
-      "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 180 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
-    location: "Lomas de Chapultepec",
-    previousLink: "/moliere-310-polanco",
-    nextLink: "/tatel-polanco",
-    locationInMap: {
-      lat: 19.429364,
-      lng: -99.216756,
-    },
-    district: "Lomas de Chapultepec",
-    prices: [
-      {
-        day: "Lunes",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 38500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 51000,
-          },
-        ],
-      },
-      {
-        day: "Martes",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 38500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 51000,
-          },
-        ],
-      },
-      {
-        day: "Miércoles",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 48500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 71000,
-          },
-        ],
-      },
-      {
-        day: "Jueves",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 48500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 71000,
-          },
-        ],
-      },
-      {
-        day: "Viernes",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 54500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 84500,
-          },
-        ],
-      },
-      {
-        day: "Sábado",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 54500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 84500,
-          },
-        ],
-      },
-      {
-        day: "Domingo",
-        type: [
-          {
-            type: "Terraza (80PX)",
-            price: 38500,
-          },
-          {
-            type: "Completo (180PX)",
-            price: 51000,
-          },
-        ],
-      },
-    ],
-    flat: MACARELLAFLAT,
-    flatPDF: MACARELLAFLATPDF,
-    calendlyURL:
-      "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
-    whatsAppURL:
-      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
-  },
+  
   // {
   //   jsonLd: {
   //     "@context": "https://schema.org",
