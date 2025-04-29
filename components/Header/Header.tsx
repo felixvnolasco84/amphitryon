@@ -15,7 +15,7 @@ export default function Header() {
               className="object-fill object-center" 
               width={195}              
               sizes="100vw"
-              alt="image of Amphitryon logo"
+              alt="Amphitryon"
               src={Logo}
             />
           </Link>

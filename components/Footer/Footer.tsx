@@ -14,7 +14,7 @@ export default function Footer() {
             <Image
               width={195}
               sizes="100vw"
-              alt="image of Amphitryon logo"
+              alt="Amphitryon"
               src={Logo}
             />
           </Link>
