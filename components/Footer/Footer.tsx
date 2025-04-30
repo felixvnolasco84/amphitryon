@@ -11,12 +11,7 @@ export default function Footer() {
       <div className="container grid grid-cols-1 justify-between gap-6 py-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
           <Link href={"/"}>
-            <Image
-              width={195}
-              sizes="100vw"
-              alt="Amphitryon"
-              src={Logo}
-            />
+            <Image width={195} sizes="100vw" alt="Amphitryon" src={Logo} />
           </Link>
           <div className="flex flex-col gap-1 text-sm lg:gap-2 lg:text-base">
             {/* <Link target="_blank" href={"tel:5523053711"}>
@@ -24,7 +19,7 @@ export default function Footer() {
                 Inés Torres (55) 2305 3711
               </Button>
             </Link> */}
-            {/* <Link target="_blank" href={"tel:5544502253"}>
+            <Link target="_blank" href={"tel:5544502253"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Rafael González: (55) 4450 2253
               </Button>
@@ -34,20 +29,20 @@ export default function Footer() {
                 Salvador Mier: (55) 4295 7398
               </Button>
             </Link>
-            <Link target="_blank" href={"tel:5610070314"}>
+            <Link target="_blank" href={"tel:5620244047"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Antón Arias: (56) 2024 4047
+              </Button>
+            </Link>
+            {/* <Link target="_blank" href={"tel:5610070314"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Luisa Gomez: (56) 1007 0314
               </Button>
             </Link> */}
 
-            <Link target="_blank" href={"tel:5513842959"}>
+            {/* <Link target="_blank" href={"tel:5513842959"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Cesar Gonzalez: (55) 1384 2959
-              </Button>
-            </Link>
-            {/* <Link target="_blank" href={"tel:5620244047"}>
-              <Button className="text-lg underline" variant={"ghost"}>
-                Antón Arias: (56) 2024 4047
               </Button>
             </Link> */}
           </div>

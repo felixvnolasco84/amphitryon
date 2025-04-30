@@ -192,11 +192,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 38500,
+            price: 35000,
           },
           {
             type: "Completo (180PX)",
-            price: 51000,
+            price: 50000,
           },
         ],
       },
@@ -205,11 +205,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 38500,
+            price: 35000,
           },
           {
             type: "Completo (180PX)",
-            price: 51000,
+            price: 50000,
           },
         ],
       },
@@ -218,11 +218,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 48500,
+            price: 45000,
           },
           {
             type: "Completo (180PX)",
-            price: 71000,
+            price: 60000,
           },
         ],
       },
@@ -231,11 +231,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 48500,
+            price: 45000,
           },
           {
             type: "Completo (180PX)",
-            price: 71000,
+            price: 60000,
           },
         ],
       },
@@ -244,11 +244,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 54500,
+            price: 55000,
           },
           {
             type: "Completo (180PX)",
-            price: 84500,
+            price: 70000,
           },
         ],
       },
@@ -257,11 +257,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 54500,
+            price: 55000,
           },
           {
             type: "Completo (180PX)",
-            price: 84500,
+            price: 70000,
           },
         ],
       },
@@ -270,11 +270,11 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "Terraza (80PX)",
-            price: 38500,
+            price: 35000,
           },
           {
             type: "Completo (180PX)",
-            price: 51000,
+            price: 50000,
           },
         ],
       },
@@ -388,15 +388,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 51000,
+            price: 40000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 46000,
+            price: 35000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 61000,
+            price: 55000,
           },
         ],
       },
@@ -405,15 +405,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 51000,
+            price: 40000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 46000,
+            price: 35000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 61000,
+            price: 55000,
           },
         ],
       },
@@ -422,15 +422,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 56000,
+            price: 55000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 51000,
+            price: 50000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 66000,
+            price: 65000,
           },
         ],
       },
@@ -439,15 +439,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 58000,
+            price: 55000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 53000,
+            price: 50000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 67000,
+            price: 65000,
           },
         ],
       },
@@ -456,15 +456,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 76000,
+            price: 70000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 66000,
+            price: 65000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 81000,
+            price: 85000,
           },
         ],
       },
@@ -473,15 +473,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 81000,
+            price: 70000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 71000,
+            price: 65000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 96000,
+            price: 85000,
           },
         ],
       },
@@ -490,15 +490,15 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "ESPACIO A (100PX)",
-            price: 51000,
+            price: 40000,
           },
           {
             type: "ESPACIO B (80PX)",
-            price: 46000,
+            price: 35000,
           },
           {
             type: "COMPLETO (150PX)",
-            price: 61000,
+            price: 55000,
           },
         ],
       },
@@ -603,7 +603,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 73400,
+            price: 55000,
           },
         ],
       },
@@ -612,7 +612,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 73400,
+            price: 55000,
           },
         ],
       },
@@ -621,7 +621,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 83400,
+            price: 65000,
           },
         ],
       },
@@ -630,7 +630,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 83400,
+            price: 65000,
           },
         ],
       },
@@ -639,7 +639,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 93400,
+            price: 80000,
           },
         ],
       },
@@ -648,7 +648,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 93400,
+            price: 80000,
           },
         ],
       },
@@ -657,7 +657,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "TERRAZA (170PX)",
-            price: 73400,
+            price: 55000,
           },
         ],
       },
