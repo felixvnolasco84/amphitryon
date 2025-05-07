@@ -12,6 +12,9 @@ export const create = mutation({
       await ctx.db.insert("CallContact", { receivedBy: "Antón Arias" });
       return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Antón Arias") {
+      await ctx.db.insert("CallContact", { receivedBy: "Luisa Gomez" });
+      return `tel:5610070314`;
+    } else if (lastContact?.receivedBy === "Luisa Gomez") {
       await ctx.db.insert("CallContact", { receivedBy: "Rafael González" });
       return `tel:5544502253`;
     }
@@ -32,6 +35,8 @@ export const getLastContact = query({
       return `tel:5542957398`;
     } else if (lastContact?.receivedBy === "Antón Arias") {
       return `tel:5620244047`;
+    } else if (lastContact?.receivedBy === "Luisa Gomez") {
+      return `tel:5610070314`;
     }
   },
 });

@@ -34,11 +34,11 @@ export default function Footer() {
                 Antón Arias: (56) 2024 4047
               </Button>
             </Link>
-            {/* <Link target="_blank" href={"tel:5610070314"}>
+            <Link target="_blank" href={"tel:5610070314"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Luisa Gomez: (56) 1007 0314
               </Button>
-            </Link> */}
+            </Link>
 
             {/* <Link target="_blank" href={"tel:5513842959"}>
               <Button className="text-lg underline" variant={"ghost"}>
