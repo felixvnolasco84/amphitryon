@@ -13,10 +13,10 @@ export const create = mutation({
       return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Antón Arias" });
-      return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
+      return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Antón Arias") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Luisa Gomez" });
-      return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
+      return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Luisa Gomez") {
       await ctx.db.insert("WhatsAppContact", { receivedBy: "Rafael González" });
       return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
@@ -40,9 +40,9 @@ export const getLastContact = query({
     if (lastContact?.receivedBy === "Rafael González") {
       return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
-      return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
-    } else if (lastContact?.receivedBy === "Antón Arias") {
       return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
+    } else if (lastContact?.receivedBy === "Antón Arias") {
+      return `https://wa.me/5542957398?text=${encodeURIComponent(message)}`;
     } else if (lastContact?.receivedBy === "Luisa Gomez") {
       return `https://wa.me/5544502253?text=${encodeURIComponent(message)}`;
     }
