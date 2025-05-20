@@ -57,7 +57,7 @@ export default function Home() {
               Salvador Mier: (55) 4295 7398
             </Button>
           </Link>
-          <Link target="_blank" href={"tel:5620244047"}>
+          {/* <Link target="_blank" href={"tel:5620244047"}>
             <Button className="text-lg underline" variant={"ghost"}>
               Antón Arias: (56) 2024 4047
             </Button>
@@ -66,7 +66,7 @@ export default function Home() {
               <Button className="text-lg underline" variant={"ghost"}>
                 Luisa Gomez: (56) 1007 0314
               </Button>
-            </Link>
+            </Link> */}
           {/* <Link target="_blank" href={"tel:5513842959"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Cesar Gonzalez: (55) 1384 2959
