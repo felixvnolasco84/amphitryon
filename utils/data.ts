@@ -124,15 +124,15 @@ export const rentPlaces: RentPlace[] = [
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "Juárez 42",
+      name: "Casa Lucerna 42",
       url: "https://www.amphitryon.mx/casa-lucerna-juarez-42",
       logo: "https://www.amphitryon.mx/images/CasaLucerna1.png",
     },
-    metaTitle: "Casa Lucerna en Juárez 42 - Grupo Amphytrion",
+    metaTitle: "Casa Lucerna en Lucerna 42 - Grupo Amphytrion",
     metaDescription:
       "Es una hermosa casona ubicada en el corazón de la colonia Juárez, con más de 100 años de antigüedad la casa conserva más del 80% de su estructura original.",
     slug: "casa-lucerna-juarez-42",
-    name: "JUÁREZ 42",
+    name: "LUCERNA 42",
     description: "CASA LUCERNA",
     img: CasaLucerna1,
     gallery: [CasaLucerna1, CasaLucerna2, CasaLucerna7,CasaLucerna4, CasaLucerna3,  CasaLucerna5, CasaLucerna6, CasaLucerna8, CasaLucerna9, CasaLucerna10, CasaLucerna11, CasaLucerna12, CasaLucerna13, CasaLucerna14],
