@@ -36,6 +36,22 @@ import Tonala2 from "@/public/images/Tonala2.webp";
 import Tonala3 from "@/public/images/Tonala3.webp";
 import Tonala4 from "@/public/images/Tonala4.webp";
 
+// CASA LUCERNA IMAGES
+import CasaLucerna1 from "@/public/images/Casa_Lucerna-45.jpg";
+import CasaLucerna2 from "@/public/images/Casa_Lucerna-46.jpg";
+import CasaLucerna3 from "@/public/images/Casa_Lucerna-5.jpg";
+import CasaLucerna4 from "@/public/images/Casa_Lucerna-50.jpg";
+import CasaLucerna5 from "@/public/images/Casa_Lucerna-9.jpg";
+import CasaLucerna6 from "@/public/images/Casa_Lucerna-15.jpg";
+import CasaLucerna7 from "@/public/images/Casa_Lucerna-33.jpg";
+import CasaLucerna8 from "@/public/images/Casa_Lucerna-21.jpg";
+import CasaLucerna9 from "@/public/images/Casa_Lucerna-24.jpg";
+import CasaLucerna10 from "@/public/images/Casa_Lucerna-27.jpg";
+import CasaLucerna11 from "@/public/images/Casa_Lucerna-28.jpg";
+import CasaLucerna12 from "@/public/images/Casa_Lucerna-30.jpg";
+import CasaLucerna13 from "@/public/images/Casa_Lucerna-31.jpg";
+import CasaLucerna14 from "@/public/images/Casa_Lucerna-38.jpg";
+
 // FLATS
 
 import CASAJARANAFLAT from "@/public/flat/CASA_JARANA.png";
@@ -47,14 +63,16 @@ import TATELPrivados from "@/public/flat/TATEL_PRIVADOS.png";
 import TATELTerraza from "@/public/flat/TATEL_TERRAZA.png";
 import TATELWelcomeDrinks from "@/public/flat/TATEL_WELCOME_DRINKS.png";
 
-
+// CASA LUCERNA FLAT
 
 
 import GALERIAFLAT from "@/public/flat/Galeria.png";
 import PEPITAFLAT from "@/public/flat/Pepita.png";
 import MACARELLAFLAT from "@/public/flat/Tonala.png";
+import CASALUCERNAFLATImage from "@/public/flat/CASA_LUCERNA.png";
 
 //FLAT PDF
+const CASALUCERNAFLAT = "/pdfs/LUCERNA_42.pdf";
 const CASAJARANAFLATPDF = "/pdfs/CASA_JARANA.pdf";  
 
 //TATEL FLAT PDF
@@ -103,6 +121,122 @@ export type RentPlace = {
 
 export const rentPlaces: RentPlace[] = [
   {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      name: "Juárez 42",
+      url: "https://www.amphitryon.mx/casa-lucerna-juarez-42",
+      logo: "https://www.amphitryon.mx/images/CasaLucerna1.png",
+    },
+    metaTitle: "Casa Lucerna en Juárez 42 - Grupo Amphytrion",
+    metaDescription:
+      "Es una hermosa casona ubicada en el corazón de la colonia Juárez, con más de 100 años de antigüedad la casa conserva más del 80% de su estructura original.",
+    slug: "casa-lucerna-juarez-42",
+    name: "JUÁREZ 42",
+    description: "CASA LUCERNA",
+    img: CasaLucerna1,
+    gallery: [CasaLucerna1, CasaLucerna2, CasaLucerna7,CasaLucerna4, CasaLucerna3,  CasaLucerna5, CasaLucerna6, CasaLucerna8, CasaLucerna9, CasaLucerna10, CasaLucerna11, CasaLucerna12, CasaLucerna13, CasaLucerna14],
+    features: [
+      {
+        title: "Capacidad",
+        description: "450 PAX",
+      },
+      {
+        title: "Horario",
+        description: "8:00 AM - 2:00",
+      },
+      {
+        title: "Audio",
+        description: "N/A",
+      },
+      {
+        title: "Mobilario",
+        description: "N/A",
+      },
+    ],  
+    largeDescription:
+      "Es una hermosa casona ubicada en el corazón de la colonia Juárez, con más de 100 años de antigüedad la casa conserva más del 80% de su estructura original, techos altos, un patio central, muros y marcos de madera que nos  sumergen en la arquitectura de la época porfiriana y un toque industrial contemporáneo, con personalidad única y vibrante ideal para llevar a cabo eventos con los mayores estándares de calidad. Casa Lucerna 42 se ha convertido en unos de los venues predilectos para la realización de eventos nacionales e internacionales, lanzamientos de marca, experiencias immersivas, fiestas, espectáculos y filmaciones, ofreciendo a sus invitados gran comodidad por su diseño arquitectónico y su fácil acceso. Cuenta con un aforo de hasta 450 pax.",
+    location: "Cuauhtémoc",
+    previousLink: "/casa-jarana-roma-norte",
+    nextLink: "/palmas-781-lomas-de-chapultepec",
+    locationInMap: {
+      lat: 19.429782331497858,
+      lng: -99.15539294690045,
+    },
+    district: "Cuauhtémoc",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "CASA COMPLETA (450 PX)",
+            price: 90000,
+          },
+        ],
+      },
+      ],
+    flat: CASALUCERNAFLATImage,
+    flatPDF: CASALUCERNAFLAT,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/casa-lucerna?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  }
+  ,{
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -179,7 +313,7 @@ export const rentPlaces: RentPlace[] = [
     largeDescription:
       "Estratégicamente ubicado en el corazón de las Lomas de Chapultepec, este espacio es un verdadero oasis de sofisticación y comodidad. Con capacidad para hasta 180 personas en formato cóctel y 140 en formato sentado, es el escenario ideal para eventos de cualquier índole. Disfruta de la elegancia de nuestro mobiliario premium, diseñado para realzar la belleza de cada reunión. Además, nuestro sistema de sonido premium garantiza una experiencia acústica incomparable, mientras que la ubicación privilegiada dentro de Plaza Carso de Palmas te brinda la máxima seguridad y prestigio para tu evento. Déjate cautivar por la magia de Macarella, donde la seguridad, el lujo y la exclusividad se fusionan para ofrecerte una experiencia única e inolvidable. ¡Haz de tu próximo evento un momento inigualable en un entorno de máxima distinción!",
     location: "Lomas de Chapultepec",
-    previousLink: "/moliere-310-polanco",
+    previousLink: "/casa-lucerna-juarez-42",
     nextLink: "/tatel-polanco",
     locationInMap: {
       lat: 19.429364,
@@ -771,7 +905,7 @@ export const rentPlaces: RentPlace[] = [
       "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, Casa Jarana ofrece un refugio lleno de estilo y carácter, ideal para escapar del bullicio urbano. Con su vibrante terraza rodeada de vegetación, es el escenario perfecto para transformar cualquier evento en una experiencia inolvidable. Su arquitectura contemporánea, combinada con toques tradicionales, se integra de manera armónica con la atmósfera dinámica y artística de la Roma.Cada evento en Casa Jarana refleja la fusión entre modernidad y tradición, ofreciendo un entorno sofisticado, pero relajado, donde cada detalle ha sido pensado para crear una experiencia única y en sintonía con el espíritu creativo de la zona. ",
     location: "Roma Norte",
     previousLink: "/tatel-polanco",
-    nextLink: "/moliere-310-polanco",
+    nextLink: "/casa-lucerna-juarez-42",
     locationInMap: {
       lat: 19.419211,
       lng: -99.170745,
