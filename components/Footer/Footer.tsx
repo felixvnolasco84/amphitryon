@@ -19,22 +19,25 @@ export default function Footer() {
                 Inés Torres (55) 2305 3711
               </Button>
             </Link> */}
-            <Link target="_blank" href={"tel:5544502253"}>
+            {/* <Link target="_blank" href={"tel:5544502253"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Rafael González: (55) 4450 2253
               </Button>
+            </Link> */}
+
+            <Link target="_blank" href={"tel:5620244047"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Antón Arias: (56) 2024 4047
+              </Button>
             </Link>
+
             <Link target="_blank" href={"tel:5542957398"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Salvador Mier: (55) 4295 7398
               </Button>
             </Link>
-            {/* <Link target="_blank" href={"tel:5620244047"}>
-              <Button className="text-lg underline" variant={"ghost"}>
-                Antón Arias: (56) 2024 4047
-              </Button>
-            </Link>
-            <Link target="_blank" href={"tel:5610070314"}>
+
+            {/* <Link target="_blank" href={"tel:5610070314"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Luisa Gomez: (56) 1007 0314
               </Button>
