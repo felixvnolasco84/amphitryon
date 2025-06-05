@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from "next/image";
 import { Button } from "../ui/button";
 import { TrackGoogleAnalyticsEvent } from "@/lib/google-analytics";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function FlatComponent({
   flat,
@@ -25,7 +26,7 @@ export default function FlatComponent({
 
   return (
     <section>
-      <h2 className="text-center text-2xl font-bold lg:text-4xl xl:mb-8 xl:text-5xl">
+      <h2 className={`${PPEditorialNewRegular.className} text-center text-2xl font-bold lg:text-4xl xl:mb-8 xl:text-5xl`}>
         PLANO DEL VENUE
       </h2>
 

@@ -30,7 +30,7 @@ import { sendContactEmail } from "@/app/_actions";
 import SuccessMessage from "./SuccessMessage";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { clashDisplayMedium, clashDisplayRegular } from "@/utils/fonts";
+import { clashDisplayMedium, PPEditorialNewRegular } from "@/utils/fonts";
 import { Textarea } from "../ui/textarea";
 import { phoneRegex } from "@/lib/utils";
 
@@ -110,7 +110,7 @@ export function ContactForm() {
 
   return (
     <section id="contacto" className="order-7 flex flex-col items-center gap-2">
-      <h2 className={`${clashDisplayMedium.className} text-3xl`}>CONTACTO</h2>
+      <h2 className={`${PPEditorialNewRegular.className} text-3xl`}>CONTACTO</h2>
       {showModalMessage && <SuccessMessage />}
       <Form {...form}>
         <form
@@ -214,31 +214,31 @@ export function ContactForm() {
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem
-                          className={`${clashDisplayRegular.className} text-lg`}
+                          className={`${PPEditorialNewRegular.className} text-lg`}
                           value="TATEL"
                         >
                           Terraza Masaryk 183
                         </SelectItem>
                         <SelectItem
-                          className={`${clashDisplayRegular.className} text-lg`}
+                          className={`${PPEditorialNewRegular.className} text-lg`}
                           value="Casa Jarana"
                         >
                           Casa Jarana
                         </SelectItem>
                         <SelectItem
-                          className={`${clashDisplayRegular.className} text-lg`}
+                          className={`${PPEditorialNewRegular.className} text-lg`}
                           value="La Galeria"
                         >
                           La Galería
                         </SelectItem>
                         <SelectItem
-                          className={`${clashDisplayRegular.className} text-lg`}
+                          className={`${PPEditorialNewRegular.className} text-lg`}
                           value="Macarella"
                         >
                           Macarella
                         </SelectItem>
                         <SelectItem
-                          className={`${clashDisplayRegular.className} text-lg`}
+                          className={`${PPEditorialNewRegular.className} text-lg`}
                           value="Terraza Pepita"
                         >
                           Terraza Pepita
@@ -286,6 +286,7 @@ export function ContactForm() {
           ) : (
             <div className="flex w-full flex-col gap-2">
               <Button
+                className={`${PPEditorialNewRegular.className} text-lg`}
                 type="submit"
                 size={"contact"}
                 variant={"contact"}

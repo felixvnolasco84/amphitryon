@@ -3,10 +3,13 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { WithContext, Organization } from "schema-dts";
 import Script from "next/script";
 import "./globals.css";
-import { clashDisplayRegular } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { ConvexClientProvider } from "@/providers/convex-provider";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 const jsonLd: WithContext<Organization> = {
   "@context": "https://schema.org",
@@ -40,12 +43,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="es-Mx">
       <head>
         <meta name="robots" content="index, follow" />
       </head>
-      <body className={`${clashDisplayRegular.className}`}>
+      <body className={`${inter.className} bg-[#ede7d9]`}>
         <ConvexClientProvider>
           <Header />
           <div id="root" className="flex flex-1 flex-col gap-3">

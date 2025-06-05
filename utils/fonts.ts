@@ -5,6 +5,7 @@ const clashDisplayExtralight = localFont({
   src: "../fonts/ClashDisplay-Extralight.otf",
 });
 const clashDisplayLight = localFont({ src: "../fonts/ClashDisplay-Light.otf" });
+
 const clashDisplayMedium = localFont({
   src: "../fonts/ClashDisplay-Medium.otf",
 });
@@ -15,6 +16,10 @@ const clashDisplaySemibold = localFont({
   src: "../fonts/ClashDisplay-Semibold.otf",
 });
 
+const PPEditorialNewRegular = localFont({
+  src: "../fonts/PPEditorialNew-Regular.otf",
+});
+
 export {
   clashDisplayBold,
   clashDisplayExtralight,
@@ -22,4 +27,5 @@ export {
   clashDisplayMedium,
   clashDisplayRegular,
   clashDisplaySemibold,
+  PPEditorialNewRegular,
 };

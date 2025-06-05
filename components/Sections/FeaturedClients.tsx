@@ -1,4 +1,4 @@
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import Image, { StaticImageData } from "next/image";
 import Ambrosia from "@/public/images/clients/ambrosia.webp";
 import Carso from "@/public/images/clients/carso.webp";
@@ -63,7 +63,7 @@ export default function FeaturedClients() {
   return (
     <section className="order-1 flex flex-col gap-4 lg:gap-7 xl:gap-14">
       <h2
-        className={`${clashDisplayMedium.className} text-center text-xl lg:text-3xl`}
+        className={`${PPEditorialNewRegular.className} text-center text-xl lg:text-3xl`}
       >
         NUESTROS CLIENTES
       </h2>

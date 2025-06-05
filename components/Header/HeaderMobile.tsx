@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import { rentPlaces } from "@/utils/data";
 import { Button } from "../ui/button";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function HeaderMobile() {
   return (
@@ -46,7 +47,7 @@ export default function HeaderMobile() {
                 <Link className="h-fit" href={`/${place.slug}`}>
                   <SheetClose className="text-white">
                     <div>
-                      <p className="font-light text-gray-400">
+                      <p className={`${PPEditorialNewRegular.className} "font-light text-gray-400"`}>
                         {place.description}
                       </p>
                       <p className="text-xs">

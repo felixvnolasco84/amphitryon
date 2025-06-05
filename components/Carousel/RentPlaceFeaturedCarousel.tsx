@@ -7,7 +7,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function RentPlaceFeaturedCarousel({
   features,
@@ -48,7 +48,7 @@ export default function RentPlaceFeaturedCarousel({
                   {feature.title}
                 </h3>
                 <p
-                  className={`${clashDisplayMedium.className} text-base lg:text-xl xl:text-2xl`}
+                  className={`${PPEditorialNewRegular.className} text-base lg:text-xl xl:text-2xl`}
                 >
                   {feature.description}
                 </p>

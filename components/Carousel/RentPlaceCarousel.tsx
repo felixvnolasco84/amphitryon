@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function RentPlaceCarousel({ items }: { items: any[] }) {
   const [api, setApi] = useState<any>();
@@ -53,7 +53,7 @@ export default function RentPlaceCarousel({ items }: { items: any[] }) {
                 />
                 <div>
                   <h3
-                    className={`${clashDisplayMedium.className} text-xl lg:text-2xl`}
+                    className={`${PPEditorialNewRegular.className} text-xl lg:text-2xl`}
                   >
                     {item.name}, {item.district.toUpperCase()}
                   </h3>

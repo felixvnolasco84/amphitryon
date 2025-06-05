@@ -10,7 +10,7 @@ import CallButton from "@/components/WhatsApp/CallButton";
 
 import WhatsAppComponent from "@/components/WhatsApp/WhatsAppComponent";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import Link from "next/link";
 import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 import { Button } from "@/components/ui/button";
@@ -43,7 +43,7 @@ export default function Home() {
         <ContactForm />
         <section className="order-8 mx-auto flex flex-col text-center">
           <h3
-            className={`my-1 text-xl lg:my-2 lg:text-3xl ${clashDisplayMedium.className}`}
+            className={`my-1 text-xl lg:my-2 lg:text-3xl ${PPEditorialNewRegular.className}`}
           >
             Llámanos
           </h3>

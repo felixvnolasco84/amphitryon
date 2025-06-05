@@ -2,7 +2,7 @@ import HeroSection from "@/components/Sections/HeroSection";
 import Script from "next/script";
 import { Metadata } from "next";
 import { RentPlace, rentPlaces } from "@/utils/data";
-import { clashDisplayMedium, clashDisplaySemibold } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -76,7 +76,7 @@ export default function PlacePage({ params }: Props) {
 
             <div className="flex flex-col">
               <h1
-                className={`${clashDisplaySemibold.className} text-4xl lg:text-7xl xl:text-8xl text-center`}
+                className={`${PPEditorialNewRegular.className} text-4xl lg:text-7xl xl:text-8xl text-center`}
               >
                 {rentPlace.name}
               </h1>
@@ -108,12 +108,12 @@ export default function PlacePage({ params }: Props) {
           >
             {rentPlace.features.map((feature, index) => (
               <div className="border-t-2 border-black pt-2 lg:pt-4" key={index}>
-                <h3 className="text-xs text-[#727272] lg:text-sm">
+                <h3 className={`${PPEditorialNewRegular.className} text-xs text-[#727272] lg:text-sm`}>
                   {feature.title}
                 </h3>
                 {Array.isArray(feature.description) ? (
                   <p
-                    className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
+                    className={`${PPEditorialNewRegular.className} text-lg xl:text-xl`}
                   >
                     {feature.description.map((description, index) => (
                       <>
@@ -124,7 +124,7 @@ export default function PlacePage({ params }: Props) {
                   </p>
                 ) : (
                   <p
-                    className={`${clashDisplayMedium.className} text-lg xl:text-xl`}
+                    className={`${PPEditorialNewRegular.className} text-lg xl:text-xl`}
                   >
                     {feature.description}
                   </p>
@@ -136,9 +136,9 @@ export default function PlacePage({ params }: Props) {
         <HeroSection isRentPlace={true} img={rentPlace.img} />
 
         <div className="container flex flex-col gap-6 lg:gap-y-12">
-          <section className="flex flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
+          <section className="flex flex-col gap-2 bg-[#ede7d9] p-4 lg:gap-4">
             <h3
-              className={`${clashDisplayMedium.className} my-0 lg:my-2 text-3xl`}
+              className={`${PPEditorialNewRegular.className} my-0 lg:my-2 text-3xl`}
             >
               {rentPlace.name + " - " + rentPlace.location}
             </h3>

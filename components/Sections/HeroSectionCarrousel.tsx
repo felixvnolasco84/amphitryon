@@ -13,6 +13,7 @@ import { InfiniteMovingMessages } from "../InfiniteMovingCarrousel/InfiniteMovin
 import hero1 from "@/public/images/Hero/MoliereHero.webp";
 import hero2 from "@/public/images/Hero/PepitaHero.webp";
 import hero3 from "@/public/images/HeroNew.webp";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function HeroSectionCarrousel({}: {}) {
   const items = [
@@ -170,7 +171,7 @@ export default function HeroSectionCarrousel({}: {}) {
                   alt="Carrousel image"
                 />
 
-                <h2 className="relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl">
+                <h2 className={`${PPEditorialNewRegular.className} relative flex h-full w-full items-end justify-center bg-gradient-to-t from-black to-transparent pb-12 text-center text-2xl text-white lg:items-center lg:pb-0 lg:text-3xl xl:text-5xl`}>
                   {item.title}
                 </h2>
               </div>

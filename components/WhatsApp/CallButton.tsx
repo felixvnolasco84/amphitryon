@@ -6,6 +6,7 @@ import React from "react";
 import { Button } from "../ui/button";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function CallButton() {
   const create = useMutation(api.callContact.create);
@@ -24,7 +25,7 @@ export default function CallButton() {
       }}
       href={LastContact}
     >
-      <Button className="text-lg" size={"lg"} variant={"contact"}>
+      <Button className={`text-lg`} size={"lg"} variant={"contact"}>
         Llamar
       </Button>
     </Link>

@@ -1,4 +1,4 @@
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import AgregarIcono from "@/public/images/Agregar_Sevicio_Icono.webp";
 import Image from "next/image";
 
@@ -14,9 +14,9 @@ export default function SingleFeature() {
           src={AgregarIcono}
         />
       </div>
-      <div className="flex w-fit flex-col gap-2 bg-[#F8F8F8] p-4 lg:gap-4">
+      <div className="flex w-fit flex-col gap-2 bg-[#ede7d9] p-4 lg:gap-4">
         <h3
-          className={`${clashDisplayMedium.className} my-1 lg:my-2 text-xl lg:text-3xl`}
+          className={`${PPEditorialNewRegular.className} my-1 lg:my-2 text-xl lg:text-3xl`}
         >
           VENUES PROPIOS
         </h3>

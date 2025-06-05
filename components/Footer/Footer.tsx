@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Logo from "@/public/images/Logo_Amphitryon_blanco.png";
+import Logo from "@/public/images/Amphitryon_Logotype_RGB_2@1080x.png";
 import Estrella from "@/public/svg/Vector_estrella.svg";
 import Link from "next/link";
 import FooterLinkComponent from "./FooterLinkComponent";
 import { Button } from "../ui/button";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function Footer() {
   return (
-    <footer className="bg-black px-4 text-white xl:text-3xl">
+    <footer className="bg-black px-4 text-[#ede7d9] xl:text-3xl">
       <div className="container grid grid-cols-1 justify-between gap-6 py-12 lg:grid-cols-2 lg:gap-0">
         <div className="flex flex-col items-center gap-6 lg:items-start lg:gap-12">
           <Link href={"/"}>
@@ -52,7 +53,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center gap-2 lg:items-end lg:gap-6 xl:gap-12">
           <div className="relative">
-            <h3 className="text-4xl lg:block xl:text-6xl">Hablemos</h3>
+            <h3 className={`${PPEditorialNewRegular.className} text-4xl lg:block xl:text-6xl`}>Hablemos</h3>
             <div className="absolute right-0 top-0">
               <div className="relative h-4 w-4">
                 <Image
@@ -83,7 +84,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="container flex flex-col items-center justify-between gap-2 border-white py-4 text-xs text-white lg:flex-row lg:gap-4 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg">
+      <div className={`${PPEditorialNewRegular.className} container flex flex-col items-center justify-between gap-2 border-white py-4 text-xs text-[#ede7d9] lg:flex-row lg:gap-4 lg:border-t-2 lg:py-6 lg:text-base xl:py-12 xl:text-lg`}>
         <p>CIUDAD DE MÉXICO, MÉXICO.</p>
         <Link href={"/aviso-de-privacidad"}>
           <Button className="text-lg underline" variant={"ghost"} size={"sm"}>

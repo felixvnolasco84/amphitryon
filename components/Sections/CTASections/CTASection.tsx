@@ -1,9 +1,9 @@
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 
 export default function CTASection() {
   return (
     <section className="order-2 flex flex-col gap-2 text-center lg:gap-4">
-      <h2 className={`${clashDisplayMedium.className} text-xl lg:text-3xl`}>
+      <h2 className={`${PPEditorialNewRegular.className} text-xl lg:text-3xl`}>
         RENTA TU ESPACIO FAVORITO PARA TU EVENTO PRIVADO EN CDMX
       </h2>
       <p className="text-lg leading-tight lg:text-xl">

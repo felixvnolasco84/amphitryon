@@ -1,4 +1,4 @@
-import { clashDisplayMedium } from "@/utils/fonts";
+import { PPEditorialNewRegular } from "@/utils/fonts";
 import Image from "next/image";
 
 import Link from "next/link";
@@ -9,7 +9,7 @@ export default function RentSection() {
   return (
     <section className="order-4 flex flex-col gap-6 lg:gap-12">
       <h2
-        className={`${clashDisplayMedium.className} text-xl lg:text-3xl text-center`}
+        className={`${PPEditorialNewRegular.className} text-xl lg:text-3xl text-center`}
       >
         NUESTROS VENUES
       </h2>
@@ -32,7 +32,7 @@ export default function RentSection() {
 
             <div className="py-4 text-center lg:py-0 lg:text-left">
               <h3
-                className={`${clashDisplayMedium.className} hover:underline text-xl lg:text-2xl`}
+                className={`${PPEditorialNewRegular.className} hover:underline text-xl lg:text-2xl`}
               >
                 {place.name}, {place.district.toUpperCase()}
               </h3>
