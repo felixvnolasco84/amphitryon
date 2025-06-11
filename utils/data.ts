@@ -15,7 +15,14 @@ import CASAJARANA3 from '@/public/images/CASA-JARANA (3).png'
 //TATEL IMAGES
 import TATEL from '@/public/images/TATEL (4).png'
 import TATEL1 from '@/public/images/TATEL (1).png'
-// import TATEL2 from '@/public/images/TATEL (3).png'
+import TATEL2 from '@/public/images/TATEL (3).png'
+import TATEL3 from '@/public/images/Masaryk_183_01.png'
+import TATEL4 from '@/public/images/Masaryk_183_02.png'
+import TATEL5 from '@/public/images/Masaryk_183_03.png'
+import TATEL6 from '@/public/images/Masaryk_183_04.png'
+import TATEL7 from '@/public/images/Masaryk_183_05.png'
+import TATEL8 from '@/public/images/Masaryk_183_06.png'
+import TATEL9 from '@/public/images/Masaryk_183_08.png'
 // import TATEL3 from '@/public/images/Hero/TATELHero.png'
 // import TATEL4 from '@/public/images/TATEL (5).png'
 
@@ -585,7 +592,7 @@ export const rentPlaces: RentPlace[] = [
     name: "MASARYK 183",
     description: "TERRAZA MASARYK 183",
     img: TATEL,
-    gallery: [TATEL, TATEL1],
+    gallery: [TATEL, TATEL1, TATEL8, TATEL3, TATEL4, TATEL5, TATEL6, TATEL7, TATEL9],
     features: [
       {
         title: "Capacidad",
@@ -621,8 +628,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Lunes",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 55000,
+            type: "TERRAZA (150PX)",
+            price: 73400,
           },
         ],
       },
@@ -630,8 +637,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Martes",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 55000,
+            type: "TERRAZA (150PX)",
+            price: 73400,
           },
         ],
       },
@@ -639,8 +646,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Miércoles",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 65000,
+            type: "TERRAZA (150PX)",
+            price: 83400,
           },
         ],
       },
@@ -648,8 +655,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Jueves",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 65000,
+            type: "TERRAZA (150PX)",
+            price: 83400,
           },
         ],
       },
@@ -657,8 +664,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Viernes",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 80000,
+            type: "TERRAZA (150PX)",
+            price: 93400,
           },
         ],
       },
@@ -666,8 +673,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Sábado",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 80000,
+            type: "TERRAZA (150PX)",
+            price: 93400,
           },
         ],
       },
@@ -675,8 +682,8 @@ export const rentPlaces: RentPlace[] = [
         day: "Domingo",
         type: [
           {
-            type: "TERRAZA (170PX)",
-            price: 55000,
+            type: "TERRAZA (150PX)",
+            price: 73400,
           },
         ],
       },
@@ -761,7 +768,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (450 PX)",
-            price: 90000,
+            price: 80000,
           },
         ],
       },
@@ -770,7 +777,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (450 PX)",
-            price: 90000,
+            price: 80000,
           },
         ],
       },
@@ -779,7 +786,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (450 PX)",
-            price: 90000,
+            price: 80000,
           },
         ],
       },
@@ -815,7 +822,7 @@ export const rentPlaces: RentPlace[] = [
         type: [
           {
             type: "CASA COMPLETA (450 PX)",
-            price: 90000,
+            price: 80000,
           },
         ],
       },
