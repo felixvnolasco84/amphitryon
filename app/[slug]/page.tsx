@@ -175,6 +175,17 @@ export default function PlacePage({ params }: Props) {
             <CustomMapSection location={rentPlace.locationInMap} />
           </Suspense>
 
+          {rentPlace.matterportURL && (
+            <iframe
+              width="100%"
+              height="480"
+              src={rentPlace.matterportURL}
+              frameBorder={0}
+              allowFullScreen
+              allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"
+            ></iframe>
+          )}
+
           <section id="contacto" className="flex flex-col items-center gap-2">
             {/* <CustomModalCalendly url={rentPlace.calendlyURL} /> */}
             <CallButton />

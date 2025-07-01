@@ -124,6 +124,7 @@ export type RentPlace = {
   calendlyURL: string;
   whatsAppURL: string;
   jsonLd: WithContext<LocalBusiness>;
+  matterportURL?: string;
 };
 
 export const rentPlaces: RentPlace[] = [
@@ -542,7 +543,7 @@ export const rentPlaces: RentPlace[] = [
       "@type": "LocalBusiness",
       name: "TERRAZA MASARYK 183",
       url: "https://www.amphitryon.mx/tatel-polanco",
-      logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",
+      logo: "https://www.amphitryon.mx/images/Hero/TATELHero.png",      
       description:
         "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 es una majestuosa casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel.",
       telephone: "+52-55-2305-3711",
@@ -592,6 +593,7 @@ export const rentPlaces: RentPlace[] = [
     name: "MASARYK 183",
     description: "TERRAZA MASARYK 183",
     img: TATEL,
+    matterportURL:"https://my.matterport.com/show/?m=vTzHPVKViTA",
     gallery: [TATEL, TATEL1, TATEL8, TATEL3, TATEL4, TATEL5, TATEL6, TATEL7, TATEL9],
     features: [
       {
