@@ -7,16 +7,16 @@ export const create = mutation({
 
     if (lastContact?.receivedBy === "Rafael González") {
       await ctx.db.insert("CallContact", { receivedBy: "Salvador Mier" });
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
       await ctx.db.insert("CallContact", { receivedBy: "Antón Arias" });
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Antón Arias") {
       await ctx.db.insert("CallContact", { receivedBy: "Luisa Gomez" });
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Luisa Gomez") {
       await ctx.db.insert("CallContact", { receivedBy: "Rafael González" });
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     }
   },
 });
@@ -30,13 +30,13 @@ export const getLastContact = query({
     }
 
     if (lastContact?.receivedBy === "Rafael González") {
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Salvador Mier") {
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Antón Arias") {
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     } else if (lastContact?.receivedBy === "Luisa Gomez") {
-      return `tel:5542957398`;
+      return `tel:5620244047`;
     }
   },
 });

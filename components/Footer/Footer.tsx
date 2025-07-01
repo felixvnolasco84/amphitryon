@@ -21,18 +21,18 @@ export default function Footer() {
             </Link> */}
 
 
-            {/* <Link target="_blank" href={"tel:5620244047"}>
+            <Link target="_blank" href={"tel:5620244047"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Antón Arias: (56) 2024 4047
               </Button>
-            </Link> */}
+            </Link>
 
 
-            <Link target="_blank" href={"tel:5542957398"}>
+            {/* <Link target="_blank" href={"tel:5542957398"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Salvador Mier: (55) 4295 7398
               </Button>
-            </Link>
+            </Link> */}
 
             {/* <Link target="_blank" href={"tel:5544502253"}>
               <Button className="text-lg underline" variant={"ghost"}>
