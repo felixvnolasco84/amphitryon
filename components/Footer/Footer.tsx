@@ -34,11 +34,11 @@ export default function Footer() {
               </Button>
             </Link>
 
-            <Link target="_blank" href={"tel:5544502253"}>
+            {/* <Link target="_blank" href={"tel:5544502253"}>
               <Button className="text-lg underline" variant={"ghost"}>
                 Rafael González: (55) 4450 2253
               </Button>
-            </Link>
+            </Link> */}
 
 
             {/* <Link target="_blank" href={"tel:5610070314"}>

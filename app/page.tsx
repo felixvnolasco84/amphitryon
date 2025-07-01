@@ -58,11 +58,11 @@ export default function Home() {
               Antón Arias: (56) 2024 4047
             </Button>
           </Link> */}
-          <Link target="_blank" href={"tel:5544502253"}>
+          {/* <Link target="_blank" href={"tel:5544502253"}>
             <Button className="text-lg underline" variant={"ghost"}>
               Rafael González: (55) 4450 2253
             </Button>
-          </Link>
+          </Link> */}
 
           {/* <Link target="_blank" href={"tel:5610070314"}>
               <Button className="text-lg underline" variant={"ghost"}>
