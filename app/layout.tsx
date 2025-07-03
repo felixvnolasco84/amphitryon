@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/next-script-for-ga */
+
 import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { WithContext, Organization } from "schema-dts";
 import Script from "next/script";
@@ -56,14 +57,20 @@ export default function RootLayout({
                 __html: JSON.stringify(jsonLd),
               }}
             />
+
+            <script defer id="respondio__widget" src="https://cdn.respond.io/webchat/widget/widget.js?cId=ef8de27647a850faa9dd5ccc0800baa"></script>
+
             {children}
           </div>
+
           <GoogleAnalytics gaId="G-Z2FQ3KVBPJ" />
           <GoogleTagManager gtmId="AW-16453854332" />
           <GoogleTagManager gtmId="GTM-NBMB3DLT" />
           <Footer />
         </ConvexClientProvider>
+
       </body>
+
     </html>
   );
 }
