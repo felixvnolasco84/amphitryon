@@ -20,9 +20,16 @@ export default function Footer() {
               </Button>
             </Link> */}
 
-            <Link target="_blank" href={"tel:5538931801"}>
+            {/* <Link target="_blank" href={"tel:5538931801"}>
               <Button className="text-lg underline" variant={"ghost"}>
               Jimena Montenegro:  ( 55) 3893 1801              
+              </Button>
+            </Link> */}
+
+
+            <Link target="_blank" href={"tel:5568688442"}>
+              <Button className="text-lg underline" variant={"ghost"}>
+                Pili Arias:  (55) 6868 8442
               </Button>
             </Link>
 
