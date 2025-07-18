@@ -27,9 +27,9 @@ export default function Footer() {
             </Link> */}
 
 
-            <Link target="_blank" href={"tel:5568688442"}>
+            <Link target="_blank" href={"tel:5565222282"}>
               <Button className="text-lg underline" variant={"ghost"}>
-                Pili Arias:  (55) 6868 8442
+                Pili Arias:  (55) 6522 2282
               </Button>
             </Link>
 
