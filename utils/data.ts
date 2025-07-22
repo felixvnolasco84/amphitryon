@@ -785,7 +785,7 @@ export const rentPlaces: RentPlace[] = [
     },
     metaTitle: "Orizaba 76 en Roma Norte - Grupo Amphytrion",
     metaDescription:
-      "",
+      "Terraza Panorama es un venue elegante y funcional ubicado en Orizaba 76, en el corazón de la Roma Norte, una de las zonas más vibrantes de la Ciudad de México.",
     slug: "orizaba-76-roma-norte",
     name: "ORIZABA 76",
     description: "TERRAZA PANORAMA",
