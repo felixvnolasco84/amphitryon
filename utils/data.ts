@@ -4,6 +4,20 @@ import MOLIERE from "@/public/images/Hero/MoliereHero.webp";
 import PALMAS from "@/public/images/HeroNew.webp";
 import TONALÁ from "@/public/images/TonalaHome.webp";
 
+//TERRAZA PANORAMA
+import TERRAZAPANORAMA1 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.06.jpeg' 
+import TERRAZAPANORAMA2 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (1).jpeg'   
+import TERRAZAPANORAMA3 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (2).jpeg'    
+import TERRAZAPANORAMA4 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (3).jpeg'     
+import TERRAZAPANORAMA5 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (4).jpeg'      
+import TERRAZAPANORAMA6 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (5).jpeg'      
+import TERRAZAPANORAMA7 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (6).jpeg'      
+import TERRAZAPANORAMA8 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (7).jpeg'       
+import TERRAZAPANORAMA9 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07.jpeg'       
+import TERRAZAPANORAMA10 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.08 (1).jpeg'       
+import TERRAZAPANORAMA11 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.08 (2).jpeg'        
+import TERRAZAPANORAMA12 from '@/public/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.08.jpeg'         
+
 
 //CASA JARANA IMAGES
 
@@ -72,11 +86,11 @@ import TATELWelcomeDrinks from "@/public/flat/TATEL_WELCOME_DRINKS.png";
 
 // CASA LUCERNA FLAT
 
-
 import GALERIAFLAT from "@/public/flat/Galeria.png";
 import PEPITAFLAT from "@/public/flat/Pepita.png";
 import MACARELLAFLAT from "@/public/flat/Tonala.png";
 import CASALUCERNAFLATImage from "@/public/flat/CASA_LUCERNA.png";
+import TERRAZAPANORAMAFLATImage from "@/public/flat/TERRAZA_PANORAMA.png";
 
 //FLAT PDF
 const CASALUCERNAFLAT = "/pdfs/LUCERNA_42.pdf";
@@ -92,6 +106,7 @@ const TATELWELCOMEDRINKS = "/pdfs/TATEL WELCOME DRINKS.pdf";
 const GALERIAFLATPDF = "/pdfs/La Galeria.pdf";
 const MACARELLAFLATPDF = "/pdfs/Macarella.pdf";
 const PEPITAFLATPDF = "/pdfs/Pepita.pdf";
+const PANORAMAFLATPDF = "/pdfs/Panorama Plano Arq.pdf";
 
 import { PricePlace } from "@/lib/utils";
 import { LocalBusiness, WithContext } from "schema-dts";
@@ -127,9 +142,9 @@ export type RentPlace = {
   matterportURL?: string;
 };
 
-export const rentPlaces: RentPlace[] = [
+export const rentPlaces: RentPlace[] = [  
   
-  {
+  {    
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
@@ -619,7 +634,7 @@ export const rentPlaces: RentPlace[] = [
       "Ubicado en una de las zonas más exclusivas de Polanco, Terraza Masaryk 183 casa que combina elegancia, distinción y versatilidad, convirtiéndose en el lugar perfecto para eventos de alto nivel. Con capacidad para hasta 200 personas, una terraza encantadora para disfrutar del aire libre. Terraza Masaryk 183 garantiza no solo comodidad y estilo, sino también una experiencia inolvidable en uno de los lugares más icónicos de la ciudad.",
     location: "Polanco",
     previousLink: "/moliere-310-polanco",
-    nextLink: "/casa-lucerna-juarez-42",
+    nextLink: "/orizaba-76-roma-norte",
     locationInMap: {
       lat: 19.431593,
       lng: -99.189084,
@@ -724,6 +739,170 @@ export const rentPlaces: RentPlace[] = [
     jsonLd: {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
+      name: "ORIZABA 76",
+      url: "https://www.amphitryon.mx/orizaba-76-roma-norte",
+      logo: "https://www.amphitryon.mx/images/TERRAZAPANORAMA/TERRAZAPANORAMA at 11.36.07 (2).jpeg",      
+      description:
+        "Terraza Panorama es un venue elegante y funcional ubicado en Orizaba 76, en el corazón de la Roma Norte, una de las zonas más vibrantes de la Ciudad de México. Con capacidad para 100 personas en formato cóctel y 50 en banquete, el espacio incluye sistema de sonido, mobiliario y servicio de limpieza, facilitando la producción de eventos sin complicaciones. Ideal para celebraciones íntimas, eventos corporativos, cenas privadas, lanzamientos de marca o activaciones exclusivas, Terraza Panorama combina una atmósfera contemporánea con una ubicación inmejorable para ofrecer experiencias memorables.",
+      telephone: "+52-55-6868-8442",
+      priceRange: "$$$",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "Orizaba 76 Roma Norte Cuauhtémoc",
+        addressLocality: "Ciudad de México",
+        addressRegion: "CDMX",
+        postalCode: "06700",
+        addressCountry: "MX",
+      },
+      geo: {
+        "@type": "GeoCoordinates",        
+        latitude: 19.420490339601567,
+        longitude: -99.1601088637579,
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+          opens: "08:00",
+          closes: "02:00",
+        },
+      ],
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          telephone: "+52-55-6868-8442",
+          contactType: "Reservas",
+        },
+      ],
+    },
+    metaTitle: "Orizaba 76 en Roma Norte - Grupo Amphytrion",
+    metaDescription:
+      "",
+    slug: "orizaba-76-roma-norte",
+    name: "ORIZABA 76",
+    description: "TERRAZA PANORAMA",
+    img: TERRAZAPANORAMA3,
+    gallery: [ TERRAZAPANORAMA1, TERRAZAPANORAMA2, TERRAZAPANORAMA5,   TERRAZAPANORAMA8, TERRAZAPANORAMA10, TERRAZAPANORAMA11, TERRAZAPANORAMA12],
+    features: [
+      {
+        title: "Capacidad",
+        description: ["100PX FORMATO COCTÉL", "50PX FORMATO BANQUETE"],
+      },
+      {
+        title: "Horario",
+        description: "8:00 - 2:00",
+      },
+      {
+        title: "Audio",
+        description: "INCLUÍDO",
+      },
+      {
+        title: "Mobilario",
+        description: "INCLUÍDO",
+      },
+    ],
+    largeDescription:
+      "Terraza Panorama es un venue elegante y funcional ubicado en Orizaba 76, en el corazón de la Roma Norte, una de las zonas más vibrantes de la Ciudad de México. Con capacidad para 100 personas en formato cóctel y 50 en banquete, el espacio incluye sistema de sonido, mobiliario y servicio de limpieza, facilitando la producción de eventos sin complicaciones. Ideal para celebraciones íntimas, eventos corporativos, cenas privadas, lanzamientos de marca o activaciones exclusivas, Terraza Panorama combina una atmósfera contemporánea con una ubicación inmejorable para ofrecer experiencias memorables.",
+    location: "Cuauhtémoc",
+    previousLink: "/tatel-polanco",
+    nextLink: "/casa-lucerna-juarez-42",
+    locationInMap: {      
+      lat: 19.420490339601567,
+      lng: -99.1601088637579,
+    },
+    district: "Cuauhtémoc",
+    prices: [
+      {
+        day: "Lunes",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 35000,
+          },
+        
+        ],
+      },
+      {
+        day: "Martes",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 35000,
+          },
+        ],
+      },
+      {
+        day: "Miércoles",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 40000,
+          },
+          
+        ],
+      },
+      {
+        day: "Jueves",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 40000,
+          },
+          
+        ],
+      },
+      {
+        day: "Viernes",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 50000,
+          },
+          
+        ],
+      },
+      {
+        day: "Sábado",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 50000,
+          },
+          
+        ],
+      },
+      {
+        day: "Domingo",
+        type: [
+          {
+            type: "Terraza 100PX FORMATO CÓCTEL - 50PX FORMATO BANQUETE",
+            price: 50000,
+          },
+          
+        ],
+      },
+    ],
+    flat: TERRAZAPANORAMAFLATImage,
+    flatPDF: PANORAMAFLATPDF,
+    calendlyURL:
+      "https://calendly.com/amphitryonterrazas/macarella?hide_event_type_details=0&hide_gdpr_banner=0&text_color=080808&primary_color=000205",
+    whatsAppURL:
+      "https://wa.me/5620244047?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20sus%20servicios",
+  },
+
+
+  {
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
       name: "Casa Lucerna 42",
       url: "https://www.amphitryon.mx/casa-lucerna-juarez-42",
       logo: "https://www.amphitryon.mx/images/CasaLucerna1.png",
@@ -757,7 +936,7 @@ export const rentPlaces: RentPlace[] = [
     largeDescription:
       "Es una hermosa casona ubicada en el corazón de la colonia Juárez, con más de 100 años de antigüedad la casa conserva más del 80% de su estructura original, techos altos, un patio central, muros y marcos de madera que nos  sumergen en la arquitectura de la época porfiriana y un toque industrial contemporáneo, con personalidad única y vibrante ideal para llevar a cabo eventos con los mayores estándares de calidad. Casa Lucerna 42 se ha convertido en unos de los venues predilectos para la realización de eventos nacionales e internacionales, lanzamientos de marca, experiencias immersivas, fiestas, espectáculos y filmaciones, ofreciendo a sus invitados gran comodidad por su diseño arquitectónico y su fácil acceso. Cuenta con un aforo de hasta 450 pax.",
     location: "Cuauhtémoc",
-    previousLink: "/tatel-polanco",
+    previousLink: "/orizaba-76-roma-norte",
     nextLink: "/casa-jarana-roma-norte",
     locationInMap: {
       lat: 19.429782331497858,
@@ -915,7 +1094,7 @@ export const rentPlaces: RentPlace[] = [
       "Ubicada en el corazón de la Colonia Roma Norte de la Ciudad de México, Casa Jarana ofrece un refugio lleno de estilo y carácter, ideal para escapar del bullicio urbano. Con su vibrante terraza rodeada de vegetación, es el escenario perfecto para transformar cualquier evento en una experiencia inolvidable. Su arquitectura contemporánea, combinada con toques tradicionales, se integra de manera armónica con la atmósfera dinámica y artística de la Roma.Cada evento en Casa Jarana refleja la fusión entre modernidad y tradición, ofreciendo un entorno sofisticado, pero relajado, donde cada detalle ha sido pensado para crear una experiencia única y en sintonía con el espíritu creativo de la zona. ",
     location: "Roma Norte",
     previousLink: "/casa-lucerna-juarez-42",
-    nextLink: "/palmas-781-lomas-de-chapultepec",
+    nextLink: "/palmas-781-lomas-de-chapultepec", 
     locationInMap: {
       lat: 19.419211,
       lng: -99.170745,
